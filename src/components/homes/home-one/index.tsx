@@ -1,7 +1,7 @@
 import FooterOne from "@/layouts/footers/FooterOne"
-import HeaderOne from "@/layouts/headers/HeaderOne"
-import Banner from "./Banner"
-import Feedback from "./Feedback"
+import HeaderTwo from "@/layouts/headers/HeaderTwo"
+import Banner from "../home-three/HeroBanner"
+import Feedback from "../home-two/FeedbackOne"
 import BLockFeatureOne from "./BLockFeatureOne"
 import BLockFeatureTwo from "./BLockFeatureTwo"
 import BLockFeatureThree from "./BLockFeatureThree"
@@ -16,9 +16,11 @@ import FancyBanner from "@/components/common/FancyBanner"
 const HomeOne = () => {
   return (
     <>
-      <HeaderOne style={false} />
+      <HeaderTwo style_1={true} style_2={false} />
       <Banner />
       <Feedback />
+      <BLockFeatureFive style={false} />
+      <FancyBanner style={false} />
       <BLockFeatureOne />
       <BLockFeatureTwo />
       <BLockFeatureThree />
@@ -26,8 +28,6 @@ const HomeOne = () => {
       <FancyBannerOne style={false} />
       <AgentArea style={false} />
       <BLockFeatureFour />
-      <BLockFeatureFive style={false} />
-      <FancyBanner style={false} />
       <FancyBannerThree />
       <FooterOne style={false} />
     </>

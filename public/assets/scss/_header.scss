@@ -49,6 +49,10 @@
     position: relative;
     z-index: 999;
     // box-shadow: 0 13px 35px -12px rgb(35 35 35 / 10%);
+    .logo-moviit {
+        height: 60px;
+        width: 140px;
+    }
     @include transition(0.4s);
     .gap-one {
         padding: 33px 40px;

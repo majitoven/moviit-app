@@ -115,24 +115,18 @@ const feature_data: DataType[] = [
       id: 1,
       page: "home_1_feature_3",
       icon: feature3Icon_1,
-      title: "Create Account",
-      desc: "It’s very easy to open an account and start your journey.",
+      title: "Te conocemos",
+      desc: "Nos aseguramos de que llegues directamente a tu hogar ideal. Rellená el formulario y nos contactaremos cuanto antes para conocer tus necesidades y aconsejarte de acuerdo a tu perfil.",
    },
    {
       id: 2,
       page: "home_1_feature_3",
       class_name:"arrow position-relative",
       icon: feature3Icon_2,
-      title: "Find Home",
-      desc: "Complete your profile with all the info to get attention of client.",
+      title: "Te encontramos tu lugar",
+      desc: "Te ofrecemos una búsqueda 360º de apartamentos y habitaciones en Madrid, presentándote todas las opciones que se ajustan a tus necesidades. Negociamos con la agencia o propietario y te asesoramos sobre la documentación necesaria para aumentar tus posibilidades de ser aceptado.",
    },
-   {
-      id: 3,
-      page: "home_1_feature_3",
-      icon: feature3Icon_3,
-      title: "Quick Process",
-      desc: "Apply & get your preferable jobs with all the requirements and get it.",
-   },
+
 
    // home_two_feature_1
 

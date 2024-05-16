@@ -15,10 +15,16 @@
         position: absolute;
         top:88px;
         left: -90px;
+     
     }
     &.arrow:after {
         left: auto;
         right:-72px;
+    }
+    &:last-child {
+        &.arrow:after {
+        display: none;
+        }
     }
 }
 // Card Style Two

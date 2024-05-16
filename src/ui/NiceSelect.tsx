@@ -12,6 +12,7 @@ type NiceSelectProps = {
   defaultCurrent: number;
   placeholder: string;
   className?: string;
+  multiple?: boolean;
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
   name: string;
 }
@@ -21,6 +22,7 @@ const NiceSelect: FC<NiceSelectProps> = ({
   defaultCurrent,
   placeholder,
   className,
+  multiple,
   onChange,
   name,
 }) => {
