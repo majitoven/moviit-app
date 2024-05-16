@@ -11,10 +11,10 @@
     }
     &.arrow:before,
     &.arrow:after {
-        content: url(../images/icon/icon_10.svg);
+        content: url(../images/icon/right-arrow-alt.svg);
         position: absolute;
-        top:88px;
-        left: -90px;
+        top:20px;
+        left: -100px;
      
     }
     &.arrow:after {
