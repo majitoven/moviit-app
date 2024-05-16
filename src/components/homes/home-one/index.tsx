@@ -2,16 +2,18 @@ import FooterOne from "@/layouts/footers/FooterOne"
 import HeaderTwo from "@/layouts/headers/HeaderTwo"
 import Banner from "../home-three/HeroBanner"
 import Feedback from "../home-two/FeedbackOne"
-import BLockFeatureOne from "./BLockFeatureOne"
-import BLockFeatureTwo from "./BLockFeatureTwo"
 import BLockFeatureThree from "./BLockFeatureThree"
 import Property from "./Property"
 import FancyBannerOne from "./FancyBannerOne"
+import BLockFeatureTwo from "../home-two/BLockFeatureTwo"
 import AgentArea from "./AgentArea"
 import BLockFeatureFour from "./BLockFeatureFour"
 import BLockFeatureFive from "./BLockFeatureFive"
-import FancyBannerThree from "./FancyBannerThree"
+import FancyBannerThree from "../home-two/FancyBannerTwo"
 import FancyBanner from "@/components/common/FancyBanner"
+import FancyBannerTwo from "../home-two/FancyBannerOne"
+import AgentBanner from "../home-four/FancyBanner"
+
 
 const HomeOne = () => {
   return (
@@ -20,16 +22,18 @@ const HomeOne = () => {
       <Banner />
       <Feedback />
       <BLockFeatureFive style={false} />
-      <FancyBanner style={false} />
-      <BLockFeatureOne />
-      <BLockFeatureTwo />
-      <BLockFeatureThree />
-      <Property />
-      <FancyBannerOne style={false} />
-      <AgentArea style={false} />
+      <FancyBannerTwo />
       <BLockFeatureFour />
-      <FancyBannerThree />
-      <FooterOne style={false} />
+      <FancyBannerOne style={false} />
+      {/* <FancyBanner style={false} /> */}
+      <AgentBanner style={false} />
+      <BLockFeatureTwo />
+      {/* <BLockFeatureThree /> */}
+      {/* <Property /> */}
+      {/* <AgentArea style={false} /> */}
+      {/* <FancyBannerThree /> */}
+      <FancyBannerThree/>
+      <FooterOne style={true} />
     </>
   )
 }

@@ -53,7 +53,6 @@ const BLockFeatureTwo = () => {
                   </div>
                   <Image src={featureShape} alt="" className="lazy-img shapes shape_01" />
                </div>
-               <BLockFeatureThree />
             </div>
          </div>
       </div>
