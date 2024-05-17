@@ -20,7 +20,7 @@ const { title, desc, icon } = content_data;
 
 const BLockFeatureTwo = () => {
    return (
-      <div className="block-feature-seven position-relative z-1 mt-150 xl-mt-120">
+      <div className="block-feature-seven position-relative z-1 mt-80 mb-80 xl-mt-120">
          <div className="container">
             <div className="position-relative">
                <div className="text-center wow fadeInUp">
