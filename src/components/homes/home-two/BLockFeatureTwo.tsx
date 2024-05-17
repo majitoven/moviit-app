@@ -12,8 +12,8 @@ interface ContentType {
 }
 
 const content_data: ContentType = {
-   title: (<>How our clients get <i>benefited</i> by us</>),
-   desc: "“Outstanding service, bought my dream home quickly!”",
+   title: (<>Nuestros clientes <i>felices</i></>),
+   desc: "“Excelente servicio, el piso fue perfecto y el barrio demasiado lindo!”",
    icon: ["fa-sharp fa-solid fa-star", "fa-sharp fa-solid fa-star", "fa-sharp fa-solid fa-star", "fa-sharp fa-solid fa-star", "fa-sharp fa-solid fa-star",],
 }
 const { title, desc, icon } = content_data;
@@ -32,7 +32,7 @@ const BLockFeatureTwo = () => {
                      {icon.map((icon, index) => (
                         <li key={index}><i className={icon}></i></li>
                      ))}
-                     <li><span className="color-dark fw-500">4.7</span> (18k Reviews)</li>
+                     <li><span className="color-dark fw-500">4.7</span> (+25 reviews)</li>
                   </ul>
                </div>
 
@@ -45,7 +45,7 @@ const BLockFeatureTwo = () => {
                               <div className="content text-center">
                                  <h5 className="mb-25">{item.title}</h5>
                                  <div className="btn tran3s fw-500 text-uppercase">{item.tag}</div>
-                                 <Link href="/listing_03" className="stretched-link"></Link>
+                                 <Link href={item.url ? item.url : "/listing_03"} className="stretched-link" rel="noopener noreferrer" target="_blank" ></Link>
                               </div>
                            </div>
                         </div>

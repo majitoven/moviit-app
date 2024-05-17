@@ -27,9 +27,9 @@ import feature7Icon_1 from "@/assets/images/icon/icon_40.svg";
 import feature7Icon_2 from "@/assets/images/icon/icon_41.svg";
 import feature7Icon_3 from "@/assets/images/icon/icon_42.svg";
 
-import featureImg_1 from "@/assets/images/media/img_19.jpg";
-import featureImg_2 from "@/assets/images/media/img_20.jpg";
-import featureImg_3 from "@/assets/images/media/img_21.jpg";
+import featureImg_1 from "@/assets/images/media/reel_1.jpg";
+import featureImg_2 from "@/assets/images/media/reel_2.jpg";
+import featureImg_3 from "@/assets/images/media/reel_3.jpg";
 
 interface DataType {
    id: number;
@@ -43,6 +43,7 @@ interface DataType {
    data_delay_time?: string;
    btn?: string;
    class_name?:string;
+   url?: string;
 }
 
 const feature_data: DataType[] = [
@@ -177,25 +178,28 @@ const feature_data: DataType[] = [
       id: 1,
       page: "home_two_feature_2",
       img: featureImg_1,
-      title: "Explore & buy Home",
-      tag: "BUY HOME",
+      title: "Fulanita de tal, 25 años",
+      tag: "VER REVIEW",
       data_delay_time: "0.2s",
+      url: 'https://www.instagram.com/reel/C4oMsmrIm9R/?igsh=MXNlcndtOGM5MWhmZQ=='
    },
    {
       id: 2,
       page: "home_two_feature_2",
       img: featureImg_2,
-      title: "List & Sell quickly",
-      tag: "Sell Now",
+      title: "Fulanita de tal, 25 años",
+      tag: "VER REVIEW",
       data_delay_time: "0.1s",
+      url: 'https://www.instagram.com/reel/C6KWXTLglIm/?igsh=aDlvMzczN21jaXJh'
    },
    {
       id: 3,
       page: "home_two_feature_2",
       img: featureImg_3,
-      title: "Discover & get Rental",
-      tag: "RENT NOW",
+      title: "Fulanita de tal, 25 años",
+      tag: "VER REVIEW",
       data_delay_time: "0.2s",
+      url: 'https://www.instagram.com/reel/C67PXZNI9ri/?igsh=aTd4bzE2Z3F5cmd4'
    },
 
    // home_two_feature_3
