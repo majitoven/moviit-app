@@ -25,8 +25,8 @@ const BLockFeatureFive = ({ style }: any) => {
                         <div key={item.id} className="col-lg-6 col-sm-6">
                            <div className={`card-style-one text-center wow fadeInUp ${item.class_name}`}>
                               <Image src={item.icon ? item.icon : ""} alt="" style={{maxHeight: '150px'}} className="lazy-img m-auto icon" />
-                              <h5 className="mt-50 lg-mt-30 mb-15">{item.title}</h5>
-                              <p className="pe-xxl-4 ps-xxl-4">{item.desc}</p>
+                              <h4 className="mt-20 lg-mt-30 mb-15">{item.title}</h4>
+                              <p style={{fontSize: '20px'}} className="pe-xxl-4 ps-xxl-4">{item.desc}</p>
                            </div>
                         </div>
                      ))}
