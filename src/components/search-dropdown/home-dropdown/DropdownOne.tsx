@@ -31,8 +31,8 @@ const DropdownOne = ({ style }: any) => {
             <NiceSelect
               className={`nice-select ${style ? "fw-normal" : ""}`}
               options={[
+                { value: "apartments", text: "Alquilar un departamento" },
                 { value: "rooms", text: "Alquilar una habitación" },
-                { value: "apartments", text: "Alquilar un apartamento" },
               ]}
               defaultCurrent={0}
               onChange={selectHandler}
@@ -47,12 +47,12 @@ const DropdownOne = ({ style }: any) => {
             <NiceSelect
               className={`nice-select location ${style ? "fw-normal" : ""}`}
               options={[
+                { value: "chamberí", text: "Chamberí" },
                 { value: "justicia", text: "Justicia" },
                 { value: "chueca", text: "Chueca" },
                 { value: "malasaña", text: "Malasaña" },
                 { value: "sol", text: "Sol" },
                 { value: "almagro", text: "Almagro" },
-                { value: "chamberí", text: "Chamberí" },
                 { value: "rios rosas", text: "Ríos Rosas" },
                 { value: "Gaztambide", text: "Gaztambide" },
                 { value: "Argüelles", text: "Argüelles" },
@@ -135,7 +135,7 @@ const DropdownOne = ({ style }: any) => {
             </div>
             <PriceRange
               MAX={maxPrice}
-              MIN={0}
+              MIN={600}
               STEP={1}
               values={priceValue}
               handleChanges={handlePriceChange}

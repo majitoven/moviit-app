@@ -2,7 +2,7 @@ import Image from "next/image"
 import Count from "@/components/common/Count";
 
 import feedbackAvatar from "@/assets/images/media/img_01.jpg";
-import feedbackShape_1 from "@/assets/images/shape/shape_14.svg";
+import feedbackShape_1 from "@/assets/images/shape/eye_rotation.svg";
 import feedbackShape_2 from "@/assets/images/shape/shape_15.svg";
 
 const Feedback = () => {

@@ -153,7 +153,7 @@ const UseShortedProperty = ({ itemsPerPage, page }: DataType) => {
    const maxPrice = all_property.filter(item => item.page === page).reduce((max, item) => {
       return item.price > max ? item.price : max;
    }, 0);
-   const [priceValue, setPriceValue] = useState([0, maxPrice]);
+   const [priceValue, setPriceValue] = useState([600, maxPrice]);
 
    useEffect(() => {
       let filterPrice = all_property.filter((j) => j.price >= priceValue[0] && j.price <= priceValue[1]);
