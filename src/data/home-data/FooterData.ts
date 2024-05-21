@@ -13,13 +13,6 @@ interface DataType {
 
 const footer_data: DataType[] = [
    {
-      id: 1,
-      page: "home_1",
-      widget_class: "xs-mt-50",
-      widget_title: "Links",
-      footer_link: [{ link: "/", link_title: "Home" }, { link: "/dashboard/membership", link_title: "Membership" }, { link: "/about_us_01", link_title: "About Company" }, { link: "/blog_01", link_title: "Blog" }, { link: "/blog_02", link_title: "Explore Careers" }, { link: "/pricing_02", link_title: "Pricing" }, { link: "/dashboard/dashboard-index", link_title: "Dashboard" },]
-   },
-   {
       id: 2,
       widget_class: "xs-mt-30",
       page: "home_1",
