@@ -2,7 +2,7 @@ import DashboardFavourite from "@/components/dashboard/favourites";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Dashboard Favourite Homy - Real Estate React Next js Template",
+   title: "Dashboard Favourite Moviit Madrid",
 };
 const index = () => {
    return (
