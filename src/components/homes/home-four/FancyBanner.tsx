@@ -15,7 +15,7 @@ const FancyBanner = ({ style }: any) => {
                      <div className="pb-80 lg-pb-40">
                         <h3>Nuestra misión es ayudarte <span className="fw-normal fst-italic">a encontrar tu lugar.</span></h3>
                         <div className="d-inline-flex flex-wrap align-items-center position-relative mt-15">
-                           <Link href="/contact" className="btn-two rounded-0 border-0 mt-10"><span>Contactanos</span></Link>
+                           <Link href="/contact" className="btn-two rounded-0 border-0 mt-10"><span style={{fontSize: '36px'}}>Contactanos</span></Link>
                            <Image src={fancyShape_1} alt="" className="lazy-img shapes shape_02 wow fadeInRight" />
                         </div>
                      </div>
