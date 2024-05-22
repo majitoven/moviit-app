@@ -15,16 +15,16 @@ const FancyBannerOne = () => {
                   <div className="col-xl-8 col-lg-9 ms-auto wow fadeInRight">
                      <div className="ps-xxl-5">
                         <div className="title-one mb-50 lg-mb-30">
-                           <h2 className="font-garamond fs-xl">Aseguramos el mejor match para tí.</h2>
+                           <h2 className="font-garamond fs-xl">Aseguramos el mejor match para ti.</h2>
                         </div>
                         <div className="row">
                            <div className="col-lg-4">
                               <Image src={fancyImg_1} alt="" className="lazy-img ms-auto d-none d-lg-block me-auto mt-20" />
                            </div>
                            <div className="col-lg-8">
-                              <p className="fs-24 color-dark"><b>¿Qué presupuesto manejamos?</b> </p>
-                              <p className="fs-24 color-dark">Nuestra tarifa depende de la duración del alquiler:</p>
-                              <div className="accordion accordion-style-one mt-60" id="accordionOne">
+                              <p className="fs-24 color-dark" style={{marginBottom: '0px'}}><b>¿Cual es el costo de nuestro servicio?</b> </p>
+                              <p className="fs-20 color-dark">Nuestra tarifa depende de la duración del alquiler:</p>
+                              <div className="accordion accordion-style-one mt-40" id="accordionOne">
                                  <FaqOne />
                               </div>
                            </div>

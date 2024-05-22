@@ -13,7 +13,7 @@ const BLockFeatureFour = () => {
                <div className="col-lg-6 d-flex order-lg-last">
                   <div className="ps-xxl-5 ms-xl-4 pt-100 xl-pt-80 pb-45 w-100 h-100 wow fadeInRight">
                      <div className="title-one mb-40 lg-mb-40">
-                        <div className="upper-title">COMENCEMOS, PARA EMPEZAR:</div>
+                        <div className="upper-title">PARA EMPEZAR:</div>
                         <h3>Nos gustaría <span>conocerte<Image src={titleShape} alt="" className="lazy-img" /></span> mejor.</h3>
                         <p className="fs-24 color-dark"> ¿Eres trabajador o estudiante? ¿Conoces las zonas de Madrid? ¿Vienes solo o acompañado? </p>
                         <p style={{margin: '0px'}}>Dejanos tu número de Whatsapp y nos pondremos en contacto:</p>
