@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
 import titleShape from "@/assets/images/shape/eye.svg";
-import bannerShape_1 from "@/assets/images/shape/shape_35.svg";
-import bannerShape_2 from "@/assets/images/shape/shape_36.svg";
+import bannerShape_1 from "@/assets/images/shape/nube_3.svg";
+import bannerShape_2 from "@/assets/images/shape/nube_4.svg";
 import Slider from "react-slick";
 import DropdownOne from "@/components/search-dropdown/home-dropdown/DropdownOne";
 
