@@ -79,6 +79,10 @@ p {line-height: 1.777em;}
     transform: rotateY(0deg);
   }
 }
+
+.styles-module_whatsappButton__tVits::after{
+  animation: none !important;
+  }
 // Scroll Top
 .scroll-top {
   width:35px;
