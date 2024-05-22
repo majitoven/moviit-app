@@ -1,5 +1,5 @@
 import Image from "next/image"
-import fancyShape from "@/assets/images/shape/shape_30.svg"
+import fancyShape from "@/assets/images/icon/icon_homy_2.png"
 import Link from "next/link"
 
 const FancyBannerTwo = () => {

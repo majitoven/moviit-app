@@ -4,8 +4,8 @@ import footer_data from "@/data/home-data/FooterData";
 
 import footerLogo_1 from "@/assets/images/shape/eye.svg";
 import footerLogo_2 from "@/assets/images/shape/eye.svg";
-import footerShape_1 from "@/assets/images/shape/shape_32.svg";
-import footerShape_2 from "@/assets/images/shape/shape_33.svg";
+import footerShape_1 from "@/assets/images/icon/icon_homy_2.png";
+import footerShape_2 from "@/assets/images/shape/nube_4.png";
 
 const FooterOne = ({ style }: any) => {
   return (

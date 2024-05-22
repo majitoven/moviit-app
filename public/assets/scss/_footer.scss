@@ -66,8 +66,11 @@
         background: #0D1A1C;
         color: rgba($color: #fff, $alpha: 0.6);
         .shape_02 {
-            bottom: 7%;
-            left: 61%;
+            // bottom: 7%;
+            // left: 61%;
+
+            bottom: 0;
+            right: -10%;
         }
         .footer-intro {
             background: url(../images/shape/shape_31.svg) no-repeat center;
