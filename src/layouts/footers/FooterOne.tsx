@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import footer_data from "@/data/home-data/FooterData";
 
-import footerLogo_1 from "@/assets/images/logo/logo_01.svg";
-import footerLogo_2 from "@/assets/images/logo/logo_03.svg";
+import footerLogo_1 from "@/assets/images/shape/eye.svg";
+import footerLogo_2 from "@/assets/images/shape/eye.svg";
 import footerShape_1 from "@/assets/images/shape/shape_32.svg";
 import footerShape_2 from "@/assets/images/shape/shape_33.svg";
 
@@ -22,7 +22,11 @@ const FooterOne = ({ style }: any) => {
                 <div className="bg-wrapper">
                   <div className="logo mb-20">
                     <Link href="/">
-                      <Image src={style ? footerLogo_2 : footerLogo_1} alt="" />
+                      <Image
+                        src={style ? footerLogo_2 : footerLogo_1}
+                        alt=""
+                        style={{ maxHeight: "70px", maxWidth: "70px" }}
+                      />
                     </Link>
                   </div>
                   <p className="mb-60 lg-mb-40 md-mb-20">Madrid, España</p>
@@ -47,27 +51,18 @@ const FooterOne = ({ style }: any) => {
                   >
                     +34 611 877 027{" "}
                   </p>
-                  <div className="d-flex align-items-end justify-content-start">
-                    <p style={{ margin: "0px" }}>
-                      <Link href="#">
-                        <i
-                          className={`fa-brands fa${
-                            style ? "" : "-square"
-                          }-instagram`}
-                        ></i>
-                      </Link>
-                    </p>
-                    <Link
-                      href="#"
-                      className={`email tran3s  ${
-                        style
-                          ? "font-garamond"
-                          : "fs-24 text-decoration-underline"
-                      }`}
-                    >
-                      @moviitt
-                    </Link>
-                  </div>
+                  <Link
+                    href="https://www.instagram.com/moviitt/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className={`email tran3s  ${
+                      style
+                        ? "font-garamond"
+                        : "fs-24 text-decoration-underline"
+                    }`}
+                  >
+                   ig: @moviitt
+                  </Link>
                 </div>
                 {style && (
                   <Image

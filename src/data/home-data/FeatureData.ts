@@ -180,7 +180,7 @@ const feature_data: DataType[] = [
       id: 1,
       page: "home_two_feature_2",
       img: featureImg_1,
-      title: "Fulanita de tal, 25 años",
+      title: "Paly Ferrer, 21 años",
       tag: "VER REVIEW",
       data_delay_time: "0.2s",
       url: 'https://www.instagram.com/reel/C4oMsmrIm9R/?igsh=MXNlcndtOGM5MWhmZQ=='
@@ -189,7 +189,7 @@ const feature_data: DataType[] = [
       id: 2,
       page: "home_two_feature_2",
       img: featureImg_2,
-      title: "Fulanita de tal, 25 años",
+      title: "Morita Smith, 27 años",
       tag: "VER REVIEW",
       data_delay_time: "0.1s",
       url: 'https://www.instagram.com/reel/C6KWXTLglIm/?igsh=aDlvMzczN21jaXJh'
@@ -198,7 +198,7 @@ const feature_data: DataType[] = [
       id: 3,
       page: "home_two_feature_2",
       img: featureImg_3,
-      title: "Fulanita de tal, 25 años",
+      title: "Isa Castañares, 21 años",
       tag: "VER REVIEW",
       data_delay_time: "0.2s",
       url: 'https://www.instagram.com/reel/C67PXZNI9ri/?igsh=aTd4bzE2Z3F5cmd4'
