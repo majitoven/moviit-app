@@ -31,7 +31,7 @@ const FooterOne = ({ style }: any) => {
                   </div>
                   <p className="mb-60 lg-mb-40 md-mb-20">Madrid, España</p>
                   <Link
-                    href="#"
+                    href="mailto:moviitmad@gmail.com"
                     className={`email tran3s ${
                       style
                         ? "font-garamond"
