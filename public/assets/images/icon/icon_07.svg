@@ -9,7 +9,7 @@
 </g>
 <path d="M119.7 117.7H81.9C76.8874 117.7 72.0801 119.691 68.5357 123.236C64.9912 126.78 63 131.588 63 136.6V146.05" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M100.8 98.8C111.238 98.8 119.7 90.3382 119.7 79.9C119.7 69.4618 111.238 61 100.8 61C90.3617 61 81.8999 69.4618 81.8999 79.9C81.8999 90.3382 90.3617 98.8 100.8 98.8Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M167.25 134.5C167.25 147.603 156.407 158.25 143 158.25C129.593 158.25 118.75 147.603 118.75 134.5C118.75 121.397 129.593 110.75 143 110.75C156.407 110.75 167.25 121.397 167.25 134.5Z" fill="#FF9264" stroke="black" stroke-width="1.5"/>
+<path d="M167.25 134.5C167.25 147.603 156.407 158.25 143 158.25C129.593 158.25 118.75 147.603 118.75 134.5C118.75 121.397 129.593 110.75 143 110.75C156.407 110.75 167.25 121.397 167.25 134.5Z" fill="#FDB853" stroke="black" stroke-width="1.5"/>
 <path d="M143.56 123V145" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <path d="M133 134.44L155 134.44" stroke="black" stroke-width="2" stroke-linecap="round"/>
 <defs>

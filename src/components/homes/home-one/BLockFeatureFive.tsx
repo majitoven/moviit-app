@@ -1,7 +1,7 @@
 import Image from "next/image"
 import feature_data from "@/data/home-data/FeatureData"
 
-import titleShape from "@/assets/images/shape/title_shape_07.svg";
+import titleShape from "@/assets/images/shape/title_shape_07_alt.svg";
 import featureShape_1 from "@/assets/images/shape/shape_07.svg";
 import featureShape_2 from "@/assets/images/shape/shape_08.svg";
 
@@ -24,7 +24,7 @@ const BLockFeatureFive = ({ style }: any) => {
                      {feature_data.filter((items) => items.page === "home_1_feature_3").map((item) => (
                         <div key={item.id} className="col-lg-6 col-sm-6">
                            <div className={`card-style-one text-center wow fadeInUp ${item.class_name}`}>
-                              <Image src={item.icon ? item.icon : ""} alt="" style={{maxHeight: '150px'}} className="lazy-img m-auto icon" />
+                              <Image src={item.icon ? item.icon : ""} alt="" style={{maxHeight: '200px', maxWidth: '200px'}} className="lazy-img m-auto icon" />
                               <h4 className="mt-20 lg-mt-30 mb-15">{item.title}</h4>
                               <p style={{fontSize: '20px'}} className="pe-xxl-4 ps-xxl-4">{item.desc}</p>
                            </div>
