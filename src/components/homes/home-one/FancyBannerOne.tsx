@@ -30,8 +30,8 @@ const FancyBannerOne = ({ style }: any) => {
                 tu hogar en Madrid.
               </h3>
               <p className="fs-24 text-white pe-xl-5 me-xxl-5">
-                No solo te buscamos casa, también te la amueblamos con lo indispensable para que
-                llegues directo a dormir.
+                No solo te buscamos casa, también te la amueblamos con lo
+                indispensable para que llegues directo a dormir.
               </p>
             </div>
             <Link href="/listing_details_02" className="btn-six">
@@ -46,9 +46,9 @@ const FancyBannerOne = ({ style }: any) => {
               }`}
             >
               <div className="row gx-0">
-                <div className="col-md-7 d-flex">
+                <div className="col-md-8 d-flex">
                   <div className="gutter border-right w-100 h-100">
-                    <div className="tag mb-20">Proceso</div>
+                    <div className="tag mb-20"><strong>Proceso</strong></div>
                     <strong className="d-block color-dark fw-500 fs-20">
                       Qué incluye:
                     </strong>
@@ -74,27 +74,30 @@ const FancyBannerOne = ({ style }: any) => {
                   </div>
                 </div>
 
-                <div className="col-md-5 d-flex">
+                <div className="col-md-4 d-flex">
                   <div className="gutter w-100 h-100">
-                    <div className="tag mb-20">PRECIO</div>
-                    <h2
-                      className="price text-center"
-                      style={{ fontSize: "30px" }}
-                    >
-                      450€
-                    </h2>
-                    <p
-                      className="fs-16"
-                      style={{
-                        fontStyle: "italic",
-                        fontSize: "13px",
-                        margin: "0px",
-                        textAlign: "end",
-                      }}
-                    >
-                      *Pago por adelantado.
-                    </p>
-                    <strong className="d-block color-dark fw-500 fs-20">
+                    <div className="tag mb-20"><strong>COSTO</strong></div>
+                    <div style={{height: '80%'}} className="d-flex align-items-center justify-content-center flex-column">
+                      <h2
+                        className="price text-center"
+                        style={{ fontSize: "40px" }}
+                      >
+                        450€
+                      </h2>
+                      <p
+                        className="fs-16"
+                        style={{
+                          fontStyle: "italic",
+                          fontSize: '14px',
+                          margin: "0px",
+                          textAlign: "end",
+                        }}
+                      >
+                        *Pago por adelantado.
+                      </p>
+                    </div>
+
+                    {/* <strong className="d-block color-dark fw-500 fs-20">
                       Desglose:
                     </strong>
                     <p style={{ fontSize: "15px", margin: "0px" }}>
@@ -105,7 +108,7 @@ const FancyBannerOne = ({ style }: any) => {
                     </p>
                     <p style={{ fontSize: "15px", margin: "0px" }}>
                       - Recibimiento y selección: 200€
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>

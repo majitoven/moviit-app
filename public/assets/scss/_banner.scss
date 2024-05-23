@@ -454,7 +454,9 @@
         .price {
             font-size: 40px;
             letter-spacing: -0.8px;
-            background: url(../images/shape/shape_04.svg)  no-repeat center;
+            background: url(../images/shape/shape_04_alt.svg)  no-repeat center;
+            border: 2px solid #75BE93;
+            border-radius: 6%;
             background-size: cover;
             padding: 15px 10px;
         }

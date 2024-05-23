@@ -29,7 +29,8 @@ const FooterOne = ({ style }: any) => {
                       />
                     </Link>
                   </div>
-                  <p className="mb-60 lg-mb-40 md-mb-20">Madrid, España</p>
+                  <p className="mb-40 lg-mb-40 md-mb-20">Madrid, España.</p>
+                  <h6 style={{margin: '0px', marginBottom: '-5px'}}>CORREO:</h6>
                   <Link
                     href="mailto:moviitmad@gmail.com"
                     className={`email tran3s ${
@@ -40,6 +41,7 @@ const FooterOne = ({ style }: any) => {
                   >
                     moviitmad@gmail.com
                   </Link>
+                  <h6 style={{marginTop: '10px', marginBottom: '-5px'}}>MÓVIL:</h6>
                   <p
                     style={{ margin: "0px" }}
                     className={`email tran3s ${
@@ -50,6 +52,7 @@ const FooterOne = ({ style }: any) => {
                   >
                     +34 611 877 027{" "}
                   </p>
+                  <h6 style={{marginTop: '10px', marginBottom: '-5px'}}>INSTAGRAM:</h6>
                   <Link
                     href="https://www.instagram.com/moviitt/"
                     rel="noopener noreferrer"
@@ -60,7 +63,20 @@ const FooterOne = ({ style }: any) => {
                         : "fs-24 text-decoration-underline"
                     }`}
                   >
-                   ig: @moviitt
+                   @moviitt
+                  </Link>
+                  <h6 style={{marginTop: '10px', marginBottom: '-5px'}}>TIKTOK:</h6>
+                  <Link
+                    href="https://www.tiktok.com/@moviitmad/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className={`email tran3s  ${
+                      style
+                        ? "font-garamond"
+                        : "fs-24 text-decoration-underline"
+                    }`}
+                  >
+                   @moviitmad
                   </Link>
                 </div>
                 {style && (

@@ -31,7 +31,7 @@ const DropdownOne = ({ style }: any) => {
             <NiceSelect
               className={`nice-select ${style ? "fw-normal" : ""}`}
               options={[
-                { value: "apartments", text: "Alquilar un departamento" },
+                { value: "apartments", text: "Alquilar un apartamento" },
                 { value: "rooms", text: "Alquilar una habitación" },
               ]}
               defaultCurrent={0}

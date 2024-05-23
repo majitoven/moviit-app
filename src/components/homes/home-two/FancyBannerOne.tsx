@@ -22,7 +22,7 @@ const FancyBannerOne = () => {
                               <Image src={fancyImg_1} alt="" className="lazy-img ms-auto d-none d-lg-block me-auto mt-20" />
                            </div>
                            <div className="col-lg-8">
-                              <p className="fs-24 color-dark" style={{marginBottom: '0px'}}><b>¿Cual es el costo de nuestro servicio?</b> </p>
+                              <p className="fs-24 color-dark" style={{marginBottom: '0px'}}><b>¿Cuál es el costo de nuestro servicio?</b> </p>
                               <p className="fs-20 color-dark">Nuestra tarifa depende de la duración del alquiler:</p>
                               <div className="accordion accordion-style-one mt-40" id="accordionOne">
                                  <FaqOne />

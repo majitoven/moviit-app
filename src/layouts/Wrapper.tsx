@@ -24,7 +24,7 @@ const Wrapper = ({ children }: any) => {
     return <>
         {children}
         {/* <ScrollToTop /> */}
-        <FloatingWhatsApp buttonStyle={{background: '#3BB17C'}} avatar="https://i.ibb.co/WcBhrjf/mar-cara.jpg" phoneNumber="+34611877027" accountName="Moviit Madrid" chatMessage="Hola! 🤝 ¿Cómo podemos ayudarte?" placeholder="Escribe tu consulta..." statusMessage="Responderemos en menos de 24hrs."/>
+        <FloatingWhatsApp buttonStyle={{background: '#3BB17C'}} avatar="https://i.ibb.co/WcBhrjf/mar-cara.jpg" phoneNumber="+34611877027" accountName="Moviit Madrid" chatMessage={"Hola! Somos Moviit 🤝 \nCómo podemos ayudarte?"} placeholder="Escribe tu consulta..." statusMessage="Responderemos en menos de 24hrs."/>
         <ToastContainer position="top-center" />
     </>;
 }
