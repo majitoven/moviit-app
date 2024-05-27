@@ -44,9 +44,11 @@
 }
 // Feedback Section Two 
 .feedback-section-two {
-    background: #0D1A1C;
+    //  background: #75BE93;
+    background: #75be93cf;
+    // background: #CDF4F3;
     .bg-wrapper {
-        background: url(../images/shape/shape_13.svg) no-repeat center;
+        background: url(../images/shape/shape_13_alt.svg) no-repeat center;
         background-size: cover;
         padding: 50px 50px;
     }
@@ -57,7 +59,7 @@
             position: absolute;
             height: 100%;
             width: 1px;
-            background: rgba($color: #fff, $alpha: 0.05);
+            background: rgba($color: #fff, $alpha: 0.2);            
             top:0;
             z-index: -1;
             left: 44%;
@@ -83,12 +85,29 @@
         font-size: 74px;
         line-height: 1.1486em;
         margin: 0;
-        color: #000;
+        
+    //     color: #000;
+    //     background: rgba(0, 0, 0, 0.035);
+    // padding: 15px;
+    // padding-top: 0px;
+    // border-radius: 15px;
         span {
             font-style: italic;
             color: $color-one;
             text-decoration-line: underline;
             text-decoration-thickness: 3px;
+            // background: white;
+            // padding: 0px 5px;
+            // border-radius: 15px;
+            // opacity: 0.5;
+            text-shadow: 0 1px 0 #fff, 0 2px 0 #fff,
+                0 3px 0 #fff, 0 4px 0 #fff,
+                0 5px 0 #fff, 0 6px 0 #fff
+        }
+        .span2 {
+            text-shadow: 0 1px 0 #fff, 0 2px 0 #fff,
+            0 3px 0 #fff, 0 4px 0 #fff,
+            0 5px 0 #fff, 0 6px 0 #fff
         }
     }
     .avatar {
