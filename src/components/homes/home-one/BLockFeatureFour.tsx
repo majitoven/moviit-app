@@ -28,7 +28,7 @@ const BLockFeatureFour = () => {
 
                <div className="col-lg-6 d-flex">
                   <div className="img-gallery position-relative z-1 w-100 h-100 me-lg-5 wow fadeInLeft">
-                     <div className="img-bg" style={{ backgroundImage: `url(/assets/images/media/img_palacio.jpg)` }}></div>
+                     <div className="img-bg" style={{ backgroundImage: `url(/assets/images/media/perro.jpg)` }}></div>
                   </div>
                </div>
             </div>

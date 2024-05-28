@@ -112,9 +112,13 @@ const DropdownOne = ({ style }: any) => {
           <div className="input-box-one border-left border-lg-0">
             <div className="label">Rango de precios</div>
             <div className="price-ranger">
-              <div className="price-input d-flex align-items-center justify-content-between pt-5">
+              <div
+                className="price-input d-flex align-items-center justify-content-between pt-5"
+                style={{ marginBottom: "12px" }}
+              >
                 <div className="field d-flex align-items-center">
                   <input
+                    style={{ height: "30px" }}
                     type="number"
                     className="input-min"
                     value={priceValue[0]}
@@ -124,6 +128,7 @@ const DropdownOne = ({ style }: any) => {
                 <div className="divider-line"></div>
                 <div className="field d-flex align-items-center">
                   <input
+                    style={{ height: "30px" }}
                     type="number"
                     className="input-max"
                     value={priceValue[1]}
