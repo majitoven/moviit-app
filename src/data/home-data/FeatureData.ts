@@ -30,7 +30,7 @@ import feature7Icon_2 from "@/assets/images/icon/icon_41.svg";
 import feature7Icon_3 from "@/assets/images/icon/icon_42.svg";
 
 import featureImg_1 from "@/assets/images/media/reel_1.jpg";
-import featureImg_2 from "@/assets/images/media/reel_2.jpg";
+import featureImg_2 from "@/assets/images/media/reel2.png";
 import featureImg_3 from "@/assets/images/media/reel_3.jpg";
 
 interface DataType {
