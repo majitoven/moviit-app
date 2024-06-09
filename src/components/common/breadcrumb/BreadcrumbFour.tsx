@@ -11,17 +11,17 @@ const BreadcrumbFour = ({ title, link, link_title, subTitle, subTitle2, style, b
          <div className="container">
             <div className="row">
                <div className="col-lg-6">
-                  <h3 className={`${style ? "xl-mb-30 md-mb-20" : "xl-mb-20 pt-15"} mb-35 special`}>{title}</h3>
+                  <h2 className={`${style ? "xl-mb-30 md-mb-20" : "xl-mb-20 pt-15"} mb-35 special font-garamond`}>{title}</h2>
                </div>
                {subTitle && (
              <div className="col-lg-6" >
              <div>
-                <p className="sub-heading special" style={{ color: 'white', fontWeight: 450 }}>{subTitle}
+                <p className="sub-heading special font-garamond" style={{ color: 'white', fontWeight: 450 }}>{subTitle}
                 </p>
 
              </div>
              <div>
-                <p className="sub-heading special" style={{ color: 'white', fontSize: '22px' }}>
+                <p className="sub-heading special font-garamond" style={{ color: 'white', fontSize: '28px' }}>
                    {subTitle2}
                 </p>
              </div>
