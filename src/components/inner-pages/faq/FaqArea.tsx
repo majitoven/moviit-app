@@ -12,17 +12,16 @@ const FaqArea = () => {
                   <div className="faq-sidebar">
                      <div className="bg-wrapper">
                         <ul className="style-none">
-                           <li><Link href="#Selling">1. <span>Selling</span></Link></li>
-                           <li><Link href="#Renting">2. <span>Renting</span></Link></li>
-                           <li><Link href="#Buying">3. <span>Buying</span></Link></li>
-                           <li><Link href="#Payments">4. <span>Payments</span></Link></li>
-                           <li><Link href="#Terms">5. <span>Terms & Conditions</span></Link></li>
-                           <li><Link href="#Account">6. <span>Account</span></Link></li>
+                           <li><Link href="#Empresa">1. <span>La empresa</span></Link></li>
+                           <li><Link href="#Servicios">2. <span>Servicios</span></Link></li>
+                           <li><Link href="#Costos">3. <span>Costos</span></Link></li>
+                           <li><Link href="#Terminos">4. <span>Términos & Condiciones</span></Link></li>
+                           <li><Link href="#Otros">5. <span>Otros</span></Link></li>
                         </ul>
                      </div>
                      <div className="bg-wrapper text-center mt-35">
-                        <h4 className="mb-35">Don’t Find Your <br />Answer?</h4>
-                        <Link href="/contact" className="btn-five">Contact us</Link>
+                        <h4 className="mb-35">No encuentras tu <br />respuesta?</h4>
+                        <Link href="/contact" className="btn-five">Contactanos</Link>
                      </div>
                   </div>
                </div>

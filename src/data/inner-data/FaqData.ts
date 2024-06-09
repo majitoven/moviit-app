@@ -13,37 +13,38 @@ interface DataType {
 const inner_faq_data:DataType[] = [
    {
       id: 1,
-      id_name: "Selling",
-      title: "SELLING",
+      id_name: "Empresa",
+      title: "LA EMPRESA",
       md_pt:true,
       faq: [
          {
             id: 1,
-            question: "How does the free trial work?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "¿Qué hacen en Moviit?",
+            answer: "Somos Personal Shoppers. Hacemos una búsqueda personalizada de pisos/habitaciones en Madrid. Te presentamos los pisos disponibles que se adapten a tus condiciones. Te ayudamos a firmar contrato online para que llegues directo a tu piso.",
          },
          {
             id: 2,
-            question: "How do you weigh different criteria in your process?",
+            question: "¿Quién necesita de Moviit?",
             answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
          },
          {
             id: 3,
-            question: "What’s the process of selling property?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "¿Son una inmobiliaria?",
+            answer: "No somos inmobiliaria. En Moviit trabajamos para nuestro cliente. Negociamos en nombre de él con: Inmobiliaria/ Gestor de piso/ Propietario.",
          },
-         {
-            id: 4,
-            question: "Refund & Frauds",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-         },
+
       ]
    },
    {
       id: 2,
-      id_name: "Renting",
-      title: "RENTING",
+      id_name: "Servicios",
+      title: "SERVICIOS",
       faq: [
+         {
+            id: 4,
+            question: "¿Qué pasa si decido abandonar el servicio?",
+            answer: "Puedes abandonar el servicio cuando quieras. La seña no se devuelve debido al trabajo realizado hasta la fecha.",
+         },
          {
             id: 5,
             question: "Can a home depreciate in value?",
@@ -68,8 +69,8 @@ const inner_faq_data:DataType[] = [
    },
    {
       id: 3,
-      id_name: "Buying",
-      title: "BUYING",
+      id_name: "Costos",
+      title: "COSTOS",
       faq: [
          {
             id: 9,
@@ -112,8 +113,8 @@ const inner_faq_data:DataType[] = [
    },
    {
       id: 5,
-      id_name: "Terms",
-      title: "TERMS & CONDITIONS",
+      id_name: "Terminos",
+      title: "TERMINOS & CONDICIONES",
       faq: [
          {
             id: 15,
@@ -129,8 +130,8 @@ const inner_faq_data:DataType[] = [
    },
    {
       id: 6,
-      id_name: "Account",
-      title: "ACCOUNT",
+      id_name: "Otros",
+      title: "OTROS",
       faq: [
          {
             id: 17,
