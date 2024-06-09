@@ -62,7 +62,7 @@ const menu_data: MenuItem[] = [
         id: 6,
         has_dropdown: false,
         title: "Contacto",
-        link: "/agent_details",
+        link: "/contact",
     },
 ];
 export default menu_data;

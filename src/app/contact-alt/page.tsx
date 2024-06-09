@@ -1,13 +1,13 @@
-import AgentDetails from "@/components/inner-pages/agent/agent-details";
+import Contact from "@/components/inner-pages/contact";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Agent Details Moviit Madrid",
+   title: "Contact Moviit Madrid",
 };
 const index = () => {
    return (
       <Wrapper>
-         <AgentDetails />
+         <Contact />
       </Wrapper>
    )
 }
