@@ -1,15 +1,15 @@
-import BreadcrumbOne from '@/components/common/breadcrumb/BreadcrumbOne'
+import BreadcrumbFour from '@/components/common/breadcrumb/BreadcrumbFour'
 import FooterFour from '@/layouts/footers/FooterFour'
-import HeaderOne from '@/layouts/headers/HeaderOne'
+import HeaderTwo from '@/layouts/headers/HeaderTwo'
 import FaqArea from './FaqArea'
 import FancyBanner from '@/components/common/FancyBanner'
 
 const Faq = () => {
    return (
       <>
-         <HeaderOne style={true} />
-         <BreadcrumbOne title="Question & Answers" link="#" link_title="Pages" sub_title="Faq’s" style={true} />
-         <FaqArea/>
+         <HeaderTwo style_1={true} style_2={false} />
+         <BreadcrumbFour title="FAQ's" subTitle="¿Tienes dudas?" subTitle2="Respondemos todas las preguntas y respuestas." style={false} background={`url(/assets/images/media/contacto3.jpg)`}/>
+         <FaqArea />
          <FancyBanner style={false} />
          <FooterFour />
       </>

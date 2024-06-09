@@ -8,7 +8,7 @@ const AgentDetails = () => {
    return (
       <>
          <HeaderTwo style_1={true} style_2={false} />
-         <BreadcrumbFour title="Contactanos"  style={false} />
+         <BreadcrumbFour title="Contactanos" subTitle="¿En qué podemos ayudarte?" subTitle2="Ponte en contacto y te responderemos de inmediato." style={false} background={`url(/assets/images/media/contacto.jpg)`}/>
          <AgencyDetailsArea style={true} />
          <FooterOne style={true} />
       </>
