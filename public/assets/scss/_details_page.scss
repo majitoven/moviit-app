@@ -35,7 +35,7 @@
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            background-image: url(../images/agent/img_10.jpg);
+            background-image: url(../images/media/mar.jpg);
         }
         .tag {
             font-size: 14px;
@@ -715,6 +715,10 @@
 .theme-sidebar-one {
     &.dot-bg {
         background: url(../images/shape/shape_65.svg) no-repeat center;
+        background-size: cover;
+    }
+    &.dot-alt-bg {
+        background: url(../images/shape/shape_65_alt.svg) no-repeat center;
         background-size: cover;
     }
     .btn-nine {

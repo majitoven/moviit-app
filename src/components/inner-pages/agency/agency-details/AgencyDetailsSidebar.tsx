@@ -10,12 +10,12 @@ const AgencyDetailsSidebar = () => {
       <div className="col-lg-4">
          <div className="theme-sidebar-one dot-bg p-30 ms-xxl-3 md-mt-60">
             <div className="tour-schedule bg-white p-30 mb-40">
-               <h5 className="mb-40">Contact Form</h5>
+               <h5 className="mb-40">Formulario de Contacto</h5>
                <AgencyFormTwo />
-               <Link href="tel:+548842445" className="btn-eight sm text-uppercase w-100 rounded-0 tran3s">CALL NOW</Link>
+               <Link href="tel:+34611877027" className="btn-eight sm text-uppercase w-100 rounded-0 tran3s">LLAMAR AHORA</Link>
             </div>
 
-            <div className="agent-finder bg-white p-30">
+            {/* <div className="agent-finder bg-white p-30">
                <h5 className="mb-40">Search Agency</h5>
                <form onSubmit={(e) => e.preventDefault()}>
                   <div className="input-box-one mb-25">
@@ -45,7 +45,7 @@ const AgencyDetailsSidebar = () => {
                   </div>
                   <button className="btn-nine text-uppercase w-100 mb-10">SEARCH</button>
                </form>
-            </div>
+            </div> */}
          </div>
       </div>
    )

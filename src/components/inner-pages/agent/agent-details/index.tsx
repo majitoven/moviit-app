@@ -1,17 +1,16 @@
-import BreadcrumbThree from "@/components/common/breadcrumb/BreadcrumbThree"
-import HeaderFour from "@/layouts/headers/HeaderFour"
-import FooterFour from "@/layouts/footers/FooterFour"
+import BreadcrumbFour from "@/components/common/breadcrumb/BreadcrumbFour"
+import HeaderTwo from "@/layouts/headers/HeaderTwo"
+import FooterOne from "@/layouts/footers/FooterOne"
 import AgencyDetailsArea from "../../agency/agency-details/AgencyDetailsArea"
 import FancyBanner from "@/components/common/FancyBanner"
 
 const AgentDetails = () => {
    return (
       <>
-         <HeaderFour />
-         <BreadcrumbThree title="Agent Details" link="agent" link_title="Agent" sub_title="Mathews Firlo" style={false} />
+         <HeaderTwo style_1={true} style_2={false} />
+         <BreadcrumbFour title="Contactanos"  style={false} />
          <AgencyDetailsArea style={true} />
-         <FancyBanner />
-         <FooterFour />
+         <FooterOne style={true} />
       </>
    )
 }

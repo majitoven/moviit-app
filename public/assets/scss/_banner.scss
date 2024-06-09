@@ -932,6 +932,42 @@
         padding-left: 80px;
     }
 }
+.inner-banner-four {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        padding: 40px;
+
+        h3 {
+            color: white;
+        }
+    }
+    .sub-heading {
+        font-size: 28px;
+        line-height: 1.785em;
+        margin: 0;
+        color: white;
+        padding-left: 80px;
+    }
+
+    .special {
+        display: inline-block;
+        color: white;
+        background: red;
+          display: inline;
+          color: white;
+          margin-bottom:15px;
+          -webkit-box-decoration-break: clone;
+          -ms-box-decoration-break: clone;
+          -o-box-decoration-break: clone;
+          box-decoration-break: clone;
+        padding: 8px;
+        border-radius: 15px;
+        background: rgba($color: #000000, $alpha: 0.2);
+    }
+}
+
 // Inner Banner Three
 .inner-banner-three {
     margin: 0 40px 0;

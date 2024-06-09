@@ -34,7 +34,7 @@ const address_data: DataType[] = [
 
 const ContactArea = () => {
    return (
-      <div className="contact-us border-top mt-130 xl-mt-100 pt-80 lg-pt-60">
+      <div className="contact-us border-top xl-mt-100 pt-80 lg-pt-60">
          <div className="container">
             <div className="row">
                <div className="col-xxl-9 col-xl-8 col-lg-10 m-auto">

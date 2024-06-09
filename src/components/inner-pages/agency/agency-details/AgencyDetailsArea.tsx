@@ -16,6 +16,7 @@ interface ContentType {
    desc_2: JSX.Element;
    desc_3: JSX.Element;
    desc_4: string;
+   desc_5: JSX.Element;
    table_data: {
       table_td_1: string;
       table_td_2: string;
@@ -29,32 +30,32 @@ interface ContentType {
 
 const agency_details_content: ContentType = {
    title_1: "Rainbow Housing",
-   title_2: "Mathews Firlo.",
+   title_2: "Moviit Madrid",
    desc_1: "8210 Preston Rd. Inglewood",
-   desc_4: "Sales & Broker",
+   desc_4: "Martina González Negreira / Agente inmobiliario",
    table_data: [{ table_td_1: "Location", table_td_2: "Maine, USA" }, { table_td_1: "Phone:", table_td_2: "+21 456 987 330" }, { table_td_1: "Email", table_td_2: "rainbowhousing@demo.com" }, { table_td_1: "Website:", table_td_2: "www.rainbowinc.com" },],
-   table_data_2: [{ table_td_1: "Location", table_td_2: "Spain, Barcelona" }, { table_td_1: "Phone:", table_td_2: "+21 456 987 330" }, { table_td_1: "Email", table_td_2: "mathfir@support.com" }, { table_td_1: "Qualification:", table_td_2: "Master Degree" },],
-   icon: ["whatsapp", "x-twitter", "instagram", "viber"],
-   desc_2: (<>Before establishing Beratung in 2001, Mathew founded Silicon Valley internet companies and later held management roles at Salomon in New York.</>),
-   desc_3: (<>Risk management and compliance, when approached strategically, have the potential to go beyond mitigating threats and protecting a company’s operations & reputation.They can actually generate value and create opportunities.</>),
+   table_data_2: [{ table_td_1: "Ubicación", table_td_2: "Madrid, España" }, { table_td_1: "Móvil:", table_td_2: "+34 611 877 027" }, { table_td_1: "Correo electrónico", table_td_2: "moviitmad@gmail.com" }, { table_td_1: "Perfil de instagram:", table_td_2: "@moviitt" },],
+   icon: ["whatsapp", "instagram"],
+   desc_2: (<>Con más de 5 años de experiencia, Moviit se especializa en conectar a jóvenes con su hogar ideal en Madrid.</>),
+   desc_3: (<> Nuestro equipo de asesores inmobiliarios, dinámico y experto, ofrece una búsqueda 360º personalizada. </>),
+   desc_5: (<>Nos encargamos de encontrar habitaciones y apartamentos en las mejores zonas, ajustándonos a tus necesidades y presupuesto. Además, facilitamos el proceso de mudanza y amueblamiento, gestionando las negociaciones y documentación necesarias. </>),
 }
 
-const { title_1, desc_1, table_data, icon, desc_2, desc_3, table_data_2, title_2, desc_4 } = agency_details_content;
+const { title_1, desc_1, table_data, icon, desc_2, desc_3, desc_5, table_data_2, title_2, desc_4 } = agency_details_content;
 
 const AgencyDetailsArea = ({ style }: any) => {
 
    const selectHandler = (e: any) => { };
 
    return (
-      <div className="agency-details theme-details-one mt-130 xl-mt-100 pb-150 xl-pb-100">
+      <div className="agency-details theme-details-one mt-40 xl-mt-100 xl-pb-100 pl-40 pr-40">
          <div className="container">
             <div className="row">
                <div className="col-lg-8">
-                  <div className={`info-pack-one mb-80 xl-mb-50 ${style ? "" : "p-20"}`}>
+                  <div className={`info-pack-one mb-40 xl-mb-50 ${style ? "" : "p-20"}`}>
                      <div className="row">
                         <div className="col-xl-6 d-flex">
                            <div className={`z-1 w-100 me-xl-4 position-relative ${style ? "media agent-details-thumb" : " p-20 d-flex align-items-center justify-content-center bg-white"}`}>
-                              <div className={`tag position-absolute text-uppercase ${style ? "bg-white" : "bg-dark top-0 text-white"}`}>{style ? 4 : 27} Listing</div>
                               {style ? "" : <Image src={agencyDetailsLogo} alt="" className="lazy-img" />}
                            </div>
                         </div>
@@ -93,14 +94,14 @@ const AgencyDetailsArea = ({ style }: any) => {
                      </div>
                   </div>
 
-                  <div className="agency-overview bottom-line-dark pb-40 mb-80 xl-mb-50">
-                     <h4 className="mb-20">Overview</h4>
-                     <p className="fs-20 lh-lg pb-15">{desc_2}</p>
+                  <div className="agency-overview pb-40 mb-40 xl-mb-50">
+                     <h4 className="mb-20">Te contactarán nuestros agentes de confianza</h4>
                      <p className="fs-20 lh-lg">{desc_3}</p>
+                     <p className="fs-20 lh-lg">{desc_5}</p>
                   </div>
-                  <AgencyNavTabs />
+                  {/* <AgencyNavTabs /> */}
 
-                  <div className="review-panel-one bottom-line-dark pb-40 mb-80 xl-mb-50">
+                  {/* <div className="review-panel-one bottom-line-dark pb-40 mb-80 xl-mb-50">
                      <div className="position-relative z-1">
                         <div className="d-sm-flex justify-content-between align-items-center mb-10">
                            <h4 className="m0 xs-pb-30">All Reviews (4.7 Rating)</h4>
@@ -121,7 +122,7 @@ const AgencyDetailsArea = ({ style }: any) => {
                         </div>
                      </div>
                   </div>
-                  <ReviewForm />
+                  <ReviewForm /> */}
                </div>
                <AgencyDetailsSidebar />
             </div>

@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 
 interface FormData {
+   name: string;
    email: string;
    phone: number;
    message: string;
@@ -13,15 +14,16 @@ interface FormData {
 
 const schema = yup
    .object({
+      name: yup.string().required("Este campo es requerido"),
       phone: yup.number()
          .transform((originalValue, originalObject) => {
             // Convert empty string to NaN
             return originalObject && originalObject.phone === '' ? NaN : originalValue;
          })
-         .typeError('Phone number is required')
-         .required('Phone must be a number'),
-      email: yup.string().required().email().label("Email"),
-      message: yup.string().required().label("Message"),
+         .typeError('Debe ser un número')
+         .required('Este campo es requerido'),
+      email: yup.string().required("Este campo es requerido").email('Debe ser un correo válido').typeError('Debe ser un correo válido'),
+      message: yup.string(),
    })
    .required();
 
@@ -29,7 +31,7 @@ const AgencyFormTwo = () => {
 
    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
    const onSubmit = (data: FormData) => {
-      const notify = () => toast('Review submit successfully', { position: 'top-center' });
+      const notify = () => toast('Enviado exitosamente', { position: 'top-center' });
       notify();
       reset();
    };
@@ -37,21 +39,26 @@ const AgencyFormTwo = () => {
    return (
       <form onSubmit={handleSubmit(onSubmit)}>
          <div className="input-box-three mb-25">
-            <div className="label">Your Email*</div>
-            <input type="email" {...register("email")} placeholder="Enter mail address" className="type-input rounded-0" />
+            <div className="label">Tu nombre completo*</div>
+            <input type="text" {...register("name")} placeholder="Ingrese su nombre y apellido" className="type-input rounded-0" />
+            <p className="form_error">{errors.name?.message}</p>
+         </div>
+         <div className="input-box-three mb-25">
+            <div className="label">Tu correo electrónico*</div>
+            <input type="email" {...register("email")} placeholder="Ingrese su correo electrónico" className="type-input rounded-0" />
             <p className="form_error">{errors.email?.message}</p>
          </div>
          <div className="input-box-three mb-25">
-            <div className="label">Your Phone*</div>
-            <input type="tel" {...register("phone")} placeholder="Your phone number" className="type-input rounded-0" />
+            <div className="label">Tu teléfono móvil*</div>
+            <input type="tel" {...register("phone")} placeholder="Ingrese un teléfono" className="type-input rounded-0" />
             <p className="form_error">{errors.phone?.message}</p>
          </div>
          <div className="input-box-three mb-15">
-            <div className="label">Message*</div>
-            <textarea {...register("message")} placeholder="Hello, I am interested in [Califronia Apartments]" className="rounded-0"></textarea>
+            <div className="label">Mensaje</div>
+            <textarea {...register("message")} placeholder="Hola, estoy interesada/o en ..." className="rounded-0"></textarea>
             <p className="form_error">{errors.message?.message}</p>
          </div>
-         <button type='submit' className="btn-nine text-uppercase w-100 mb-20">INQUIry</button>
+         <button type='submit' className="btn-nine text-uppercase w-100 mb-20">ENVIAR</button>
       </form>
    )
 }

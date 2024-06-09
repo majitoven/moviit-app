@@ -32,12 +32,9 @@ const NavMenu = () => {
     return (
         <ul className="navbar-nav align-items-lg-center">
             <li className="d-block d-lg-none"><div className="logo"><Link href="/" className="d-block"><Image src={logo} alt="" /></Link></div></li>
-            {/* <li className="nav-item dashboard-menu">
-                <Link className="nav-link" href="/dashboard/dashboard-index" target="_blank">Dashboard</Link>
-            </li> */}
             {menu_data.map((menu: any, index) => (
                 <li key={menu.id} className={`nav-item dropdown ${menu.class_name} ${index == 0 && 'dashboard-menu'}`}>
-                    <Link href={menu.link} className={`nav-link dropdown-toggle ${pathname === menu.link ? 'active' : ''}
+                    <Link href={menu.link} className={`nav-link ${menu.has_dropdown && 'dropdown-toggle'} ${pathname === menu.link ? 'active' : ''}
                      ${navTitle === menu.title ? "show" : ""}`} onClick={() => openMobileMenu(menu.title)}>
                         {menu.title}
                     </Link>
