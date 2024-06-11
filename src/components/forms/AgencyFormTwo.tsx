@@ -15,7 +15,7 @@ interface FormData {
 const schema = yup
    .object({
       name: yup.string().required("Este campo es requerido"),
-      email: yup.string().required("Este campo es requerido").email('Debe ser un correo válido').typeError('Debe ser un correo válido'),
+      email: yup.string().required("Este campo es requerido").email('Debe ser un correo válido'),
       phone: yup.number()
          .transform((originalValue, originalObject) => {
             // Convert empty string to NaN
@@ -23,7 +23,7 @@ const schema = yup
          })
          .typeError('Debe ser un número')
          .required('Este campo es requerido'),
-      message: yup.string(),
+      message: yup.string().required("Este campo es requerido"),
    })
    .required();
 
@@ -54,7 +54,7 @@ const AgencyFormTwo = () => {
             <p className="form_error">{errors.phone?.message}</p>
          </div>
          <div className="input-box-three mb-15">
-            <div className="label">Mensaje</div>
+            <div className="label">Mensaje*</div>
             <textarea {...register("message")} placeholder="Hola, estoy interesada/o en ..." className="rounded-0"></textarea>
             <p className="form_error">{errors.message?.message}</p>
          </div>
