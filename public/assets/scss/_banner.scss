@@ -953,7 +953,6 @@
 
     .special {
         display: inline-block;
-        color: white;
           display: inline;
           color: white;
           margin-bottom:15px;
@@ -964,6 +963,15 @@
         padding: 8.5px;
         border-radius: 15px;
         background: rgba($color: #000000, $alpha: 0.2);
+        border: 2px solid #3CB17C;
+        background: #3CB17C;
+    }
+
+    .special-title {
+        @extend .special;
+        background: #3CB17C;
+        margin-bottom: 0px;
+        padding: 8px 12px;
     }
 }
 

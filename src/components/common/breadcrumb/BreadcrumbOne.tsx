@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import breadcrumbImg from "@/assets/images/assets/ils_07.svg"
+import breadcrumbImg from "@/assets/images/media/contacto.jpg"
 
 const BreadcrumbOne = ({ title, sub_title, style, link, link_title }: any) => {
    return (

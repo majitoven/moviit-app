@@ -10,10 +10,10 @@ const BreadcrumbFour = ({ title, link, link_title, subTitle, subTitle2, style, b
       <div className={`inner-banner-four inner-banner position-relative ${style ? "z-1 pt-170 xl-pt-150 md-pt-130 pb-100 xl-pb-80 md-pb-50" : "pt-160 lg-pt-130 pb-160 xl-pb-120 md-pb-80"}`} style={{ backgroundImage: background }}>
          <div className="container">
             <div className="row">
-               <div className="col-lg-6">
-                  <h2 className={`${style ? "xl-mb-30 md-mb-20" : "xl-mb-20 pt-15"} mb-35 special font-garamond`}>{title}</h2>
+               <div className="col-lg-12 col-md-6">
+                  <h2 className={`${style ? "xl-mb-30 md-mb-20" : "xl-mb-20 pt-15"} mb-35 special-title font-garamond`}>{title}</h2>
                </div>
-               {subTitle && (
+               {/* {subTitle && (
              <div className="col-lg-6" >
              <div>
                 <p className="sub-heading special font-garamond" style={{ color: 'white', fontWeight: 450 }}>{subTitle}
@@ -27,7 +27,7 @@ const BreadcrumbFour = ({ title, link, link_title, subTitle, subTitle2, style, b
              </div>
 
           </div>
-               )}
+               )} */}
   
             </div>
 
