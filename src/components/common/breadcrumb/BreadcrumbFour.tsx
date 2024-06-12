@@ -7,7 +7,7 @@ const BreadcrumbFour = ({ title, link, link_title, subTitle, subTitle2, style, b
    const selectHandler = (e: any) => { };
 
    return (
-      <div className={`inner-banner-four inner-banner position-relative ${style ? "z-1 pt-170 xl-pt-150 md-pt-130 pb-100 xl-pb-80 md-pb-50" : "pt-160 lg-pt-130 pb-160 xl-pb-120 md-pb-80"}`} style={{ backgroundImage: background }}>
+      <div className={`inner-banner-four fancy-banner-five position-relative z-1 inner-banner position-relative ${style ? "z-1 pt-170 xl-pt-150 md-pt-130 pb-100 xl-pb-80 md-pb-50" : "pt-160 lg-pt-130 pb-160 xl-pb-120 md-pb-80"}`} style={{ backgroundImage: background }}>
          <div className="container">
             <div className="row">
                <div className="col-lg-12 col-md-6">
