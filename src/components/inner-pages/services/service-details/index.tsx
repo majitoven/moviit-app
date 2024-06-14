@@ -1,4 +1,4 @@
-import FooterFour from "@/layouts/footers/FooterFour"
+import FooterOne from "@/layouts/footers/FooterOne"
 import ServiceDetailsArea from "./ServiceDetailsArea"
 import FancyBanner from "@/components/common/FancyBanner"
 import BreadcrumbOne from "@/components/common/breadcrumb/BreadcrumbOne"
@@ -11,7 +11,7 @@ const ServiceDetails = () => {
          <BreadcrumbOne title="Service Details" link="#" link_title="Service" sub_title="Buy Home" style={true} />
          <ServiceDetailsArea />
          <FancyBanner />
-         <FooterFour />
+         <FooterOne style={true} />
       </>
    )
 }
