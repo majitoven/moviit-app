@@ -8,7 +8,7 @@ const VideoBanner = () => {
 
    return (
       <>
-         <div className="video-banner-one mt-80 xl-mt-120 md-mt-80">
+         <div className="video-banner-one mt-80 mb-80 xl-mt-120 md-mt-80">
             <div className="container">
                <div className="bg-wrapper position-relative z-1 overflow-hidden d-flex align-items-center justify-content-center" style={{ backgroundImage: `url(/assets/images/media/video-cover.jpg)` }}>
                   <a onClick={() => setIsVideoOpen(true)} style={{ cursor: "pointer" }} className="fancybox video-icon d-flex align-items-center justify-content-center rounded-circle tran3s">

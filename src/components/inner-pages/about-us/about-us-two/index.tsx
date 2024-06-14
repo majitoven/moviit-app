@@ -20,20 +20,19 @@ const AboutUsTwo = () => {
          <BLockFeatureOne />
          <IgBanner />
          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <div style={{ padding: '30px', borderRadius: '16px', border: '1px solid #CCF4F4', margin: '40px', background: '#CCF4F4' }}>
+            <div style={{ padding: '30px', borderRadius: '16px', border: '1px solid #ccf4f475', margin: '40px', background: '#ccf4f475' }}>
                <InstagramEmbed url="https://www.instagram.com/reel/C7NQqNDolhd/?igsh=aW96ZTl2Z3lpMm11" width={328} />
             </div>
-            <div style={{ padding: '30px', borderRadius: '16px', border: '1px solid #CCF4F4', margin: '40px', background: '#CCF4F4' }}>
+            <div style={{ padding: '30px', borderRadius: '16px', border: '1px solid #ccf4f475', margin: '40px', background: '#ccf4f475' }}>
                <InstagramEmbed url="https://www.instagram.com/reel/C5ULADUITmO/?igsh=MW82Y3MyeDIyanhuNg==" width={328} />
             </div>
-            <div style={{ padding: '30px', borderRadius: '16px', border: '1px solid #CCF4F4', margin: '40px', background: '#CCF4F4' }}>
+            <div style={{ padding: '30px', borderRadius: '16px', border: '1px solid #ccf4f475', margin: '40px', background: '#ccf4f475' }}>
                <InstagramEmbed url="https://www.instagram.com/reel/C5wvvEYIddt/?igsh=MXBkMWIwMmo0eTJ4OA==" width={328} />
             </div>
          </div>
-         <VideoBanner />
-
-         {/* <BLockFeatureTwo /> */}
          <Feedback />
+         <VideoBanner />
+         {/* <BLockFeatureTwo /> */}
          {/* <Brand /> */}
          <FooterOne style={true} />
       </>
