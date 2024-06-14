@@ -14,9 +14,10 @@ const FaqArea = () => {
                         <ul className="style-none">
                            <li><Link href="#Empresa">1. <span>La empresa</span></Link></li>
                            <li><Link href="#Servicios">2. <span>Servicios</span></Link></li>
-                           <li><Link href="#Costos">3. <span>Costos</span></Link></li>
-                           <li><Link href="#Terminos">4. <span>Términos & Condiciones</span></Link></li>
-                           <li><Link href="#Otros">5. <span>Otros</span></Link></li>
+                           <li><Link href="#Costos">3. <span>Costos y Pagos Alquiler</span></Link></li>
+                           <li><Link href="#Amoblamiento">4. <span>Costos y Pagos Amoblamiento</span></Link></li>
+                           <li><Link href="#Terminos">5. <span>Términos & Condiciones</span></Link></li>
+                           <li><Link href="#Otros">6. <span>Otros</span></Link></li>
                         </ul>
                      </div>
                      <div className="bg-wrapper text-center mt-35">
@@ -34,16 +35,16 @@ const FaqArea = () => {
                            {item.faq.map((faq: any, index: any) => (
                               <div key={index} className={`accordion-item ${faq.showAnswer ? "active" : ""}`}>
                                  <h2 className="accordion-header">
-                                    <button className={`accordion-button ${faq.id === 3 ? "" : "collapsed"}`} type="button"
+                                    <button className={`accordion-button ${faq.id === 1 ? "" : "collapsed"}`} type="button"
                                        data-bs-toggle="collapse" data-bs-target={`#collapse${faq.id}`} aria-expanded="true"
                                        aria-controls={`collapse${faq.id}`}>
                                        {faq.question}
                                     </button>
                                  </h2>
-                                 <div id={`collapse${faq.id}`} className={`accordion-collapse collapse ${faq.id === 3 ? "show" : ""}`}
+                                 <div id={`collapse${faq.id}`} className={`accordion-collapse collapse ${faq.id === 1 ? "show" : ""}`}
                                     data-bs-parent={`#accordion${item.id}`}>
                                     <div className="accordion-body">
-                                       <p>{faq.answer}</p>
+                                       <p >{`${faq.answer}`}</p>
                                     </div>
                                  </div>
                               </div>

@@ -25,7 +25,7 @@ const inner_faq_data:DataType[] = [
          {
             id: 2,
             question: "¿Quién necesita de Moviit?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            answer: "Moviit es necesario para todos aquellos que:\nNo están en Madrid. \nEstán en Madrid pero no tienen tiempo para buscar piso. No tienen las herramientas suficientes para encontrarlo.",
          },
          {
             id: 3,
@@ -47,22 +47,7 @@ const inner_faq_data:DataType[] = [
          },
          {
             id: 5,
-            question: "Can a home depreciate in value?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-         },
-         {
-            id: 6,
-            question: "Is an older home as good a value as a new home?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-         },
-         {
-            id: 7,
-            question: "What is a broker?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-         },
-         {
-            id: 8,
-            question: "Can I pay my own taxes and insurance?",
+            question: "PRUEBA: Ustedes me pagan las expensas mensualmente?",
             answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
          },
       ]
@@ -70,44 +55,64 @@ const inner_faq_data:DataType[] = [
    {
       id: 3,
       id_name: "Costos",
-      title: "COSTOS",
+      title: "COSTOS Y PAGOS ALQUILER",
       faq: [
          {
             id: 9,
-            question: "How does the free trial work?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "De 3 -6 meses: 50% de 1 mes de alquiler",
+            answer: "Seña de 200 Euros (1 persona)",
          },
          {
             id: 10,
-            question: "How do you weigh different criteria in your process?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "De 7 - 9 meses: 70% de 1 mes de alquiler",
+            answer: "Seña de 200 Euros (1 persona)",
          },
          {
             id: 11,
-            question: "Refund & Frauds",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "De 10 - 12 meses: 1 mes de alquiler",
+            answer: " -Seña de 200 Euros (1 persona)",
+         },
+         {
+            id: 11,
+            question: "En caso de ser más de 1 persona:",
+            answer: "400 Euros de seña.",
+         },
+         {
+            id: 11,
+            question: "Extras firmado el contrato:",
+            answer: "Una vez firmado el contrato de alquiler se requiere el resto del monto total. Aplica para todos los casos.",
+         },
+         {
+            id: 11,
+            question: "Reembolsos y/o devoluciones",
+            answer: "En caso de querer abandonar el proceso, la seña de Moviit será totalmente perdida debido al trabajo realizado hasta la fecha. Aplica para todos los casos.",
+         },
+         {
+            id: 11,
+            question: "PRUEBA: Como se abona el servicio?",
+            answer: "Transferencia????",
          },
       ]
    },
    {
       id: 4,
-      id_name: "Payments",
-      title: "PAYMENTS",
+      id_name: "Amoblamiento",
+      title: "COSTOS Y PAGOS AMOBLAMIENTO",
       faq: [
          {
             id: 12,
-            question: "Which payment method is supported?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "El servicio de amueblamiento está incluido en el servicio de alquiler?",
+            answer: "No. Es un servicio aparte. ",
          },
          {
             id: 13,
-            question: "Is my card is secure here?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "Cual el costo de este servicio extra?",
+            answer: "450 Euros. Pago por adelantado.",
          },
          {
             id: 14,
-            question: "Can I provide cheque to my client for payment?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "Que incluye el servicio?",
+            answer: "Los 450 Euros se desglosan en: \nLimpieza de piso 50 Euros \nArmado y colocación 200 Euros \nRecibimiento y selección de muebles 200 Euros",
          },
       ]
    },
@@ -118,12 +123,12 @@ const inner_faq_data:DataType[] = [
       faq: [
          {
             id: 15,
-            question: "How does the free trial work?",
+            question: "PRUEBA 1?",
             answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
          },
          {
             id: 16,
-            question: "How do you weigh different criteria in your process?",
+            question: "PRUEBA 2?",
             answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
          },
       ]
@@ -135,12 +140,12 @@ const inner_faq_data:DataType[] = [
       faq: [
          {
             id: 17,
-            question: "Can a home depreciate in value?",
+            question: "PRUEBA: ??",
             answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
          },
          {
             id: 18,
-            question: "Is an older home as good a value as a new home?",
+            question: "PRUEBA: ??",
             answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
          },
       ]
