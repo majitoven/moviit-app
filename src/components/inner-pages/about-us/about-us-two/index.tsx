@@ -11,7 +11,7 @@ const AboutUsTwo = () => {
    return (
       <>
          <HeaderTwo style_1={true} style_2={false} />
-         <BreadcrumbTwo title="About Agency" sub_title="About us" />
+         <BreadcrumbTwo title="¿Quiénes somos?" sub_title="Nosotros" />
          <BLockFeatureOne />
          <BLockFeatureTwo />
          <Feedback />
