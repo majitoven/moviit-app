@@ -72,22 +72,22 @@ const faq_data:DataType[] = [
    {
       id: 1,
       page: "home_six",
-      question: "Who we are?",
-      answer: "Our founders Dustin Moskovitz and Justin Rosenstein met while leading Engineering .",
+      question: "MISIÓN",
+      answer: "Nuestro objetivo es encontrar tu lugar ideal, en una zona agradable donde te sientas cómodo.",
       showAnswer: false,
    },
    {
       id: 2,
       page: "home_six",
-      question: "What’s our goal",
-      answer: "Our founders Dustin Moskovitz and Justin Rosenstein met while leading Engineering .",
+      question: "VISIÓN",
+      answer: "Somos los ojos de nuestros clientes en Madrid. Nuestro objetivo es apoyarlos durante todo este proceso y brindarles confianza.",
       showAnswer: false,
    },
    {
       id: 3,
       page: "home_six",
-      question: "Our vision",
-      answer: "Our founders Dustin Moskovitz and Justin Rosenstein met while leading Engineering .",
+      question: "NUESTRA RED SOCIAL",
+      answer: "Forma parte de nuestra comunidad siguiéndonos en nuestras redes sociales para enterarte de las últimas noticias en Madrid.",
       showAnswer: false,
    },
 ];

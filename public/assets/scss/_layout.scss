@@ -474,6 +474,29 @@
         }
     }
 }
+
+     .accordion-button-special:after {
+       display: none !important;
+
+}
+
+.speciall {
+    display: inline-block;
+      display: inline;
+      color: black;
+    padding: 8.5px;
+    border-radius: 15px;
+    background: rgba($color: #000000, $alpha: 0.2);
+    border: 2px solid #CCF4F4;
+    background: #CCF4F4;
+}
+
+.special-title {
+    @extend .speciall;
+    background: #CCF4F4;
+    margin-bottom: 0px;
+    padding: 12px;
+}
 // BLock Feature Sixteen
 .block-feature-sixteen {
     margin: 0 40px;

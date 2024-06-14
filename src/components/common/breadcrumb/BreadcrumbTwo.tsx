@@ -9,7 +9,7 @@ import breadcrumbShape_2 from "@/assets/images/shape/nube_4.svg";
 const BreadcrumbTwo = ({ title, sub_title, background }: any) => {
    return (
       <div className="inner-banner-three inner-banner text-center z-1 position-relative">
-         <div className="bg-wrapper overflow-hidden position-relative z-1" style={{ backgroundImage: background ? background : `url(/assets/images/media/img_51.jpg)` }}>
+         <div className="bg-wrapper overflow-hidden position-relative z-1" style={{ backgroundImage: background ? background : `url(/assets/images/media/img_about.jpg)` }}>
             <div className="container position-relative z-2">
                <h2 className="mb-35 xl-mb-20 md-mb-10 pt-15 font-garamond text-white">{title}</h2>
                <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
