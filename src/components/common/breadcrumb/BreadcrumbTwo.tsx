@@ -1,8 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import breadcrumbShape_1 from "@/assets/images/shape/shape_35.svg"
-import breadcrumbShape_2 from "@/assets/images/shape/shape_36.svg"
+// import breadcrumbShape_1 from "@/assets/images/shape/shape_35.svg"
+// import breadcrumbShape_2 from "@/assets/images/shape/shape_36.svg"
+import breadcrumbShape_1 from "@/assets/images/shape/nube_3.svg";
+import breadcrumbShape_2 from "@/assets/images/shape/nube_4.svg";
 
 const BreadcrumbTwo = ({ title, sub_title, background }: any) => {
    return (

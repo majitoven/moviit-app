@@ -1029,18 +1029,30 @@
             }
         }
     }
+    // .shape_01 {
+    //     left: 0;
+    //     top:0;
+    //     max-width: 5%;
+    //     z-index: 0;
+    //     opacity: 0.5;
+    // }
+    // .shape_02 {
+    //     right: 0;
+    //     bottom:0;
+    //     max-width: 4%;
+    //     z-index: 0;
+    //     opacity: 0.7;
+    // }
     .shape_01 {
         left: 0;
         top:0;
-        max-width: 5%;
-        z-index: 0;
-        opacity: 0.5;
+        max-width: 18%;
+        z-index: 1;
     }
     .shape_02 {
         right: 0;
         bottom:0;
-        max-width: 4%;
-        z-index: 0;
-        opacity: 0.7;
+        max-width: 15%;
+        z-index: 2;
     }
 }
