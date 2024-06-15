@@ -38,7 +38,7 @@ const menu_data: MenuItem[] = [
         link: "#",
         sub_menus: [
             { link: "/service_details_rent", title: "Alquileres" },
-            { link: "/blog_02", title: "Amueblamiento" },
+            { link: "/service_details_furniture", title: "Amueblamiento" },
         ],
     },
     {
