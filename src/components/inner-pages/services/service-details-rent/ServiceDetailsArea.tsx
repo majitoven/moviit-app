@@ -4,9 +4,11 @@ import Link from "next/link";
 import seviceDetailsThumb_1 from "@/assets/images/media/A3.jpg";
 import seviceDetailsThumb_2 from "@/assets/images/media/friendz.jpg";
 
-import seviceDetailsIcon_1 from "@/assets/images/icon/icon_72.svg";
-import seviceDetailsIcon_2 from "@/assets/images/icon/icon_73.svg";
-import seviceDetailsIcon_3 from "@/assets/images/icon/icon_74.svg";
+import seviceDetailsIcon_1 from "@/assets/images/icon/icon_contact.png";
+import seviceDetailsIcon_2 from "@/assets/images/icon/lupa.png";
+import seviceDetailsIcon_3 from "@/assets/images/icon/icon_homy.png";
+import seviceDetailsIcon_4 from "@/assets/images/icon/timbre.png";
+
 
 interface ContentType {
    title_1: string;
@@ -36,18 +38,23 @@ const content_data: ContentType = {
    service_features: [
       {
          icon: seviceDetailsIcon_1,
-         title: "Property Insurance",
-         desc: "Elit esse cillum dol fu nulla tur nos ullamo."
+         title: "TE CONOCEMOS",
+         desc: "Describe tu necesidad/preferencias rellenando el formulario de búsqueda."
       },
       {
          icon: seviceDetailsIcon_2,
-         title: "Easy Payments",
-         desc: "quis nostr exerct ull security finibus ne derived."
+         title: "BUSCAMOS",
+         desc: "Con toda la información recopilada, comienza la búsqueda de tu lugar perfecto."
+      },
+      {
+         icon: seviceDetailsIcon_4,
+         title: "VISITAMOS",
+         desc: "Visitamos tus apartamentos/habitaciones favoritos y te enviamos fotos y videos."
       },
       {
          icon: seviceDetailsIcon_3,
-         title: "Quick Process",
-         desc: "Duis aute irure do reprehe Cicero voluptat velit."
+         title: "APLICAMOS",
+         desc: "Te asesoramos sobre los documentos que debes presentar para aplicar a tu apartamento ideal."
       },
    ],
    service_list: ["De 3 - 6 meses: 50% de 1 mes de alquiler + Seña de 200 Euros (1 persona)",
@@ -90,7 +97,7 @@ const ServiceDetailsArea = () => {
                      <div className="img-gallery pt-15 pb-70 lg-pb-50">
                         <div className="row">
                            <div className="col-8">
-                              <Image src={seviceDetailsThumb_1} alt="" className="lazy-img w-100 mt-20" />
+                              <Image src={seviceDetailsThumb_1} alt="" className="lazy-img  w-100 mt-20" />
                            </div>
                            <div className="col-4">
                               <div className="ms-xl-5">
@@ -104,22 +111,18 @@ const ServiceDetailsArea = () => {
                            </div>
                         </div>
                      </div>
-                     <h4 className="mb-30">{title_2}</h4>
-                     <p className="fs-24">{desc_3}</p>
-
-                     <div className="feature-wrapper mt-60 lg-mt-40 mb-65 lg-mb-40">
-                        <div className="bg-wrapper">
-                           <div className="row">
-                              {service_features.map((item, index) => (
-                                 <div key={index} className="col-xl-4 col-lg-6 col-md-4">
-                                    <div className="card-style-eleven mt-30">
-                                       <div className="icon"><Image src={item.icon} alt="" className="lazy-img" /></div>
-                                       <h5 className="mt-30 mb-20">{item.title}</h5>
-                                       <p>{item.desc}</p>
-                                    </div>
+                     <h4 className="font-garamond special-title mb-30">{title_2}</h4>
+                     <div className="lg-mt-40 mt-20 mb-65 lg-mb-40">
+                        <div className="row">
+                           {service_features.map((item, index) => (
+                              <div key={index} className="col-xl-3 col-lg-3 col-md-3">
+                                 <div className="card-style-five mt-30" style={{ padding: '50px 40px 50px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                    <div className="icon" style={{height: '150px', width: '185px'}}><Image src={item.icon} alt="" className="lazy-img w-100 h-100" /></div>
+                                    <h5 className="mt-20 mb-20 font-garamond special-title">{`${index + 1}. ${item.title}`}</h5>
+                                    <p>{item.desc}</p>
                                  </div>
-                              ))}
-                           </div>
+                              </div>
+                           ))}
                         </div>
                      </div>
 
