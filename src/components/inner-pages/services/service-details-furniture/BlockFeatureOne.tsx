@@ -10,7 +10,7 @@ import featureImg_6 from "@/assets/images/media/planta.jpg";
 
 const BlockFeatureOne = () => {
    return (
-      <div className="block-feature-eight position-relative z-1 mt-170 xl-mt-120">
+      <div className="block-feature-eight position-relative z-1 mt-40 xl-mt-120 pr-40 pl-40">
          <div className="container">
             <div className="position-relative">
                <div className="row">
