@@ -15,12 +15,8 @@ const ServiceFurniture = () => {
          <HeaderTwo style_1={true} style_2={false} />
          <BreadcrumbTwo title="Amueblamiento" sub_title="Amueblamos tu casa" background={`url(/assets/images/media/silla.jpg)`} />
          <BlockFeatureOne />
-         <HomeBLockFeatureOne />
-         <BlockFeatureTwo style={false} />
          <FancyBanner />
          <Feedback />
-         <BLockFeatureTwo style={true} />
-         <FancyBannerCommon />
          <FooterOne style={true} />
       </>
    )
