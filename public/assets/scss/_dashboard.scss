@@ -1330,6 +1330,12 @@
     }
 }
 
+.search-body {
+    @extend .dashboard-body;
+    margin-left: 0px;
+    background: #ccf4f475;
+    padding: 60px 45px 50px;
+}
 // New Message Container
 .compose-new-email-container {
     border: 1px solid rgba($color: #000, $alpha: 0.1);

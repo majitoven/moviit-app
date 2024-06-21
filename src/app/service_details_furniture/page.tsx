@@ -2,7 +2,7 @@ import ServiceFurniture from "@/components/inner-pages/services/service-details-
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Service One Moviit Madrid",
+   title: "Madrid | Amueblamos",
 };
 const index = () => {
    return (

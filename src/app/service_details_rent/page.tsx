@@ -2,7 +2,7 @@ import ServiceDetailsRent from "@/components/inner-pages/services/service-detail
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Service Details Moviit Madrid",
+   title: "Moviit | Alquilamos",
 };
 const index = () => {
    return (

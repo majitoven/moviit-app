@@ -23,7 +23,7 @@ const menu_data: MenuItem[] = [
         id: 1,
         has_dropdown: false,
         title: "Buscá tu hogar",
-        link: "/sss",
+        link: "/search-property",
     },
     {
         id: 2,
