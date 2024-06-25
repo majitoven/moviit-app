@@ -1,9 +1,10 @@
 import NiceSelect from "@/ui/NiceSelect";
 import PriceRange from "@/components/common/PriceRange";
 import UseShortedProperty from "@/hooks/useShortedProperty";
+import NiceMultiSelect from "@/ui/NiceMultiSelect";
 
 const DropdownOne = ({ style }: any) => {
-  const selectHandler = (e: any) => {};
+  const selectHandler = (e: any) => { };
 
   const searchHandler = () => {
     window.location.href = "/listing_0";
@@ -44,7 +45,7 @@ const DropdownOne = ({ style }: any) => {
         <div className={`${style ? "col-xl-2" : "col-xl-2"} col-md-6`}>
           <div className="input-box-one border-left">
             <div className="label">Zonas</div>
-            <NiceSelect
+            <NiceMultiSelect
               className={`nice-select location ${style ? "fw-normal" : ""}`}
               options={[
                 { value: "chamberí", text: "Chamberí" },
@@ -83,12 +84,12 @@ const DropdownOne = ({ style }: any) => {
                 { value: "Arganzuela", text: "Arganzuela" },
                 { value: "Delicias", text: "Delicias" },
               ]}
-              multiple={true}
-              defaultCurrent={0}
+              defaultCurrent={[0]}
               onChange={selectHandler}
               name=""
-              placeholder=""
+              placeholder="Select locations"
             />
+
           </div>
         </div>
         <div className="col-xl-2 col-md-6">
@@ -151,11 +152,10 @@ const DropdownOne = ({ style }: any) => {
         <div className={`${style ? "col-xl-2" : "col-xl-2"}`}>
           <div className="input-box-one lg-mt-10">
             <button
-              className={`fw-500 tran3s ${
-                style
+              className={`fw-500 tran3s ${style
                   ? "w-100 tran3s search-btn-three"
                   : "text-uppercase search-btn"
-              }`}
+                }`}
             >
               {style ? "Buscar" : "Search"}
             </button>

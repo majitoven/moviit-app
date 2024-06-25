@@ -24,6 +24,15 @@
    user-select: none;
    white-space: nowrap;
    width: auto;
+   
+   // Add these styles
+   .current {
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     display: block;
+     width: 100%;
+   }
 }
 
 .nice-select:after {

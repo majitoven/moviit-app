@@ -7,27 +7,25 @@ interface Option {
   text: string;
 }
 
-type NiceSelectProps = {
+type NiceMultiSelectProps = {
   options: Option[];
-  defaultCurrent: number;
+  defaultCurrent: number[];
   placeholder: string;
   className?: string;
-  multiple?: boolean;
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
   name: string;
 }
 
-const NiceSelect: FC<NiceSelectProps> = ({
+const NiceMultiSelect: FC<NiceMultiSelectProps> = ({
   options,
   defaultCurrent,
   placeholder,
   className,
-  multiple,
   onChange,
   name,
 }) => {
   const [open, setOpen] = useState(false);
-  const [current, setCurrent] = useState<Option>(options[defaultCurrent]);
+  const [current, setCurrent] = useState<Option[]>(defaultCurrent.map(index => options[index]));
   const onClose = useCallback(() => {
     setOpen(false);
   }, []);
@@ -36,9 +34,18 @@ const NiceSelect: FC<NiceSelectProps> = ({
   useClickAway(ref, onClose);
 
   const currentHandler = (item: Option) => {
-    setCurrent(item);
-    onChange({ target: { value: item.value } } as ChangeEvent<HTMLSelectElement>);
-    onClose();
+    setCurrent(prevCurrent => {
+      const isSelected = prevCurrent.some(option => option.value === item.value);
+      const newSelected = isSelected
+        ? prevCurrent.filter(option => option.value !== item.value)
+        : [...prevCurrent, item];
+
+      onChange({
+        target: { value: newSelected.map(option => option.value) } as any,
+      } as ChangeEvent<HTMLSelectElement>);
+
+      return newSelected;
+    });
   };
 
   return (
@@ -50,7 +57,9 @@ const NiceSelect: FC<NiceSelectProps> = ({
       onKeyDown={(e) => e}
       ref={ref}
     >
-      <span className="current">{current?.text || placeholder}</span>
+      <span className="current" style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        {current.length > 0 ? current.map(option => option.text).join(', ') : placeholder}
+      </span>
       <ul
         className="list"
         role="menubar"
@@ -61,7 +70,7 @@ const NiceSelect: FC<NiceSelectProps> = ({
           <li
             key={i}
             data-value={item.value}
-            className={`option ${item.value === current?.value ? "selected focus" : ""
+            className={`option ${current.some(option => option.value === item.value) ? "selected focus" : ""
               }`}
             style={{ fontSize: '14px' }}
             role="menuitem"
@@ -76,4 +85,4 @@ const NiceSelect: FC<NiceSelectProps> = ({
   );
 };
 
-export default NiceSelect;
+export default NiceMultiSelect;
