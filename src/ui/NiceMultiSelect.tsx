@@ -7,16 +7,16 @@ interface Option {
   text: string;
 }
 
-type NiceMultiSelectProps = {
+type NiceSelectProps = {
   options: Option[];
   defaultCurrent: number[];
   placeholder: string;
   className?: string;
-  onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
+  onChange: (selectedValues: string[]) => void;
   name: string;
 }
 
-const NiceMultiSelect: FC<NiceMultiSelectProps> = ({
+const NiceSelect: FC<NiceSelectProps> = ({
   options,
   defaultCurrent,
   placeholder,
@@ -40,9 +40,7 @@ const NiceMultiSelect: FC<NiceMultiSelectProps> = ({
         ? prevCurrent.filter(option => option.value !== item.value)
         : [...prevCurrent, item];
 
-      onChange({
-        target: { value: newSelected.map(option => option.value) } as any,
-      } as ChangeEvent<HTMLSelectElement>);
+      onChange(newSelected.map(option => option.value));
 
       return newSelected;
     });
@@ -85,4 +83,4 @@ const NiceMultiSelect: FC<NiceMultiSelectProps> = ({
   );
 };
 
-export default NiceMultiSelect;
+export default NiceSelect;

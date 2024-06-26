@@ -1,12 +1,23 @@
 "use client"
+import { useState } from 'react';
 import DashboardHeaderTwo from "@/layouts/headers/dashboard/DashboardHeaderTwo"
 import Overview from "./Overview"
 import ListingDetails from "./ListingDetails"
 import Link from "next/link"
 import SelectAmenities from "./SelectAmenities"
 import AddressAndLocation from "../../../dashboard/profile/AddressAndLocation"
+import MapBarrios from '@/components/common/MainMap';
+import NiceMultiSelect from '@/ui/NiceMultiSelect';
 
 const AddPropertyBody = () => {
+
+   const [selectedBarrios, setSelectedBarrios] = useState([]);
+
+   const selectHandler = (selectedValues) => {
+     setSelectedBarrios(selectedValues);
+   };
+
+
    return (
       <div className="search-body mt-40 xl-mt-100 xl-mb-100">
          <div className="container">
@@ -18,7 +29,64 @@ const AddPropertyBody = () => {
                   <p className="fs-20 lh-lg pb-25 fw-normal"> Es muy fácil, sólo tienes que <strong>llenar el formulario</strong> :) </p>
                </div>
             </div>
+
             <div style={{ background: '#ccf4f475', padding: '50px', borderRadius: '16px' }}>
+               <div>
+                  <div className="row">
+                     <div className="col-xl-2 col-md-6">
+                        <div className="input-box-one border-left">
+                           <div className="label">Zonas</div>
+                           <NiceMultiSelect
+                              className="nice-select location"
+                              options={[
+                                 { value: "Chamberi", text: "Chamberi" },
+                                 { value: "Justicia", text: "Justicia" },
+                                 { value: "Chueca", text: "Chueca" },
+                                 { value: "Malasaña", text: "Malasaña" },
+                                 { value: "Sol", text: "Sol" },
+                                 { value: "Almagro", text: "Almagro" },
+                                 { value: "Ríos Rosas", text: "Ríos Rosas" },
+                                 { value: "Gaztambide", text: "Gaztambide" },
+                                 { value: "Argüelles", text: "Argüelles" },
+                                 { value: "Arapiles", text: "Arapiles" },
+                                 { value: "Salamanca", text: "Salamanca" },
+                                 { value: "Goya", text: "Goya" },
+                                 { value: "Lista", text: "Lista" },
+                                 { value: "Ibiza", text: "Ibiza" },
+                                 { value: "Recoletos", text: "Recoletos" },
+                                 { value: "Castellana", text: "Castellana" },
+                                 { value: "Cuatro Caminos", text: "Cuatro Caminos" },
+                                 { value: "El Viso", text: "El Viso" },
+                                 { value: "Prosperidad", text: "Prosperidad" },
+                                 { value: "Vallehermoso", text: "Vallehermoso" },
+                                 { value: "Ciudad Jardín", text: "Ciudad Jardín" },
+                                 { value: "Hispanoamérica", text: "Hispanoamérica" },
+                                 { value: "Fuente del Berro", text: "Fuente del Berro" },
+                                 { value: "Guindalera", text: "Guindalera" },
+                                 { value: "Ventas", text: "Ventas" },
+                                 { value: "Ciudad Universitaria", text: "Ciudad Universitaria" },
+                                 { value: "Latina", text: "Latina" },
+                                 { value: "Palacio", text: "Palacio" },
+                                 { value: "Lavapiés", text: "Lavapiés" },
+                                 { value: "Universidad", text: "Universidad" },
+                                 { value: "Pacífico", text: "Pacífico" },
+                                 { value: "Jerónimos", text: "Jerónimos" },
+                                 { value: "Atocha", text: "Atocha" },
+                                 { value: "Arganzuela", text: "Arganzuela" },
+                                 { value: "Delicias", text: "Delicias" },
+                               ]}
+                              defaultCurrent={[0]}
+                              onChange={selectHandler}
+                              name=""
+                              placeholder="Selecciona zonas"
+                           />
+                        </div>
+                     </div>
+                  </div>
+                  <div className="row">
+                     <MapBarrios selectedBarrios={selectedBarrios} />
+                  </div>
+               </div>
 
                <Overview />
                <ListingDetails />
