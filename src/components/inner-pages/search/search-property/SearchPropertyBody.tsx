@@ -11,9 +11,9 @@ import NiceMultiSelect from '@/ui/NiceMultiSelect';
 
 const AddPropertyBody = () => {
 
-   const [selectedBarrios, setSelectedBarrios] = useState([]);
+   const [selectedBarrios, setSelectedBarrios] = useState<string[]>([]);
 
-   const selectHandler = (selectedValues) => {
+   const selectHandler = (selectedValues: string[]) => {
      setSelectedBarrios(selectedValues);
    };
 
@@ -75,7 +75,7 @@ const AddPropertyBody = () => {
                                  { value: "Arganzuela", text: "Arganzuela" },
                                  { value: "Delicias", text: "Delicias" },
                                ]}
-                              defaultCurrent={[0]}
+                              defaultCurrent={[]}
                               onChange={selectHandler}
                               name=""
                               placeholder="Selecciona zonas"
