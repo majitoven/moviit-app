@@ -40,14 +40,14 @@ const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBar
 
     const style = (feature: GeoJsonFeature) => {
         return {
-            fillColor: selectedBarrios.includes(feature.properties.NOMBAR) ? 'blue' : 'grey',
+            fillColor: selectedBarrios.includes(feature.properties.name) ? '#239160c4' : '#7e7e7e67',
             weight: 2,
             opacity: 1,
             color: 'white',
             fillOpacity: 0.7
         };
     };
-
+    
     return (
         geoJsonData ? (
             <MapContainer center={[40.4168, -3.7038]} zoom={13} style={{ height: "600px", width: "100%" }}>

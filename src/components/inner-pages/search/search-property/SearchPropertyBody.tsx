@@ -17,7 +17,6 @@ const AddPropertyBody = () => {
      setSelectedBarrios(selectedValues);
    };
 
-
    return (
       <div className="search-body mt-40 xl-mt-100 xl-mb-100">
          <div className="container">
@@ -39,7 +38,7 @@ const AddPropertyBody = () => {
                            <NiceMultiSelect
                               className="nice-select location"
                               options={[
-                                 { value: "Chamberi", text: "Chamberi" },
+                                 { value: "Chamberí", text: "Chamberí" },
                                  { value: "Justicia", text: "Justicia" },
                                  { value: "Chueca", text: "Chueca" },
                                  { value: "Malasaña", text: "Malasaña" },
