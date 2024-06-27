@@ -1,5 +1,4 @@
-"use client"
-import React, { useState, useCallback, useRef, FC, ChangeEvent } from "react";
+import React, { useState, useCallback, useRef, FC } from "react";
 import { useClickAway } from "react-use";
 
 interface Option {
@@ -40,6 +39,7 @@ const NiceSelect: FC<NiceSelectProps> = ({
         ? prevCurrent.filter(option => option.value !== item.value)
         : [...prevCurrent, item];
 
+      // Invoke the onChange callback with the updated values
       onChange(newSelected.map(option => option.value));
 
       return newSelected;
