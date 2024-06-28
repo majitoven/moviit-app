@@ -80,6 +80,7 @@ const AddressAndLocation = () => {
                            { value: "Gaztambide", text: "Gaztambide" },
                            { value: "Argüelles", text: "Argüelles" },
                            { value: "Arapiles", text: "Arapiles" },
+                           {value: "Trafalgar", text: "Trafalgar"}, //lo agregue
                            { value: "Salamanca", text: "Salamanca" },
                            { value: "Goya", text: "Goya" },
                            { value: "Lista", text: "Lista" },
@@ -96,7 +97,7 @@ const AddressAndLocation = () => {
                            { value: "Guindalera", text: "Guindalera" },
                            { value: "Ventas", text: "Ventas" },
                            { value: "Ciudad Universitaria", text: "Ciudad Universitaria" },
-                           { value: "Latina", text: "Latina" },
+                           { value: "Latina", text: "Latina" }, // PREGUNTAR SI ES LA LATINA O WTF
                            { value: "Palacio", text: "Palacio" },
                            { value: "Lavapiés", text: "Lavapiés" },
                            { value: "Universidad", text: "Universidad" },
