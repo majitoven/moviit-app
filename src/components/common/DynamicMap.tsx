@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, GeoJSON, Tooltip, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import './map.css'; // Import the CSS file
 
 interface ClientSideMapBarriosProps {
     selectedBarrios: string[];
@@ -13,6 +14,7 @@ interface GeoJsonFeature {
         coordinates: number[][][]; // Adjust based on your GeoJSON data structure
     } | null;
     properties: {
+        name: string;
         [key: string]: any;
     };
 }
@@ -58,15 +60,26 @@ const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBar
         };
     };
 
+    const onEachFeature = (feature: GeoJsonFeature, layer: L.Layer) => {
+        if (feature.properties && feature.properties.name) {
+            layer.bindTooltip(feature.properties.name, {
+                permanent: false,
+                direction: 'auto'
+            });
+        }
+    };
+
     return (
         geoJsonData ? (
             <MapContainer style={{ height: "600px", width: "100%" }}>
                 <SetViewOnMount center={[40.4168, -3.7038]} zoom={13} />
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    options={{
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }}
                 />
-                <GeoJSON data={geoJsonData} style={style} />
+                <GeoJSON data={geoJsonData} style={style} onEachFeature={onEachFeature} />
             </MapContainer>
         ) : (
             <div>Loading...</div>
