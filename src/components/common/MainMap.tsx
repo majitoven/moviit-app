@@ -7,8 +7,11 @@ const DynamicMapBarrios = dynamic(() => import('./DynamicMap'), {
   ssr: false
 });
 
-const MapBarrios = ({ selectedBarrios }) => {
+interface MapBarriosProps {
+  selectedBarrios: string[];
+}
+
+const MapBarrios: React.FC<MapBarriosProps> = ({ selectedBarrios }) => {
   return <DynamicMapBarrios selectedBarrios={selectedBarrios} />;
 };
-
 export default MapBarrios;

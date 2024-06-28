@@ -1,8 +1,11 @@
+
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 import './map.css';
-import L from 'leaflet'; // Import the Leaflet namespace
+
+import { GeoJsonObject, FeatureCollection, Feature } from 'geojson'; // Import necessary types from geojson package
 
 interface ClientSideMapBarriosProps {
     selectedBarrios: string[];
@@ -20,10 +23,8 @@ interface GeoJsonFeature {
     };
 }
 
-interface GeoJsonData {
-    type: string;
-    features: GeoJsonFeature[];
-}
+// Ensure GeoJsonData matches FeatureCollection type
+type GeoJsonData = FeatureCollection;
 
 const SetViewOnMount = ({ center, zoom }: { center: [number, number]; zoom: number }) => {
     const map = useMap();
@@ -51,9 +52,11 @@ const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBar
             .catch(error => console.error('Error fetching GeoJSON data:', error));
     }, []);
 
-    const style = (feature: GeoJsonFeature) => {
+    const style = (feature?: Feature): L.PathOptions => {
+        if (!feature) return {};
+        const geoFeature = feature as GeoJsonFeature;
         return {
-            fillColor: selectedBarrios.includes(feature.properties.name) ? '#239160c4' : '#7e7e7e67',
+            fillColor: selectedBarrios.includes(geoFeature.properties.name) ? '#239160c4' : '#7e7e7e67',
             weight: 2,
             opacity: 1,
             color: 'white',
@@ -61,9 +64,10 @@ const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBar
         };
     };
 
-    const onEachFeature = (feature: GeoJsonFeature, layer: L.Layer) => {
-        if (feature.properties && feature.properties.name) {
-            layer.bindTooltip(feature.properties.name, {
+    const onEachFeature = (feature: Feature, layer: L.Layer) => {
+        const geoFeature = feature as GeoJsonFeature;
+        if (geoFeature.properties && geoFeature.properties.name) {
+            layer.bindTooltip(geoFeature.properties.name, {
                 permanent: false,
                 direction: 'auto'
             });
@@ -78,7 +82,7 @@ const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBar
                     url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
                 />
-                <GeoJSON data={geoJsonData} style={style} onEachFeature={onEachFeature} />
+                <GeoJSON data={geoJsonData as GeoJsonObject} style={style} onEachFeature={onEachFeature} />
             </MapContainer>
         ) : (
             <div>Loading...</div>
