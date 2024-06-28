@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 interface ClientSideMapBarriosProps {
@@ -21,6 +21,16 @@ interface GeoJsonData {
     type: string;
     features: GeoJsonFeature[];
 }
+
+const SetViewOnMount = ({ center, zoom }: { center: [number, number]; zoom: number }) => {
+    const map = useMap();
+
+    useEffect(() => {
+        map.setView(center, zoom);
+    }, [map, center, zoom]);
+
+    return null;
+};
 
 const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBarrios }) => {
     const [geoJsonData, setGeoJsonData] = useState<GeoJsonData | null>(null);
@@ -47,10 +57,11 @@ const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBar
             fillOpacity: 0.7
         };
     };
-    
+
     return (
         geoJsonData ? (
-            <MapContainer center={[40.4168, -3.7038]} zoom={13} style={{ height: "600px", width: "100%" }}>
+            <MapContainer style={{ height: "600px", width: "100%" }}>
+                <SetViewOnMount center={[40.4168, -3.7038]} zoom={13} />
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
