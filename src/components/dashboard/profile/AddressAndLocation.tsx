@@ -1,8 +1,18 @@
+import { useState } from "react"
 import NiceSelect from "@/ui/NiceSelect";
 import Image from "next/image";
 import locationImage from "@/assets/images/dashboard/icon/icon_16.svg";
+import MapBarrios from '@/components/common/MainMap';
+import NiceMultiSelect from '@/ui/NiceMultiSelect';
 
 const AddressAndLocation = () => {
+
+
+   const [selectedBarrios, setSelectedBarrios] = useState<string[]>([]);
+
+   const changeLocation = (selectedValues: string[]) => {
+      setSelectedBarrios(selectedValues);
+   };
 
    const selectHandler = (e: any) => { };
 
@@ -48,50 +58,70 @@ const AddressAndLocation = () => {
                      placeholder="" />
                </div>
             </div>
-            <div className="col-lg-3">
-               <div className="dash-input-wrapper mb-25">
-                  <label htmlFor="">City*</label>
-                  <NiceSelect className="nice-select"
-                     options={[
-                        { value: "1", text: "Boston" },
-                        { value: "2", text: "Tokyo" },
-                        { value: "3", text: "Delhi" },
-                        { value: "4", text: "Shanghai" },
-                        { value: "5", text: "Mumbai" },
-                        { value: "6", text: "Bangalore" },
-                     ]}
-                     defaultCurrent={0}
-                     onChange={selectHandler}
-                     name=""
-                     placeholder="" />
+         </div>
+
+
+
+         <div className="col-12">
+            <div className="row">
+               <div className="col-lg-3">
+                  <div className="dash-input-wrapper mb-25">
+                     <label htmlFor="">Zonas*</label>
+                     <NiceMultiSelect
+                        className="nice-select location"
+                        options={[
+                           { value: "Chamberí", text: "Chamberí" },
+                           { value: "Justicia", text: "Justicia" },
+                           { value: "Chueca", text: "Chueca" },
+                           { value: "Malasaña", text: "Malasaña" },
+                           { value: "Sol", text: "Sol" },
+                           { value: "Almagro", text: "Almagro" },
+                           { value: "Ríos Rosas", text: "Ríos Rosas" },
+                           { value: "Gaztambide", text: "Gaztambide" },
+                           { value: "Argüelles", text: "Argüelles" },
+                           { value: "Arapiles", text: "Arapiles" },
+                           { value: "Salamanca", text: "Salamanca" },
+                           { value: "Goya", text: "Goya" },
+                           { value: "Lista", text: "Lista" },
+                           { value: "Ibiza", text: "Ibiza" },
+                           { value: "Recoletos", text: "Recoletos" },
+                           { value: "Castellana", text: "Castellana" },
+                           { value: "Cuatro Caminos", text: "Cuatro Caminos" },
+                           { value: "El Viso", text: "El Viso" },
+                           { value: "Prosperidad", text: "Prosperidad" },
+                           { value: "Vallehermoso", text: "Vallehermoso" },
+                           { value: "Ciudad Jardín", text: "Ciudad Jardín" },
+                           { value: "Hispanoamérica", text: "Hispanoamérica" },
+                           { value: "Fuente del Berro", text: "Fuente del Berro" },
+                           { value: "Guindalera", text: "Guindalera" },
+                           { value: "Ventas", text: "Ventas" },
+                           { value: "Ciudad Universitaria", text: "Ciudad Universitaria" },
+                           { value: "Latina", text: "Latina" },
+                           { value: "Palacio", text: "Palacio" },
+                           { value: "Lavapiés", text: "Lavapiés" },
+                           { value: "Universidad", text: "Universidad" },
+                           { value: "Pacífico", text: "Pacífico" },
+                           { value: "Jerónimos", text: "Jerónimos" },
+                           { value: "Atocha", text: "Atocha" },
+                           { value: "Arganzuela", text: "Arganzuela" },
+                           { value: "Delicias", text: "Delicias" },
+                        ]}
+                        defaultCurrent={[]}
+                        onChange={changeLocation}
+                        name=""
+                        placeholder="Seleccione zonas"
+                     />
+                  </div>
                </div>
             </div>
-            <div className="col-lg-3">
-               <div className="dash-input-wrapper mb-25">
-                  <label htmlFor="">Zip Code*</label>
-                  <input type="number" placeholder="1708" />
-               </div>
-            </div>
-            <div className="col-lg-3">
-               <div className="dash-input-wrapper mb-25">
-                  <label htmlFor="">State*</label>
-                  <NiceSelect className="nice-select"
-                     options={[
-                        { value: "1", text: "Maine" },
-                        { value: "2", text: "Tokyo" },
-                        { value: "3", text: "Delhi" },
-                        { value: "4", text: "Shanghai" },
-                        { value: "5", text: "Mumbai" },
-                        { value: "6", text: "Bangalore" },
-                     ]}
-                     defaultCurrent={0}
-                     onChange={selectHandler}
-                     name=""
-                     placeholder="" />
+            <div className="row">
+               <div className="col-12">
+                  <MapBarrios selectedBarrios={selectedBarrios} />
                </div>
             </div>
          </div>
-         <div className="col-12">
+
+         {/* <div className="col-12">
             <div className="dash-input-wrapper mb-25">
                <label htmlFor="">Map Location*</label>
                <div className="position-relative">
@@ -104,7 +134,7 @@ const AddressAndLocation = () => {
                   </div>
                </div>
             </div>
-         </div>
+         </div> */}
       </div>
    )
 }

@@ -11,11 +11,6 @@ import NiceMultiSelect from '@/ui/NiceMultiSelect';
 
 const AddPropertyBody = () => {
 
-   const [selectedBarrios, setSelectedBarrios] = useState<string[]>([]);
-
-   const selectHandler = (selectedValues: string[]) => {
-     setSelectedBarrios(selectedValues);
-   };
 
    return (
       <div className="search-body mt-40 xl-mt-100 xl-mb-100">
@@ -30,7 +25,7 @@ const AddPropertyBody = () => {
             </div>
 
             <div style={{ background: '#ccf4f475', padding: '50px', borderRadius: '16px' }}>
-               <div>
+               {/* <div>
                   <div className="row">
                      <div className="col-xl-2 col-md-6">
                         <div className="input-box-one border-left">
@@ -73,7 +68,7 @@ const AddPropertyBody = () => {
                                  { value: "Atocha", text: "Atocha" },
                                  { value: "Arganzuela", text: "Arganzuela" },
                                  { value: "Delicias", text: "Delicias" },
-                               ]}
+                              ]}
                               defaultCurrent={[]}
                               onChange={selectHandler}
                               name=""
@@ -83,9 +78,11 @@ const AddPropertyBody = () => {
                      </div>
                   </div>
                   <div className="row">
-                     <MapBarrios selectedBarrios={selectedBarrios} />
+                     <div className="col-10">
+                        <MapBarrios selectedBarrios={selectedBarrios} />
+                     </div>
                   </div>
-               </div>
+               </div> */}
 
                <Overview />
                <ListingDetails />
