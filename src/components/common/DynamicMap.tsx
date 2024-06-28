@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, GeoJSON, Tooltip, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './map.css'; // Import the CSS file
+import './map.css';
+import L from 'leaflet'; // Import the Leaflet namespace
 
 interface ClientSideMapBarriosProps {
     selectedBarrios: string[];
@@ -74,10 +75,8 @@ const ClientSideMapBarrios: React.FC<ClientSideMapBarriosProps> = ({ selectedBar
             <MapContainer style={{ height: "600px", width: "100%" }}>
                 <SetViewOnMount center={[40.4168, -3.7038]} zoom={13} />
                 <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    options={{
-                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    }}
+                    url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
                 />
                 <GeoJSON data={geoJsonData} style={style} onEachFeature={onEachFeature} />
             </MapContainer>
