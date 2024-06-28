@@ -25,65 +25,6 @@ const AddPropertyBody = () => {
             </div>
 
             <div style={{ background: '#ccf4f475', padding: '50px', borderRadius: '16px' }}>
-               {/* <div>
-                  <div className="row">
-                     <div className="col-xl-2 col-md-6">
-                        <div className="input-box-one border-left">
-                           <div className="label">Zonas</div>
-                           <NiceMultiSelect
-                              className="nice-select location"
-                              options={[
-                                 { value: "Chamberí", text: "Chamberí" },
-                                 { value: "Justicia", text: "Justicia" },
-                                 { value: "Chueca", text: "Chueca" },
-                                 { value: "Malasaña", text: "Malasaña" },
-                                 { value: "Sol", text: "Sol" },
-                                 { value: "Almagro", text: "Almagro" },
-                                 { value: "Ríos Rosas", text: "Ríos Rosas" },
-                                 { value: "Gaztambide", text: "Gaztambide" },
-                                 { value: "Argüelles", text: "Argüelles" },
-                                 { value: "Arapiles", text: "Arapiles" },
-                                 { value: "Salamanca", text: "Salamanca" },
-                                 { value: "Goya", text: "Goya" },
-                                 { value: "Lista", text: "Lista" },
-                                 { value: "Ibiza", text: "Ibiza" },
-                                 { value: "Recoletos", text: "Recoletos" },
-                                 { value: "Castellana", text: "Castellana" },
-                                 { value: "Cuatro Caminos", text: "Cuatro Caminos" },
-                                 { value: "El Viso", text: "El Viso" },
-                                 { value: "Prosperidad", text: "Prosperidad" },
-                                 { value: "Vallehermoso", text: "Vallehermoso" },
-                                 { value: "Ciudad Jardín", text: "Ciudad Jardín" },
-                                 { value: "Hispanoamérica", text: "Hispanoamérica" },
-                                 { value: "Fuente del Berro", text: "Fuente del Berro" },
-                                 { value: "Guindalera", text: "Guindalera" },
-                                 { value: "Ventas", text: "Ventas" },
-                                 { value: "Ciudad Universitaria", text: "Ciudad Universitaria" },
-                                 { value: "Latina", text: "Latina" },
-                                 { value: "Palacio", text: "Palacio" },
-                                 { value: "Lavapiés", text: "Lavapiés" },
-                                 { value: "Universidad", text: "Universidad" },
-                                 { value: "Pacífico", text: "Pacífico" },
-                                 { value: "Jerónimos", text: "Jerónimos" },
-                                 { value: "Atocha", text: "Atocha" },
-                                 { value: "Arganzuela", text: "Arganzuela" },
-                                 { value: "Delicias", text: "Delicias" },
-                              ]}
-                              defaultCurrent={[]}
-                              onChange={selectHandler}
-                              name=""
-                              placeholder="Selecciona zonas"
-                           />
-                        </div>
-                     </div>
-                  </div>
-                  <div className="row">
-                     <div className="col-10">
-                        <MapBarrios selectedBarrios={selectedBarrios} />
-                     </div>
-                  </div>
-               </div> */}
-
                <Overview />
                <ListingDetails />
 
