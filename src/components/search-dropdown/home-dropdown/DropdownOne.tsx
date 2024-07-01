@@ -48,16 +48,17 @@ const DropdownOne = ({ style }: any) => {
             <NiceMultiSelect
               className={`nice-select location ${style ? "fw-normal" : ""}`}
               options={[
-                { value: "chamberí", text: "Chamberí" },
-                { value: "justicia", text: "Justicia" },
-                { value: "chueca", text: "Chueca" },
-                { value: "malasaña", text: "Malasaña" },
-                { value: "sol", text: "Sol" },
-                { value: "almagro", text: "Almagro" },
-                { value: "rios rosas", text: "Ríos Rosas" },
+                { value: "Chamberí", text: "Chamberí" },
+                { value: "Justicia", text: "Justicia" },
+                { value: "Chueca", text: "Chueca" },
+                { value: "Malasaña", text: "Malasaña" },
+                { value: "Sol", text: "Sol" },
+                { value: "Almagro", text: "Almagro" },
+                { value: "Ríos Rosas", text: "Ríos Rosas" },
                 { value: "Gaztambide", text: "Gaztambide" },
                 { value: "Argüelles", text: "Argüelles" },
                 { value: "Arapiles", text: "Arapiles" },
+                { value: "Trafalgar", text: "Trafalgar" }, //lo agregue
                 { value: "Salamanca", text: "Salamanca" },
                 { value: "Goya", text: "Goya" },
                 { value: "Lista", text: "Lista" },
@@ -78,31 +79,14 @@ const DropdownOne = ({ style }: any) => {
                 { value: "Palacio", text: "Palacio" },
                 { value: "Lavapiés", text: "Lavapiés" },
                 { value: "Universidad", text: "Universidad" },
+                { value: "Cortes", text: "Cortes" }, //lo agregue
                 { value: "Pacífico", text: "Pacífico" },
                 { value: "Jerónimos", text: "Jerónimos" },
                 { value: "Atocha", text: "Atocha" },
                 { value: "Arganzuela", text: "Arganzuela" },
                 { value: "Delicias", text: "Delicias" },
               ]}
-              defaultCurrent={[0]}
-              onChange={selectHandler}
-              name=""
-              placeholder="Select locations"
-            />
-
-          </div>
-        </div>
-        <div className="col-xl-2 col-md-6">
-          <div className="input-box-one border-left border-lg-0">
-            <div className="label">Duración</div>
-            <NiceSelect
-              className={`nice-select ${style ? "fw-normal" : ""}`}
-              options={[
-                { value: "1", text: "3-6 meses" },
-                { value: "2", text: "7 - 9 meses" },
-                { value: "3", text: "10 - 12 meses" },
-              ]}
-              defaultCurrent={0}
+              defaultCurrent={[]}
               onChange={selectHandler}
               name=""
               placeholder=""
@@ -153,8 +137,8 @@ const DropdownOne = ({ style }: any) => {
           <div className="input-box-one lg-mt-10">
             <button
               className={`fw-500 tran3s ${style
-                  ? "w-100 tran3s search-btn-three"
-                  : "text-uppercase search-btn"
+                ? "w-100 tran3s search-btn-three"
+                : "text-uppercase search-btn"
                 }`}
             >
               {style ? "Buscar" : "Search"}

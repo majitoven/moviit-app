@@ -97,10 +97,11 @@ const AddressAndLocation = () => {
                            { value: "Guindalera", text: "Guindalera" },
                            { value: "Ventas", text: "Ventas" },
                            { value: "Ciudad Universitaria", text: "Ciudad Universitaria" },
-                           { value: "Latina", text: "Latina" }, // PREGUNTAR SI ES LA LATINA O WTF
+                           { value: "Latina", text: "Latina" }, 
                            { value: "Palacio", text: "Palacio" },
                            { value: "Lavapiés", text: "Lavapiés" },
                            { value: "Universidad", text: "Universidad" },
+                           { value: "Cortes", text: "Cortes" }, //lo agregue
                            { value: "Pacífico", text: "Pacífico" },
                            { value: "Jerónimos", text: "Jerónimos" },
                            { value: "Atocha", text: "Atocha" },
