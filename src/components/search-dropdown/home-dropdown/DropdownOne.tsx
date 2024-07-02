@@ -89,6 +89,23 @@ const DropdownOne = ({ style }: any) => {
               defaultCurrent={[]}
               onChange={selectHandler}
               name=""
+              placeholder="Seleccione"
+            />
+          </div>
+        </div>
+        <div className="col-xl-2 col-md-6">
+          <div className="input-box-one border-left border-lg-0">
+            <div className="label">Duración</div>
+            <NiceSelect
+              className={`nice-select ${style ? "fw-normal" : ""}`}
+              options={[
+                { value: "1", text: "3-6 meses" },
+                { value: "2", text: "7 - 9 meses" },
+                { value: "3", text: "10 - 12 meses" },
+              ]}
+              defaultCurrent={0}
+              onChange={selectHandler}
+              name=""
               placeholder=""
             />
           </div>

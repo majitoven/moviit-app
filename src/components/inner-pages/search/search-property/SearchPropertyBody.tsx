@@ -27,30 +27,14 @@ const AddPropertyBody = () => {
             <div style={{ background: '#ccf4f475', padding: '50px', borderRadius: '16px' }}>
                <Overview />
                <ListingDetails />
-
-               <div className="bg-white card-box border-20 mt-40">
-                  <h4 className="dash-title-three">Photo & Video Attachment</h4>
-                  <div className="dash-input-wrapper mb-20">
-                     <label htmlFor="">File Attachment*</label>
-
-                     <div className="attached-file d-flex align-items-center justify-content-between mb-15">
-                        <span>PorpertyImage_01.jpg</span>
-                        <Link href="#" className="remove-btn"><i className="bi bi-x"></i></Link>
-                     </div>
-                     <div className="attached-file d-flex align-items-center justify-content-between mb-15">
-                        <span>PorpertyImage_02.jpg</span>
-                        <Link href="#" className="remove-btn"><i className="bi bi-x"></i></Link>
-                     </div>
-                  </div>
-                  <div className="dash-btn-one d-inline-block position-relative me-3">
-                     <i className="bi bi-plus"></i>
-                  Upload File
-                  <input type="file" id="uploadCV" name="uploadCV" placeholder="" />
-                  </div>
-                  <small>Upload file .jpg, .png, .mp4</small>
-               </div>
                <SelectAmenities />
-               <AddressAndLocation />
+               <div className="bg-white card-box border-20 mt-40">
+                  <h4 className="dash-title-three">Otros</h4>
+                  <div className="dash-input-wrapper mb-30">
+                     <label htmlFor="">Descripción de la solicitud/notas</label>
+                     <textarea className="size-lg" placeholder="Describa brevemente su situación (ej: Vengo con mi pareja y quiero un lugar soleado y céntrico)..."></textarea>
+                  </div>
+               </div>
 
                <div className="button-group d-inline-flex align-items-center mt-30">
                   <Link href="#" className="dash-btn-two tran3s me-3">Enviar</Link>
