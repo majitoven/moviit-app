@@ -149,6 +149,14 @@ const UseShortedProperty = ({ itemsPerPage, page }: DataType) => {
       setProperties(searchingProducts);
    };
 
+      // handle squared feet
+      const maxSqFeet = 900;
+      const [sqFeetValue, setSqFeetValue] = useState([40, maxSqFeet]);
+   
+      const handleSqFeetChange = (val: number[]) => {
+         setSqFeetValue(val)
+      }
+
    // handle Price
    const maxPrice = all_property.filter(item => item.page === page).reduce((max, item) => {
       return item.price > max ? item.price : max;
@@ -188,6 +196,7 @@ const UseShortedProperty = ({ itemsPerPage, page }: DataType) => {
       setSelectedBathrooms(null);
       setSelectedAmenities([]);
       setPriceValue([0, maxPrice]);
+      setSqFeetValue([0, maxSqFeet]);
    };
 
    return {
@@ -203,8 +212,11 @@ const UseShortedProperty = ({ itemsPerPage, page }: DataType) => {
       handleStatusChange,
       handleBathroomChange,
       handlePriceChange,
+      handleSqFeetChange,
       maxPrice,
       priceValue,
+      maxSqFeet,
+      sqFeetValue,
       resetFilters,
       selectedAmenities,
       handleAmenityChange,
