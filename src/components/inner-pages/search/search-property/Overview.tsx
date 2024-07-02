@@ -973,7 +973,7 @@ const Overview = () => {
                               "value": "Zimbabwe"
                            }
                         ]}
-                     defaultCurrent={0}
+                     defaultCurrent={193}
                      onChange={selectHandler}
                      name=""
                      placeholder="" />
