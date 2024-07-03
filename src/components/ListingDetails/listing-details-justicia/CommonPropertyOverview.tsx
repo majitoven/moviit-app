@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image"
 import icon_1 from "@/assets/images/icon/icon_47.svg"
 import icon_2 from "@/assets/images/icon/icon_48.svg"
 import icon_3 from "@/assets/images/icon/icon_49.svg"
-import icon_4 from "@/assets/images/icon/icon_50.svg"
+import icon_4 from "@/assets/images/icon/icon_45.svg"
 import icon_5 from "@/assets/images/icon/icon_51.svg"
 
 interface DataType {
