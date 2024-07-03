@@ -20,9 +20,8 @@ const list_data: DataType[] = [
 const CommonNearbyList = () => {
    return (
       <>
-         <h4 className="mb-20">What’s Nearby</h4>
-         <p className="fs-20 lh-lg pb-30">Risk management and compliance, when approached strategically, have th
-            potential to go beyond mitigating threats.</p>
+         <h4 className="mb-20">¿Qué hay cerca?</h4>
+         <p className="fs-20 lh-lg pb-30">En el centro de la ciudad, Justicia cuenta con muchos beneficios para hacer de tu estadía lo mejor posible.</p>
          <ul className="style-none d-flex flex-wrap justify-content-between nearby-list-item">
             {list_data.map((list, i) => (
                <li key={i}>{list.title}<span className="fw-500 color-dark">{list.count}</span></li>

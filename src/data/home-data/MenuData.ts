@@ -47,9 +47,10 @@ const menu_data: MenuItem[] = [
         title: "Clientes felices",
         link: "#",
         sub_menus: [
-            { link: "/blog_01", title: "Fulanita / Chueca" },
-            { link: "/blog_01", title: "Fulanita / Almagro" },
-            { link: "/blog_01", title: "Fulanita / Chamberí" },
+            { link: "/listing_details_justicia", title: "Justicia" }, //Paly
+            { link: "/listing_details_malasaña", title: "Malasaña" }, //Mati & Nico
+            { link: "/listing_details_chamberi", title: "Chamberí" }, //Isa
+            { link: "/listing_details_bernabeu", title: "Bernabeu" }, // Lu & Gaston
         ],
     },
     {

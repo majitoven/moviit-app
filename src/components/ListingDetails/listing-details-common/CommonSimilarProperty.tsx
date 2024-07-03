@@ -43,7 +43,7 @@ const setting = {
 const CommonSimilarProperty = () => {
    return (
       <div className="similar-property">
-         <h4 className="mb-40">Similar Homes You May Like</h4>
+         <h4 className="mb-40">Pisos similares</h4>
          <Slider {...setting} className="similar-listing-slider-one">
             {property_data.filter((items) => items.page == "home_3_property_2").map((item) => (
                <div key={item.id} className="item">
