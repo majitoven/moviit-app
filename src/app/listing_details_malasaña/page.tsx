@@ -2,7 +2,7 @@ import ListingDetailsOne from "@/components/ListingDetails/listing-details-malas
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Listing Details One Moviit Madrid",
+   title: "Casos Reales Moviit Madrid",
 };
 const index = () => {
    return (
