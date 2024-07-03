@@ -32,7 +32,7 @@ const ListingDetailsOneArea = () => {
                <div className="col-xl-8">
                   <div className="property-overview mb-50 bg-white shadow4 border-20 p-40">
                      <h4 className="mb-20">Descripción</h4>
-                     <p className="fs-20 lh-lg">Paly es una joven de XX años de nacionalidad XX buscando un piso luminoso blablabla para vivir sola.</p>
+                     <p className="fs-20 lh-lg">Paly llegó desde Argentina directo a su piso en Madrid. Vino a estudiar un Máster.</p>
                   </div>
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
                      <CommonAmenities />

@@ -1,17 +1,17 @@
 import Image, { StaticImageData } from "next/image";
 import Fancybox from "@/components/common/Fancybox";
 
-import bigCarousel_1 from "@/assets/images/listing/img_43.jpg"
-import bigCarousel_2 from "@/assets/images/listing/img_44.jpg"
-import bigCarousel_3 from "@/assets/images/listing/img_45.jpg"
-import bigCarousel_4 from "@/assets/images/listing/img_46.jpg"
+import bigCarousel_1 from "@/assets/images/listing/mati/01.jpg"
+import bigCarousel_2 from "@/assets/images/listing/mati/02.jpg"
+import bigCarousel_3 from "@/assets/images/listing/mati/03.jpg"
+import bigCarousel_4 from "@/assets/images/listing/mati/04.jpg"
 
-import smallCarousel_1 from "@/assets/images/listing/img_43_s.jpg"
-import smallCarousel_2 from "@/assets/images/listing/img_44_s.jpg"
-import smallCarousel_3 from "@/assets/images/listing/img_45_s.jpg"
-import smallCarousel_4 from "@/assets/images/listing/img_46_s.jpg"
+import smallCarousel_1 from "@/assets/images/listing/mati/01.jpg"
+import smallCarousel_2 from "@/assets/images/listing/mati/02.jpg"
+import smallCarousel_3 from "@/assets/images/listing/mati/03.jpg"
+import smallCarousel_4 from "@/assets/images/listing/mati/04.jpg"
 
-const largeThumb: string[] = ["1", "2", "3"];
+const largeThumb: string[] = ["01", "02"];
 
 interface DataType {
   big_carousel: StaticImageData[];
@@ -19,6 +19,8 @@ interface DataType {
 }
 
 const gallery_data: DataType = {
+  // big_carousel: [bigCarousel_1, bigCarousel_2],
+  // small_carousel: [smallCarousel_1, smallCarousel_2],
   big_carousel: [bigCarousel_1, bigCarousel_2, bigCarousel_3, bigCarousel_4],
   small_carousel: [smallCarousel_1, smallCarousel_2, smallCarousel_3, smallCarousel_4],
 }
@@ -33,7 +35,7 @@ const MediaGallery = ({ style }: any) => {
           <div className={` bg-white border-20 md-mb-20 ${style ? "" : "shadow4 p-30"}`}>
             <div className="position-relative z-1 overflow-hidden border-20">
               <div className="img-fancy-btn border-10 fw-500 fs-16 color-dark">
-                Sell all 37 Photos
+                Ver todas las imágenes
                 <Fancybox
                   options={{
                     Carousel: {
@@ -42,7 +44,7 @@ const MediaGallery = ({ style }: any) => {
                   }}
                 >
                   {largeThumb.map((thumb: any, index: any) => (
-                    <a key={index} className="d-block" data-fancybox="img2" href={`/assets/images/listing/img_large_0${thumb}.jpg`}></a>
+                    <a key={index} className="d-block" data-fancybox="img2" href={`/assets/images/listing/paly/${thumb}.jpg`}></a>
                   ))}
                 </Fancybox>
               </div>
@@ -57,12 +59,12 @@ const MediaGallery = ({ style }: any) => {
               <button className="carousel-control-prev" type="button" data-bs-target="#media_slider"
                 data-bs-slide="prev">
                 <i className="bi bi-chevron-left"></i>
-                <span className="visually-hidden">Previous</span>
+                <span className="visually-hidden">Anterior</span>
               </button>
               <button className="carousel-control-next" type="button" data-bs-target="#media_slider"
                 data-bs-slide="next">
                 <i className="bi bi-chevron-right"></i>
-                <span className="visually-hidden">Next</span>
+                <span className="visually-hidden">Siguiente</span>
               </button>
             </div>
           </div>
