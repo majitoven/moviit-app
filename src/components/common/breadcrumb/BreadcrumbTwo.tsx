@@ -12,11 +12,13 @@ const BreadcrumbTwo = ({ title, sub_title, background }: any) => {
          <div className="bg-wrapper overflow-hidden position-relative z-1" style={{ backgroundImage: background ? background : `url(/assets/images/media/img_about.jpg)` }}>
             <div className="container position-relative z-2">
                <h2 className="mb-35 xl-mb-20 md-mb-10 pt-15 font-garamond text-white">{title}</h2>
-               <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
-                  <li><Link href="/">Home</Link></li>
-                  <li>/</li>
-                  <li>{sub_title}</li>
-               </ul>
+               {!!sub_title && (
+                  <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                     <li><Link href="/">Home</Link></li>
+                     <li>/</li>
+                     <li>{sub_title}</li>
+                  </ul>
+               )}
             </div>
             <Image src={breadcrumbShape_1} alt="" className="lazy-img shapes shape_01" />
             <Image src={breadcrumbShape_2} alt="" className="lazy-img shapes shape_02" />
