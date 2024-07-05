@@ -9,7 +9,7 @@ import CommonPropertyFeatureList from "../listing-details-common/CommonPropertyF
 import CommonAmenities from "../listing-details-common/CommonAmenities"
 import CommonPropertyVideoTour from "../listing-details-common/CommonPropertyVideoTour"
 import CommonPropertyFloorPlan from "../listing-details-common/CommonPropertyFloorPlan"
-import CommonNearbyList from "../listing-details-common/CommonNearbyList"
+import CommonNearbyList from "./CommonNearbyList"
 import CommonSimilarProperty from "../listing-details-common/CommonSimilarProperty"
 import CommonProPertyScore from "../listing-details-common/CommonProPertyScore"
 import CommonLocation from "../listing-details-common/CommonLocation"
@@ -20,7 +20,7 @@ const ListingDetailsOneArea = () => {
    const selectHandler = (e: any) => { };
 
    return (
-      <div className="listing-details-one theme-details-one bg-pink pt-100 pl-40 pr-40 lg-pt-150 pb-150 xl-pb-120">
+      <div className="listing-details-one theme-details-one pt-100 pl-40 pr-40 lg-pt-150 pb-150 xl-pb-120">
          <div className="container">
             <CommonBanner />
             <MediaGallery />
@@ -36,9 +36,6 @@ const ListingDetailsOneArea = () => {
                   </div>
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
                      <CommonAmenities />
-                  </div>
-                  <div className="property-video-tour mb-50">
-                     <CommonPropertyVideoTour />
                   </div>
                   <div className="property-nearby bg-white shadow4 border-20 p-40 mb-50">
                      <CommonNearbyList />

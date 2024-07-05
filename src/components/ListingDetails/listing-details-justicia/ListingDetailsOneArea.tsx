@@ -9,7 +9,7 @@ import CommonPropertyFeatureList from "../listing-details-common/CommonPropertyF
 import CommonAmenities from "../listing-details-common/CommonAmenities"
 import CommonPropertyVideoTour from "../listing-details-common/CommonPropertyVideoTour"
 import CommonPropertyFloorPlan from "../listing-details-common/CommonPropertyFloorPlan"
-import CommonNearbyList from "../listing-details-common/CommonNearbyList"
+import CommonNearbyList from "./CommonNearbyList"
 import CommonSimilarProperty from "../listing-details-common/CommonSimilarProperty"
 import CommonProPertyScore from "../listing-details-common/CommonProPertyScore"
 import CommonLocation from "../listing-details-common/CommonLocation"
