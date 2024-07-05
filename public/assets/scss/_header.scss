@@ -259,6 +259,23 @@
     left: -250px;
     padding: 10px;
 }
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navbar-nav {
+    flex-grow: 1;
+}
+.language-switcher {
+    margin-left: 130px;
+}
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
 .navbar [class*="mega-dropdown"] .menu-column {
     padding: 5px 0;
     .mega-menu-title {
