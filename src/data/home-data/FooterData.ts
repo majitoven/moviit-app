@@ -16,15 +16,15 @@ const footer_data: DataType[] = [
       id: 2,
       widget_class: "xs-mt-30",
       page: "home_1",
-      widget_title: "Legal",
-      footer_link: [{ link: "/faq", link_title: "Términos & condiciones" }, { link: "/faq", link_title: "Faq’s" }]
+      widget_title: "Legal:",
+      footer_link: [{ link: "/faq#Costos", link_title: "Términos & condiciones" }, { link: "/faq", link_title: "Faq’s" }]
    },
    {
       id: 3,
       widget_class: "xs-mt-30",
       page: "home_1",
-      widget_title: "New Listing",
-      footer_link: [{ link: "/listing_01", link_title: "​Buy Apartments" }, { link: "/listing_02", link_title: "Buy Condos" }, { link: "listing_03", link_title: "Rent Houses" }, { link: "listing_04", link_title: "Rent Industrial" }, { link: "/listing_05", link_title: "Buy Villas" }, { link: "/listing_06", link_title: "Rent Office" },]
+      widget_title: "Conocenos:",
+      footer_link: [{ link: "/about_us_02", link_title: "La empresa" }, { link: "/search_property", link_title: "Buscar piso" }, { link: "/service_details_rent", link_title: "Servicio Alquiler" }, { link: "/service_details_furniture", link_title: "Servicio Amueblamiento" },{ link: "/listing_details_justicia", link_title: "Casos reales" }, { link: "/contact", link_title: "Contacto" }]
    },
 
    // home two
