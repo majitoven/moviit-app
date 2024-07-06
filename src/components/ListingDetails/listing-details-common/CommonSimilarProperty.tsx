@@ -1,8 +1,8 @@
 "use client"
 import Fancybox from "@/components/common/Fancybox";
-import property_data from "@/data/home-data/PropertyData"
-import Image from "next/image"
-import Link from "next/link"
+import property_data from "@/data/home-data/PropertyData";
+import Image from "next/image";
+import Link from "next/link";
 import Slider from "react-slick";
 
 const setting = {
@@ -31,7 +31,8 @@ const setting = {
          settings: {
             slidesToShow: 2
          }
-      }, {
+      },
+      {
          breakpoint: 768,
          settings: {
             slidesToShow: 1
@@ -52,24 +53,19 @@ const CommonSimilarProperty = ({ propertyData }) => {
                      <div className="img-gallery p-15">
                         <div className="position-relative border-20 overflow-hidden">
                            <div className="tag bg-white text-dark fw-500 border-20">{item.tag}</div>
-                           <Image src={item.thumb ? item.thumb : ""} className="w-100 border-20" alt="..." />
-                           <Link href={item.link}
-                              className="btn-four inverse rounded-circle position-absolute"><i
-                                 className="bi bi-arrow-up-right"></i></Link>
-                           {/* <div className="img-slider-btn">
-                              {item.carousel} <i className="fa-regular fa-image"></i>
-                              <Fancybox
-                                 options={{
-                                    Carousel: {
-                                       infinite: true,
-                                    },
-                                 }}
-                              >
-                                 {item.carousel_thumb.map((thumb: any, index: any) => (
-                                    <a key={index} className="d-block" data-fancybox="gallery2" href={`/assets/images/listing/img_large_0${thumb.id}.jpg`}></a>
-                                 ))}
-                              </Fancybox>
-                           </div> */}
+                           <div className="image-container" style={{
+                              position: 'relative',
+                              width: '100%',
+                              height: '300px', /* Set the desired height */
+                              overflow: 'hidden'
+                           }}>
+                              <Image src={item.thumb ? item.thumb : ""} className="property-image border-20" alt="..." layout="fill" style={{
+                                 objectFit: 'cover'
+                              }} />
+                           </div>
+                           <Link href={item.link} className="btn-four inverse rounded-circle position-absolute">
+                              <i className="bi bi-arrow-up-right"></i>
+                           </Link>
                         </div>
                      </div>
                      <div className="property-info pe-4 ps-4">
@@ -84,7 +80,7 @@ const CommonSimilarProperty = ({ propertyData }) => {
             ))}
          </Slider>
       </div>
-   )
-}
+   );
+};
 
 export default CommonSimilarProperty;
