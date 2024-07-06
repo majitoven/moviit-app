@@ -14,6 +14,7 @@ import CommonSimilarProperty from "../listing-details-common/CommonSimilarProper
 import CommonProPertyScore from "../listing-details-common/CommonProPertyScore"
 import CommonLocation from "../listing-details-common/CommonLocation"
 import CommonReviewForm from "../listing-details-common/CommonReviewForm"
+const ammenities_data: string[] = ["Aire Cond.", "Calefacción",  "Wifi", "Ascensor", "Pet friendly", "Luminoso", "Lavarropa"];
 
 const ListingDetailsOneArea = () => {
 
@@ -36,7 +37,7 @@ const ListingDetailsOneArea = () => {
 </p>
                   </div>
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
-                     <CommonAmenities />
+                     <CommonAmenities amenities={ammenities_data}/>
                   </div>
                   <div className="property-video-tour mb-50">
                      <CommonPropertyVideoTour />

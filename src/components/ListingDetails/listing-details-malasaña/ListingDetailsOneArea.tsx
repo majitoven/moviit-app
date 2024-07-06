@@ -14,6 +14,7 @@ import CommonSimilarProperty from "../listing-details-common/CommonSimilarProper
 import CommonProPertyScore from "../listing-details-common/CommonProPertyScore"
 import CommonLocation from "../listing-details-common/CommonLocation"
 import CommonReviewForm from "../listing-details-common/CommonReviewForm"
+const ammenities_data: string[] = ["Aire Cond.", "Calefacción", "Balcón", "Wifi", "Ascensor", "Luminoso", "Lavarropa"];
 
 const ListingDetailsOneArea = () => {
 
@@ -35,7 +36,7 @@ const ListingDetailsOneArea = () => {
                      <p className="fs-20 lh-lg">Mati y Nico llegaron desde Uruguay directo a su piso en Madrid. Vinieron de intercambio. </p>
                   </div>
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
-                     <CommonAmenities />
+                     <CommonAmenities amenities={ammenities_data}/>
                   </div>
                   <div className="property-nearby bg-white shadow4 border-20 p-40 mb-50">
                      <CommonNearbyList />

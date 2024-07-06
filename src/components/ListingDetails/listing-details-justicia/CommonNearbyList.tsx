@@ -22,7 +22,7 @@ const list_data: DataType[] = [
 const CommonNearbyList = () => {
    return (
       <>
-         <h4 className="mb-20">¿Qué hay cerca?</h4>
+         <h4 className="mb-20">¿Qué hay cerca en <strong>Justicia</strong>?</h4>
          <p className="fs-20 lh-lg pb-30">En el centro de la ciudad, <strong>Justicia</strong> cuenta con muchos beneficios para hacer de tu estadía lo mejor posible.</p>
          <ul className="style-none d-flex flex-wrap justify-content-between nearby-list-item">
             {list_data.map((list, i) => (
