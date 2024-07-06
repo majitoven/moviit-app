@@ -13,7 +13,7 @@ const NavMenu = () => {
     const pathname = usePathname();
     const currentRoute = usePathname();
     const [navTitle, setNavTitle] = useState("");
-    const [language, setLanguage] = useState("en");
+    const [language, setLanguage] = useState("es");
 
     const isMenuItemActive = (menuLink: string) => {
         return currentRoute === menuLink;

@@ -8,6 +8,7 @@ import footerShape_1 from "@/assets/images/icon/icon_homy_2.png";
 import footerShape_2 from "@/assets/images/shape/nube_4.png";
 
 const FooterOne = ({ style }: any) => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className={`footer-one ${style ? "dark-bg" : ""}`}>
       <div className="position-relative z-1">
@@ -15,9 +16,8 @@ const FooterOne = ({ style }: any) => {
           <div className="row justify-content-between">
             <div className="col-lg-4">
               <div
-                className={`footer-intro ${
-                  style ? "position-relative z-1" : ""
-                }`}
+                className={`footer-intro ${style ? "position-relative z-1" : ""
+                  }`}
               >
                 <div className="bg-wrapper">
                   <div className="logo mb-20">
@@ -30,53 +30,49 @@ const FooterOne = ({ style }: any) => {
                     </Link>
                   </div>
                   <p className="mb-40 lg-mb-40 md-mb-20">Madrid, España.</p>
-                  <h6 style={{margin: '0px', marginBottom: '-5px'}}>CORREO:</h6>
+                  <h6 style={{ margin: '0px', marginBottom: '-5px' }}>CORREO:</h6>
                   <Link
                     href="mailto:moviitmad@gmail.com"
-                    className={`email tran3s ${
-                      style
-                        ? "font-garamond"
-                        : "fs-24 text-decoration-underline"
-                    }`}
+                    className={`email tran3s ${style
+                      ? "font-garamond"
+                      : "fs-24 text-decoration-underline"
+                      }`}
                   >
                     moviitmad@gmail.com
                   </Link>
-                  <h6 style={{marginTop: '10px', marginBottom: '-5px'}}>MÓVIL:</h6>
+                  <h6 style={{ marginTop: '10px', marginBottom: '-5px' }}>MÓVIL:</h6>
                   <p
                     style={{ margin: "0px" }}
-                    className={`email tran3s ${
-                      style
-                        ? "font-garamond"
-                        : "fs-24 text-decoration-underline"
-                    }`}
+                    className={`email tran3s ${style
+                      ? "font-garamond"
+                      : "fs-24 text-decoration-underline"
+                      }`}
                   >
                     +34 611 877 027{" "}
                   </p>
-                  <h6 style={{marginTop: '10px', marginBottom: '-5px'}}>INSTAGRAM:</h6>
+                  <h6 style={{ marginTop: '10px', marginBottom: '-5px' }}>INSTAGRAM:</h6>
                   <Link
                     href="https://www.instagram.com/moviitt/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className={`email tran3s  ${
-                      style
-                        ? "font-garamond"
-                        : "fs-24 text-decoration-underline"
-                    }`}
+                    className={`email tran3s  ${style
+                      ? "font-garamond"
+                      : "fs-24 text-decoration-underline"
+                      }`}
                   >
-                   @moviitt
+                    @moviitt
                   </Link>
-                  <h6 style={{marginTop: '10px', marginBottom: '-5px'}}>TIKTOK:</h6>
+                  <h6 style={{ marginTop: '10px', marginBottom: '-5px' }}>TIKTOK:</h6>
                   <Link
                     href="https://www.tiktok.com/@moviitmad/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className={`email tran3s  ${
-                      style
-                        ? "font-garamond"
-                        : "fs-24 text-decoration-underline"
-                    }`}
+                    className={`email tran3s  ${style
+                      ? "font-garamond"
+                      : "fs-24 text-decoration-underline"
+                      }`}
                   >
-                   @moviitmad
+                    @moviitmad
                   </Link>
                 </div>
                 {style && (
@@ -114,6 +110,18 @@ const FooterOne = ({ style }: any) => {
                   ))}
               </div>
             </div>
+          </div>
+          <div className="bottom-footer">
+            <p className="m0 text-center fs-16">Copyright @{`${currentYear}`} Moviit Madrid. Created by                 <Link
+              href="https://www.instagram.com/ritmo__estudio/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={`email tran3s  ${style
+                ? "font-garamond"
+                : "fs-30 text-decoration-underline"
+                }`}
+              style={{ fontSize: '20px' }}
+            >Ritmo Estudio.</Link> </p>
           </div>
         </div>
         {style && (
