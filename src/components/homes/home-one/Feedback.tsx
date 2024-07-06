@@ -74,7 +74,7 @@ const Feedback = () => {
                            <div className="col-md-12">
                               <blockquote>"{item.desc}"</blockquote>
                               <div className="mt-40 lg-mt-40">
-                              <Link href="/contact" className="btn-two">Ver casos reales</Link>
+                              <Link href="/listing_details_justicia" className="btn-two">Ver casos reales</Link>
                            </div>
                            </div>
 

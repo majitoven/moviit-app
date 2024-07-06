@@ -31,8 +31,7 @@ const AgencyFormTwo = () => {
 
    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
    const onSubmit = (data: FormData) => {
-      const notify = () => toast('Enviado exitosamente', { position: 'top-center' });
-      notify();
+      toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
       reset();
    };
 

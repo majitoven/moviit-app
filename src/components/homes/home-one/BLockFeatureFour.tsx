@@ -1,11 +1,24 @@
 "use client"
 import Image from "next/image"
-
 import titleShape from "@/assets/images/shape/title_shape_06.svg";
 import featureThumb from "@/assets/images/assets/screen_12.png";
 import Link from "next/link";
+import { useState } from 'react';
 
 const BLockFeatureFour = () => {
+   const [whatsAppNumber, setWhatsAppNumber] = useState('');
+
+   const handleWhatsAppRedirect = (e) => {
+      e.preventDefault();
+      // Check if the number is not empty
+      if (whatsAppNumber) {
+         const businessWhatsAppNumber = "+34611877027";
+         const message = `Hola! Estoy interesado/a en conocer sus servicios en Madrid. Mi número es ${whatsAppNumber}`;
+         const whatsappUrl = `https://wa.me/${businessWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+         window.open(whatsappUrl, '_blank');
+      }
+   };
+
    return (
       <div className="block-feature-four mt-100 mb-100 xl-mt-130 md-mt-40">
          <div className="container">
@@ -18,11 +31,16 @@ const BLockFeatureFour = () => {
                         <p className="fs-24 color-dark"> ¿Eres trabajador o estudiante? ¿Conoces las zonas de Madrid? ¿Vienes solo o acompañado? </p>
                         <p style={{margin: '0px'}}>Dejanos tu número de Whatsapp y nos pondremos en contacto:</p>
                      </div>
-                     <form onSubmit={(e) => e.preventDefault()} className="me-xl-4">
-                        <input type="email" placeholder="Tu número de Whatsapp..." />
-                        <button>Contactar</button>
+                     <form onSubmit={handleWhatsAppRedirect} className="me-xl-4">
+                        <input 
+                           type="tel" 
+                           placeholder="Tu número de Whatsapp..." 
+                           value={whatsAppNumber}
+                           onChange={(e) => setWhatsAppNumber(e.target.value.replace(/\D/g, ''))}  // Accept only digits
+                        />
+                        <button type="submit">Contactar</button>
                      </form>
-                     <div className="fs-16 mt-10 opacity-75">*También puedes  <Link href="/contact" className="fst-italic color-dark text-decoration-underline">rellenar el formulario completo y nos contactaremos.</Link></div>
+                     <div className="fs-16 mt-10 opacity-75">*También puedes <Link href="/contact" className="fst-italic color-dark text-decoration-underline">rellenar el formulario completo y nos contactaremos.</Link></div>
                   </div>
                </div>
 
@@ -37,4 +55,4 @@ const BLockFeatureFour = () => {
    )
 }
 
-export default BLockFeatureFour
+export default BLockFeatureFour;
