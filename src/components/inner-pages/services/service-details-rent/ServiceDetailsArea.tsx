@@ -104,7 +104,7 @@ const ServiceDetailsArea = () => {
                                  <div className="service-sidebar md-mt-80">
                                     <div className="contact-banner text-center mt-20" style={{ borderRadius: '16px', border: '1px solid #ccf4f475', background: '#ccf4f475' }}>
                                        <h4 className="mb-35 text-black font-garamond"> Para empezar, nos gustaría conocerte mejor.</h4>
-                                       <Link href="/contact" className="btn-six">Comenzar la búsqueda</Link>
+                                       <Link href="/search-property" className="btn-six">Comenzar la búsqueda</Link>
                                     </div>
                                  </div>
                               </div>
