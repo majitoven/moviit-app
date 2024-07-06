@@ -27,7 +27,7 @@ import propertyIcon_1 from "@/assets/images/icon/icon_04.svg";
 import propertyIcon_2 from "@/assets/images/icon/icon_05.svg";
 import propertyIcon_3 from "@/assets/images/icon/icon_06.svg";
 
-interface DataType {
+export interface DataType {
    id: number;
    page: string;
    tag: string;

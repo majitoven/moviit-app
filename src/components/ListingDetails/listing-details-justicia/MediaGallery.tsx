@@ -4,13 +4,11 @@ import { useState, useEffect } from "react";
 
 import bigCarousel_1 from "@/assets/images/listing/paly/01.jpg";
 import bigCarousel_2 from "@/assets/images/listing/paly/02.jpg";
-import bigCarousel_3 from "@/assets/images/listing/img_45.jpg"
 // import bigCarousel_4 from "@/assets/images/listing/img_46.jpg"
 
 import smallCarousel_1 from "@/assets/images/listing/paly/01.jpg";
 import smallCarousel_2 from "@/assets/images/listing/paly/02.jpg";
-import smallCarousel_3 from "@/assets/images/listing/img_45_s.jpg";
-import smallCarousel_4 from "@/assets/images/listing/img_46_s.jpg";
+
 
 const largeThumb: string[] = ["01", "02"];
 
@@ -22,8 +20,8 @@ interface DataType {
 const gallery_data: DataType = {
   // big_carousel: [bigCarousel_1, bigCarousel_2],
   // small_carousel: [smallCarousel_1, smallCarousel_2],
-  big_carousel: [bigCarousel_1, bigCarousel_2, bigCarousel_3],
-  small_carousel: [smallCarousel_1, smallCarousel_2, smallCarousel_3, smallCarousel_4],
+  big_carousel: [bigCarousel_1, bigCarousel_2],
+  small_carousel: [smallCarousel_1, smallCarousel_2],
 };
 
 const { big_carousel, small_carousel } = gallery_data;

@@ -67,7 +67,7 @@ const MediaGallery = ({ style }: any) => {
                       key={index}
                       className="d-block"
                       data-fancybox="img2"
-                      href={`/assets/images/listing/paly/${thumb}.jpg`}
+                      href={`/assets/images/listing/lu/${thumb}.jpg`}
                     ></a>
                   ))}
                 </Fancybox>

@@ -12,7 +12,7 @@ import smallCarousel_2 from "@/assets/images/listing/mati/02.jpg"
 import smallCarousel_3 from "@/assets/images/listing/mati/03.jpg"
 import smallCarousel_4 from "@/assets/images/listing/mati/04.jpg"
 
-const largeThumb: string[] = ["01", "02"];
+const largeThumb: string[] = ["01", "02", "03", "04"];
 
 interface DataType {
   big_carousel: StaticImageData[];
@@ -69,7 +69,7 @@ const MediaGallery = ({ style }: any) => {
                       key={index}
                       className="d-block"
                       data-fancybox="img2"
-                      href={`/assets/images/listing/paly/${thumb}.jpg`}
+                      href={`/assets/images/listing/mati/${thumb}.jpg`}
                     ></a>
                   ))}
                 </Fancybox>

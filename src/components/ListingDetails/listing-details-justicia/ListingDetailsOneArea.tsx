@@ -15,6 +15,53 @@ import CommonProPertyScore from "../listing-details-common/CommonProPertyScore"
 import CommonLocation from "../listing-details-common/CommonLocation"
 import CommonReviewForm from "../listing-details-common/CommonReviewForm"
 const ammenities_data: string[] = ["Aire Cond.", "Wifi", "Ascensor", "Luminoso", "Lavarropa"];
+import thumb1 from "@/assets/images/listing/mati/01.jpg"
+import thumb2 from "@/assets/images/listing/isa/01.jpg"
+import thumb3 from "@/assets/images/listing/lu/01.jpg"
+import Image, { StaticImageData } from "next/image"
+
+interface DataType {
+   id: number;
+   page: string;
+   tag: string;
+   thumb?: StaticImageData
+   title: string;
+   link: string;
+   address: string;
+   price: number;
+}[];
+const property_data: DataType[] = [
+   {
+      id: 1,
+      page: "home_3_property_2",
+      tag: "ALQUILER",
+      thumb: thumb1,
+      link: '/listing_details_malasana',
+      title: "Malasaña",
+      address: "2 cuartos, 1 baño, 75mts²",
+      price: 2200,
+   },
+   {
+      id: 2,
+      page: "home_3_property_2",
+      tag: "ALQUILER",
+      thumb: thumb2,
+      link: '/listing_details_chamberi',
+      title: "Chamberí",
+      address: "1 cuartos, 1 baño, 55mts²",
+      price: 1300,
+   },
+   {
+      id: 3,
+      page: "home_3_property_2",
+      tag: "ALQUILER",
+      thumb: thumb3,
+      link: '/listing_details_bernabeu',
+      title: "Bernabeu",
+      address: "3 cuartos, 1 baño, 75mts²",
+      price: 1550,
+   },
+];
 
 const ListingDetailsOneArea = () => {
 
@@ -36,7 +83,7 @@ const ListingDetailsOneArea = () => {
                      <p className="fs-20 lh-lg">Paly llegó desde Argentina directo a su piso en Madrid. Vino a estudiar un Máster.</p>
                   </div>
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
-                     <CommonAmenities amenities={ammenities_data}/>
+                     <CommonAmenities amenities={ammenities_data} />
                   </div>
                   <div className="property-video-tour mb-50">
                      <CommonPropertyVideoTour />
@@ -44,7 +91,7 @@ const ListingDetailsOneArea = () => {
                   <div className="property-nearby bg-white shadow4 border-20 p-40 mb-50">
                      <CommonNearbyList />
                   </div>
-                  <CommonSimilarProperty />
+                  <CommonSimilarProperty propertyData={property_data} />
                </div>
                <Sidebar />
             </div>
