@@ -46,22 +46,22 @@ interface StaticImageData {
    height: number;
    width: number;
    placeholder?: string;
- }
+}
 
- interface DataType {
+interface DataType {
    id: number;
    page: string;
    tag: string;
-   thumb?: StaticImageData
+   thumb?: StaticImageData;
    title: string;
    link: string;
    address: string;
    price: number;
 }
- 
- interface CommonSimilarPropertyProps {
+
+interface CommonSimilarPropertyProps {
    propertyData: DataType[];
- }
+}
 
 const CommonSimilarProperty: React.FC<CommonSimilarPropertyProps> = ({ propertyData }) => {
    const finalData = propertyData?.length ? propertyData : property_data;
@@ -81,7 +81,7 @@ const CommonSimilarProperty: React.FC<CommonSimilarPropertyProps> = ({ propertyD
                               height: '300px', /* Set the desired height */
                               overflow: 'hidden'
                            }}>
-                              <Image src={item.thumb ? item.thumb : ""} className="property-image border-20" alt="..." layout="fill" style={{
+                              <Image src={item.thumb ? item.thumb.src : ""} className="property-image border-20" alt="..." layout="fill" style={{
                                  objectFit: 'cover'
                               }} />
                            </div>
