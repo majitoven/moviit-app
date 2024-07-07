@@ -36,6 +36,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 { value: '2', text: 2 },
                 { value: '3', text: 3 },
               ]}
+              defaultCurrent={0}
               {...register("bedrooms", { required: "Este campo es obligatorio" })}
               onChange={(e) => {
                 setValue('bedrooms', e.target.value);
@@ -51,6 +52,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
             <NumberNiceSelect
               placeholder="Seleccione cantidad de baños"
               className="nice-select"
+              defaultCurrent={0}
               options={[
                 { value: '0', text: 0 },
                 { value: '1', text: 1 },
