@@ -29,11 +29,12 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
             <label htmlFor="bedrooms">Número de dormitorios*</label>
             <NumberNiceSelect
               className="nice-select"
+              placeholder="Seleccione cantidad de dormitorios"
               options={[
-                { value: 1, text: 0 },
-                { value: 2, text: 1 },
-                { value: 3, text: 2 },
-                { value: 4, text: 3 },
+                { value: '0', text: 0 },
+                { value: '1', text: 1 },
+                { value: '2', text: 2 },
+                { value: '3', text: 3 },
               ]}
               {...register("bedrooms", { required: "Este campo es obligatorio" })}
               onChange={(e) => {
@@ -48,12 +49,13 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
           <div className="dash-input-wrapper mb-30">
             <label htmlFor="bathrooms">Número de baños</label>
             <NumberNiceSelect
+              placeholder="Seleccione cantidad de baños"
               className="nice-select"
               options={[
-                { value: 1, text: 0 },
-                { value: 2, text: 1 },
-                { value: 3, text: 2 },
-                { value: 4, text: 3 },
+                { value: '0', text: 0 },
+                { value: '1', text: 1 },
+                { value: '2', text: 2 },
+                { value: '3', text: 3 },
               ]}
               {...register("bathrooms")}
               onChange={(e) => {
@@ -69,6 +71,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
             <label htmlFor="furnished">Amueblado</label>
             <NiceSelect
               className="nice-select"
+              placeholder="Seleccione preferencia"
               options={[
                 { value: 'si', text: "Si" },
                 { value: 'no', text: "No" },
@@ -87,6 +90,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
             <label htmlFor="interiorExterior">Interior/Exterior</label>
             <NiceSelect
               className="nice-select"
+              placeholder="Seleccione preferencia"
               options={[
                 { value: 'Interior', text: "Interior" },
                 { value: 'Exterior', text: "Exterior" },

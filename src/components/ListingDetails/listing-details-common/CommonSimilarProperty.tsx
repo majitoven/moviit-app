@@ -41,7 +41,22 @@ const setting = {
    ]
 };
 
-const CommonSimilarProperty = ({ propertyData }) => {
+interface Property {
+   id: string;
+   title: string;
+   tag: string;
+   link: string;
+   thumb: string;
+   address: string;
+   price: number;
+   // Add other property fields as required
+}
+
+interface CommonSimilarPropertyProps {
+   propertyData: Property[];
+}
+
+const CommonSimilarProperty: React.FC<CommonSimilarPropertyProps> = ({ propertyData }) => {
    const finalData = propertyData?.length ? propertyData : property_data;
    return (
       <div className="similar-property">

@@ -55,6 +55,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   <label htmlFor="country">País de origen*</label>
                   <NiceSelect
                      className="nice-select"
+                     placeholder="Seleccione país"
                      options={
                         [
                            { "text": "Afghanistan", "value": "Afghanistan" },
@@ -307,6 +308,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   <label htmlFor="propertyType">Estoy buscando*</label>
                   <NiceSelect
                      className="nice-select"
+                     placeholder="Seleccione una opción"
                      options={[
                         { value: "apartamento", text: "Alquilar un apartamento" },
                         { value: "habitación", text: "Alquilar una habitación" },
@@ -324,6 +326,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                <div className="dash-input-wrapper mb-30">
                   <label htmlFor="duration">Duración*</label>
                   <NiceSelect
+                     placeholder="Seleccione duración"
                      className="nice-select"
                      options={[
                         { value: "3-6", text: "3-6 meses" },
@@ -421,6 +424,8 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   ]}
                   defaultCurrent={[]}
                   onChange={changeLocation}
+                  placeholder="Seleccione zonas"
+                  name={''}
                />
                {errors.selectedBarrios && <p className="error-message">{errors.selectedBarrios.message}</p>}
             </div>
