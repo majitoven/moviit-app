@@ -33,6 +33,7 @@ export interface DataType {
    tag: string;
    tag_bg?: string;
    thumb?:StaticImageData
+   link?: string;
    carousel_thumb: {
       id?:string;
       img: StaticImageData;
