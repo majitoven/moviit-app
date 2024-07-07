@@ -56,7 +56,7 @@ const SearchPropertyBody = () => {
             <div className="dash-input-wrapper mb-30">
               <label htmlFor="description">Descripción de la solicitud/notas</label>
               <textarea {...register("description")} className="size-lg" placeholder="Describa brevemente su situación (ej: Vengo con mi pareja y quiero un lugar soleado y céntrico)..."></textarea>
-              {errors.description && <p className="error-message">{errors.description.message}</p>}
+              <p className={`error-message ${errors.description ? 'visible' : ''}`}>{String(errors.description?.message || '')}</p>
             </div>
           </div>
 
