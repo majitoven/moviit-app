@@ -42,7 +42,7 @@ const setting = {
 };
 
 interface Property {
-   id: string;
+   id: number;
    title: string;
    tag: string;
    link: string;
