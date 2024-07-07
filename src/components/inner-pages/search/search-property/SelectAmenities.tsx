@@ -40,7 +40,7 @@ const SelectAmenities: React.FC<Props> = ({ register, errors, setValue, trigger,
                      onChange={() => handleCheckboxChange(amenity)}
                   />
                   <label htmlFor={`amenity-${index}`}>{amenity}</label>
-                  {errors.amenities && errors.amenities[amenity] && <p className="error-message">{String(errors.amenities[amenity].message)}</p>}
+                  {errors.amenities?.[amenity] && <p className="error-message">{String(errors.amenities?.[amenity]?.message)}</p>}
 
                </li>
             ))}
