@@ -6,6 +6,7 @@ import NiceSelect from "@/ui/NiceSelect";
 import PriceRange from "@/components/common/PriceRange";
 import UseShortedProperty from "@/hooks/useShortedProperty";
 import { FormValues } from './SearchPropertyBody';
+
 interface Props {
    register: UseFormRegister<FormValues>;
    errors: FieldErrors<FormValues>;
@@ -44,14 +45,14 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
          <h4 className="dash-title-three">Información Básica</h4>
          <div className="row align-items-end">
             <div className="col-md-6">
-               <div className="dash-input-wrapper mb-30">
+               <div className="dash-input-wrapper ">
                   <label htmlFor="fullName">Nombre y apellido*</label>
                   <input {...register("fullName", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese nombre y apellido" />
-                  {errors.fullName && <p className="error-message">{String(errors.fullName.message)}</p>}
+                  <p className={`error-message ${errors.fullName ? 'visible' : ''}`}>{String(errors.fullName?.message || '')}</p>
                </div>
             </div>
             <div className="col-md-6">
-               <div className="dash-input-wrapper mb-25">
+               <div className="dash-input-wrapper ">
                   <label htmlFor="country">País de origen*</label>
                   <NiceSelect
                      defaultCurrent={193}
@@ -298,14 +299,14 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         trigger('country');
                      }}
                   />
-                  {errors.country && <p className="error-message">{String(errors.country.message)}</p>}
+                  <p className={`error-message ${errors.country ? 'visible' : ''}`}>{String(errors.country?.message || '')}</p>
                </div>
             </div>
          </div>
 
          <div className="row align-items-end">
             <div className="col-md-4">
-               <div className="dash-input-wrapper mb-30">
+               <div className="dash-input-wrapper">
                   <label htmlFor="propertyType">Estoy buscando*</label>
                   <NiceSelect
                      defaultCurrent={0}
@@ -321,11 +322,11 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         trigger('propertyType');
                      }}
                   />
-                  {errors.propertyType && <p className="error-message">{String(errors.propertyType.message)}</p>}
+                  <p className={`error-message ${errors.propertyType ? 'visible' : ''}`}>{String(errors.propertyType?.message || '')}</p>
                </div>
             </div>
             <div className="col-md-4">
-               <div className="dash-input-wrapper mb-30">
+               <div className="dash-input-wrapper">
                   <label htmlFor="duration">Duración*</label>
                   <NiceSelect
                      defaultCurrent={0}
@@ -342,11 +343,11 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         trigger('duration');
                      }}
                   />
-                  {errors.duration && <p className="error-message">{String(errors.duration.message)}</p>}
+                  <p className={`error-message ${errors.duration ? 'visible' : ''}`}>{String(errors.duration?.message || '')}</p>
                </div>
             </div>
             <div className="col-md-4">
-               <div className="dash-input-wrapper mb-30">
+               <div className="dash-input-wrapper">
                   <label htmlFor="priceRange">Rango de precios*</label>
                   <div className="price-ranger">
                      <div className="price-input d-flex align-items-center justify-content-between pt-5" style={{ marginBottom: "12px" }}>
@@ -376,13 +377,12 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   </div>
 
                   <PriceRange MAX={maxPrice} MIN={600} STEP={1} values={priceValue} handleChanges={handlePriceChange} />
-                  {errors.minPrice && <p className="error-message">{String(errors.minPrice.message)}</p>}
-                  {errors.maxPrice && <p className="error-message">{String(errors.maxPrice.message)}</p>}
+                  <p className={`error-message ${errors.minPrice ||  errors.maxPrice ? 'visible' : ''}`}>{String(errors.minPrice?.message || '')}</p>
                </div>
             </div>
          </div>
          <div className="col-lg-3">
-            <div className="dash-input-wrapper mb-25">
+            <div className="dash-input-wrapper">
                <label htmlFor="selectedBarrios">Zonas*</label>
                <NiceMultiSelect
                   className="nice-select location"
@@ -430,7 +430,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   placeholder="Seleccione zonas"
                   name={''}
                />
-               {errors.selectedBarrios && <p className="error-message">{String(errors.selectedBarrios.message)}</p>}
+               <p className={`error-message ${errors.selectedBarrios ? 'visible' : ''}`}>{String(errors.selectedBarrios?.message || '')}</p>
             </div>
          </div>
          <div className="col-12">

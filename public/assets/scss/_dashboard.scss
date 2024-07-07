@@ -766,6 +766,16 @@
             }
         }
     }
+
+    .error-message {
+        height: 20px;
+        font-size: 12px;
+        visibility: hidden;
+      }
+      
+      .error-message.visible {
+        visibility: visible;
+      }
     
     .remove-portfolio-item {
         width: 30px;
