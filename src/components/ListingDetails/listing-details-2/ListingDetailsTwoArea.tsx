@@ -49,7 +49,7 @@ const ListingDetailsTwoArea = () => {
                      </div>
                   </div>
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
-                     <CommonAmenities />
+                     {/* <CommonAmenities /> */}
                   </div>
                   <div className="property-video-tour mb-50">
                      <CommonPropertyVideoTour />
@@ -58,7 +58,7 @@ const ListingDetailsTwoArea = () => {
                   <div className="property-nearby bg-white shadow4 border-20 p-40 mb-50">
                      <CommonNearbyList />
                   </div>
-                  <CommonSimilarProperty />
+                  {/* <CommonSimilarProperty /> */}
                   <div className="property-score bg-white shadow4 border-20 p-40 mb-50">
                      <CommonProPertyScore />
                   </div>
