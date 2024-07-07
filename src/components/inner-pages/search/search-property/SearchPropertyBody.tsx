@@ -5,7 +5,7 @@ import Overview from "./Overview";
 import ListingDetails from "./ListingDetails";
 import SelectAmenities from "./SelectAmenities";
 
-interface FormValues {
+export interface FormValues {
   fullName: string;
   country: string;
   propertyType: string;
