@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { UseFormRegister, UseFormSetValue, UseFormTrigger, FieldValues, FieldErrors } from "react-hook-form";
 import NiceSelect from "@/ui/NiceSelect";
@@ -43,7 +44,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('bedrooms');
               }}
             />
-            {errors.bedrooms && <p className="error-message">{errors.bedrooms.message}</p>}
+            {errors.bedrooms && <p className="error-message">{String(errors.bedrooms.message)}</p>}
           </div>
         </div>
         <div className="col-md-4">
@@ -65,7 +66,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('bathrooms');
               }}
             />
-            {errors.bathrooms && <p className="error-message">{errors.bathrooms.message}</p>}
+            {errors.bathrooms && <p className="error-message">{String(errors.bathrooms.message)}</p>}
           </div>
         </div>
         <div className="col-md-4">
@@ -84,7 +85,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('furnished');
               }}
             />
-            {errors.furnished && <p className="error-message">{errors.furnished.message}</p>}
+            {errors.furnished && <p className="error-message">{String(errors.furnished.message)}</p>}
           </div>
         </div>
         <div className="col-md-4">
@@ -104,7 +105,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('interiorExterior');
               }}
             />
-            {errors.interiorExterior && <p className="error-message">{errors.interiorExterior.message}</p>}
+            {errors.interiorExterior && <p className="error-message">{String(errors.interiorExterior.message)}</p>}
           </div>
         </div>
         <div className="col-md-4">
@@ -141,8 +142,8 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 handleChanges={handleSqFeetChange}
               />
             </div>
-            {errors.minSqFeet && <p className="error-message">{errors.minSqFeet.message}</p>}
-            {errors.maxSqFeet && <p className="error-message">{errors.maxSqFeet.message}</p>}
+            {errors.minSqFeet && <p className="error-message">{String(errors.minSqFeet.message)}</p>}
+            {errors.maxSqFeet && <p className="error-message">{String(errors.maxSqFeet.message)}</p>}
           </div>
         </div>
       </div>
