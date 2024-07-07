@@ -13,8 +13,8 @@ export interface FormValues {
   minPrice: number;
   maxPrice: number;
   selectedBarrios: string[];
-  bedrooms: number;
-  bathrooms: number;
+  bedrooms: string;
+  bathrooms: string;
   furnished: string;
   interiorExterior: string;
   minSqFeet: number;
