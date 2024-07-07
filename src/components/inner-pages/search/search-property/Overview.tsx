@@ -54,6 +54,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                <div className="dash-input-wrapper mb-25">
                   <label htmlFor="country">País de origen*</label>
                   <NiceSelect
+                     defaultCurrent={193}
                      className="nice-select"
                      placeholder="Seleccione país"
                      options={

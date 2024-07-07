@@ -74,6 +74,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
             <label htmlFor="furnished">Amueblado</label>
             <NiceSelect
               className="nice-select"
+              defaultCurrent={0}
               placeholder="Seleccione preferencia"
               options={[
                 { value: 'si', text: "Si" },
@@ -92,6 +93,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
           <div className="dash-input-wrapper mb-30">
             <label htmlFor="interiorExterior">Interior/Exterior</label>
             <NiceSelect
+              defaultCurrent={0}
               className="nice-select"
               placeholder="Seleccione preferencia"
               options={[
