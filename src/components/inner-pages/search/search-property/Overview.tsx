@@ -47,7 +47,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                <div className="dash-input-wrapper mb-30">
                   <label htmlFor="fullName">Nombre y apellido*</label>
                   <input {...register("fullName", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese nombre y apellido" />
-                  {errors.fullName && <p className="error-message">{errors.fullName.message}</p>}
+                  {errors.fullName && <p className="error-message">{String(errors.fullName.message)}</p>}
                </div>
             </div>
             <div className="col-md-6">
