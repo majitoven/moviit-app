@@ -298,7 +298,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         trigger('country');
                      }}
                   />
-                  {errors.country && <p className="error-message">{errors.country.message}</p>}
+                  {errors.country && <p className="error-message">{String(errors.country.message)}</p>}
                </div>
             </div>
          </div>
@@ -320,7 +320,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         trigger('propertyType');
                      }}
                   />
-                  {errors.propertyType && <p className="error-message">{errors.propertyType.message}</p>}
+                  {errors.propertyType && <p className="error-message">{String(errors.propertyType.message)}</p>}
                </div>
             </div>
             <div className="col-md-4">
@@ -340,7 +340,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         trigger('duration');
                      }}
                   />
-                  {errors.duration && <p className="error-message">{errors.duration.message}</p>}
+                  {errors.duration && <p className="error-message">{String(errors.duration.message)}</p>}
                </div>
             </div>
             <div className="col-md-4">
@@ -374,8 +374,8 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   </div>
 
                   <PriceRange MAX={maxPrice} MIN={600} STEP={1} values={priceValue} handleChanges={handlePriceChange} />
-                  {errors.minPrice && <p className="error-message">{errors.minPrice.message}</p>}
-                  {errors.maxPrice && <p className="error-message">{errors.maxPrice.message}</p>}
+                  {errors.minPrice && <p className="error-message">{String(errors.minPrice.message)}</p>}
+                  {errors.maxPrice && <p className="error-message">{String(errors.maxPrice.message)}</p>}
                </div>
             </div>
          </div>
@@ -428,7 +428,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   placeholder="Seleccione zonas"
                   name={''}
                />
-               {errors.selectedBarrios && <p className="error-message">{errors.selectedBarrios.message}</p>}
+               {errors.selectedBarrios && <p className="error-message">{String(errors.selectedBarrios.message)}</p>}
             </div>
          </div>
          <div className="col-12">
