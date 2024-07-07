@@ -8,7 +8,7 @@ import { useState } from 'react';
 const BLockFeatureFour = () => {
    const [whatsAppNumber, setWhatsAppNumber] = useState('');
 
-   const handleWhatsAppRedirect = (e) => {
+   const handleWhatsAppRedirect = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       // Check if the number is not empty
       if (whatsAppNumber) {
