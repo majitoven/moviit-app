@@ -6,6 +6,7 @@ import NumberNiceSelect from "@/ui/NumberNiceSelect";
 import PriceRange from "@/components/common/PriceRange";
 import UseShortedProperty from "@/hooks/useShortedProperty";
 import { FormValues } from './SearchPropertyBody';
+
 interface Props {
    register: UseFormRegister<FormValues>;
    errors: FieldErrors<FormValues>;
@@ -44,7 +45,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('bedrooms');
               }}
             />
-            {errors.bedrooms && <p className="error-message">{String(errors.bedrooms.message)}</p>}
+            <p className={`error-message ${errors.bedrooms ? 'visible' : ''}`}>{String(errors.bedrooms?.message || '')}</p>
           </div>
         </div>
         <div className="col-md-4">
@@ -66,7 +67,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('bathrooms');
               }}
             />
-            {errors.bathrooms && <p className="error-message">{String(errors.bathrooms.message)}</p>}
+            <p className={`error-message ${errors.bathrooms ? 'visible' : ''}`}>{String(errors.bathrooms?.message || '')}</p>
           </div>
         </div>
         <div className="col-md-4">
@@ -86,7 +87,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('furnished');
               }}
             />
-            {errors.furnished && <p className="error-message">{String(errors.furnished.message)}</p>}
+            <p className={`error-message ${errors.furnished ? 'visible' : ''}`}>{String(errors.furnished?.message || '')}</p>
           </div>
         </div>
         <div className="col-md-4">
@@ -107,7 +108,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 trigger('interiorExterior');
               }}
             />
-            {errors.interiorExterior && <p className="error-message">{String(errors.interiorExterior.message)}</p>}
+            <p className={`error-message ${errors.interiorExterior ? 'visible' : ''}`}>{String(errors.interiorExterior?.message || '')}</p>
           </div>
         </div>
         <div className="col-md-4">
@@ -144,8 +145,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 handleChanges={handleSqFeetChange}
               />
             </div>
-            {errors.minSqFeet && <p className="error-message">{String(errors.minSqFeet.message)}</p>}
-            {errors.maxSqFeet && <p className="error-message">{String(errors.maxSqFeet.message)}</p>}
+            <p className={`error-message ${errors.minSqFeet || errors.maxSqFeet ? 'visible' : ''}`}>{String(errors.minSqFeet?.message || '')}</p>
           </div>
         </div>
       </div>
