@@ -64,6 +64,7 @@ const property_data: DataType[] = [
       price: 3280,
       price_text: "m",
       carousel: "1",
+      link: ''
    },
    {
       id: 2,
@@ -77,6 +78,7 @@ const property_data: DataType[] = [
       data_delay_time: "0.1s",
       price: 28100,
       carousel: "2",
+      link: ''
    },
    {
       id: 3,
@@ -90,6 +92,7 @@ const property_data: DataType[] = [
       data_delay_time: "0.2s",
       price: 42500,
       carousel: "3",
+      link: ''
    },
    {
       id: 4,
@@ -102,6 +105,7 @@ const property_data: DataType[] = [
       price: 3280,
       price_text: "m",
       carousel: "4",
+      link: ''
    },
    {
       id: 5,
@@ -115,6 +119,7 @@ const property_data: DataType[] = [
       data_delay_time: "0.1s",
       price: 28100,
       carousel: "5",
+      link: ''
    },
    {
       id: 6,
@@ -128,6 +133,7 @@ const property_data: DataType[] = [
       price: 42500,
       price_text: "m",
       carousel: "6",
+      link: ''
    },
 
    // home two
@@ -141,6 +147,7 @@ const property_data: DataType[] = [
       address: "Mirpur 10, Stadium dhaka 1208",
       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1370 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
       price: 34900.00,
+      link: '',
       carousel: "1",
    },
    {
@@ -154,6 +161,7 @@ const property_data: DataType[] = [
       data_delay_time: "0.1s",
       price: 28100.00,
       carousel: "2",
+      link: ''
    },
    {
       id: 3,
@@ -166,6 +174,7 @@ const property_data: DataType[] = [
       data_delay_time: "0.2s",
       price: 42500.00,
       carousel: "3",
+      link: ''
    },
 
    // home_3_property_2
@@ -181,6 +190,7 @@ const property_data: DataType[] = [
       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1780 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o2 },],
       price: 34900,
       carousel:"03",
+      link: ''
    },
    {
       id: 2,
@@ -193,6 +203,7 @@ const property_data: DataType[] = [
       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 2340 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o4 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o3 },],
       price: 28100,
       carousel:"03",
+      link: ''
    },
    {
       id: 3,
@@ -205,6 +216,7 @@ const property_data: DataType[] = [
       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 1857 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o3 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o1 },],
       price: 42500,
       carousel:"04",
+      link: ''
    },
    {
       id: 4,
@@ -217,6 +229,7 @@ const property_data: DataType[] = [
       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 2450 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o4 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o3 },],
       price: 55500,
       carousel:"04",
+      link: ''
    },
    {
       id: 5,
@@ -229,6 +242,7 @@ const property_data: DataType[] = [
       property_info: [{ icon: propertyIcon_1, feature: "sqft", total_feature: 2340 }, { icon: propertyIcon_2, feature: "bed", total_feature: 0o4 }, { icon: propertyIcon_3, feature: "bath", total_feature: 0o3 },],
       price: 28100,
       carousel:"03",
+      link: ''
    },
 
    // home_5
