@@ -113,7 +113,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
         </div>
         <div className="col-md-4">
           <div className="dash-input-wrapper mb-30">
-            <label htmlFor="sqFeet">Tamaño (m²)*</label>
+            <label htmlFor="sqFeet">Tamaño (m²)</label>
             <div className="price-ranger">
               <div className="price-input d-flex align-items-center justify-content-between pt-5" style={{ marginBottom: "12px" }}>
                 <div className="field d-flex align-items-center">

@@ -53,7 +53,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
             </div>
             <div className="col-md-6">
                <div className="dash-input-wrapper ">
-                  <label htmlFor="country">País de origen*</label>
+                  <label htmlFor="country">País de origen</label>
                   <NiceSelect
                      defaultCurrent={193}
                      className="nice-select"
@@ -293,7 +293,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                            { "text": "Zambia", "value": "Zambia" },
                            { "text": "Zimbabwe", "value": "Zimbabwe" }
                         ]}
-                     {...register("country", { required: "Este campo es obligatorio" })}
+                     {...register("country")}
                      onChange={(e) => {
                         setValue('country', e.target.value);
                         trigger('country');
@@ -337,7 +337,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         { value: "7-9", text: "7 - 9 meses" },
                         { value: "10-12", text: "10 - 12 meses" },
                      ]}
-                     {...register("duration")}
+                     {...register("duration", { required: "Este campo es obligatorio" })}
                      onChange={(e) => {
                         setValue('duration', e.target.value);
                         trigger('duration');
@@ -348,7 +348,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
             </div>
             <div className="col-md-4">
                <div className="dash-input-wrapper">
-                  <label htmlFor="priceRange">Rango de precios*</label>
+                  <label htmlFor="priceRange">Rango de precios</label>
                   <div className="price-ranger">
                      <div className="price-input d-flex align-items-center justify-content-between pt-5" style={{ marginBottom: "12px" }}>
                         <div className="field d-flex align-items-center">
@@ -383,7 +383,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
          </div>
          <div className="col-lg-3">
             <div className="dash-input-wrapper">
-               <label htmlFor="selectedBarrios">Zonas*</label>
+               <label htmlFor="selectedBarrios">Zonas</label>
                <NiceMultiSelect
                   className="nice-select location"
                   options={[
