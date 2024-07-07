@@ -5,12 +5,12 @@ import NiceSelect from "@/ui/NiceSelect";
 import NumberNiceSelect from "@/ui/NumberNiceSelect";
 import PriceRange from "@/components/common/PriceRange";
 import UseShortedProperty from "@/hooks/useShortedProperty";
-
+import { FormValues } from './SearchPropertyBody';
 interface Props {
-  register: UseFormRegister<FieldValues>;
-  errors: FieldErrors;
-  setValue: UseFormSetValue<FieldValues>;
-  trigger: UseFormTrigger<FieldValues>;
+   register: UseFormRegister<FormValues>;
+   errors: FieldErrors<FormValues>;
+   setValue: UseFormSetValue<FormValues>;
+   trigger: UseFormTrigger<FormValues>;
 }
 
 const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }) => {

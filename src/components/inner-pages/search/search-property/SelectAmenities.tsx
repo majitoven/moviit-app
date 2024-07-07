@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { UseFormRegister, UseFormSetValue, UseFormTrigger, FieldValues, FieldErrors, UseFormGetValues } from "react-hook-form";
-
+import { FormValues } from './SearchPropertyBody';
 interface Props {
-   register: UseFormRegister<FieldValues>;
-   errors: FieldErrors;
-   setValue: UseFormSetValue<FieldValues>;
-   trigger: UseFormTrigger<FieldValues>;
-   getValues: UseFormGetValues<FieldValues>;
+   register: UseFormRegister<FormValues>;
+   errors: FieldErrors<FormValues>;
+   setValue: UseFormSetValue<FormValues>;
+   trigger: UseFormTrigger<FormValues>;
+   getValues: UseFormGetValues<FormValues>;
 }
 
 const SelectAmenities: React.FC<Props> = ({ register, errors, setValue, trigger, getValues }) => {
