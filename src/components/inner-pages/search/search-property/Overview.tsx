@@ -308,6 +308,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                <div className="dash-input-wrapper mb-30">
                   <label htmlFor="propertyType">Estoy buscando*</label>
                   <NiceSelect
+                     defaultCurrent={0}
                      className="nice-select"
                      placeholder="Seleccione una opción"
                      options={[
@@ -327,6 +328,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                <div className="dash-input-wrapper mb-30">
                   <label htmlFor="duration">Duración*</label>
                   <NiceSelect
+                     defaultCurrent={0}
                      placeholder="Seleccione duración"
                      className="nice-select"
                      options={[
