@@ -41,20 +41,27 @@ const setting = {
    ]
 };
 
-interface Property {
+interface StaticImageData {
+   src: string;
+   height: number;
+   width: number;
+   placeholder?: string;
+ }
+
+ interface DataType {
    id: number;
-   title: string;
+   page: string;
    tag: string;
+   thumb?: StaticImageData
+   title: string;
    link: string;
-   thumb: string;
    address: string;
    price: number;
-   // Add other property fields as required
 }
-
-interface CommonSimilarPropertyProps {
-   propertyData: Property[];
-}
+ 
+ interface CommonSimilarPropertyProps {
+   propertyData: DataType[];
+ }
 
 const CommonSimilarProperty: React.FC<CommonSimilarPropertyProps> = ({ propertyData }) => {
    const finalData = propertyData?.length ? propertyData : property_data;
