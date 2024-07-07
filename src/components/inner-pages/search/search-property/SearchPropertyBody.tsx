@@ -19,7 +19,7 @@ export interface FormValues {
   interiorExterior: string;
   minSqFeet: number;
   maxSqFeet: number;
-  amenities: Record<string, boolean>;
+  amenities: { [key: string]: boolean };
   description: string;
 }
 
