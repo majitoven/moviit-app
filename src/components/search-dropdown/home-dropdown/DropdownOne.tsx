@@ -44,7 +44,7 @@ const DropdownOne = ({ style }: any) => {
   };
 
   const onSubmit = (data: FormValues) => {
-    console.log(data);
+    console.log(data, 'FINAL');
     handleModalOpen();
     // Handle the form submission here
   };
@@ -63,12 +63,23 @@ const DropdownOne = ({ style }: any) => {
 
   const handleMinPriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = parseInt(e.target.value, 10);
+    setValue('minPrice', newValue);
+    trigger('minPrice');
     handlePriceChange([newValue, priceValue[1]]);
   };
 
   const handleMaxPriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = parseInt(e.target.value, 10);
+    setValue('maxPrice', newValue);
+    trigger('maxPrice');
     handlePriceChange([priceValue[0], newValue]);
+  };
+
+  const handleRangeChange = (values: number[]) => {
+    setValue('minPrice', values[0]);
+    setValue('maxPrice', values[1]);
+    trigger(['minPrice', 'maxPrice']);
+    handlePriceChange(values);
   };
 
   return (
@@ -209,7 +220,7 @@ const DropdownOne = ({ style }: any) => {
                   MIN={600}
                   STEP={1}
                   values={priceValue}
-                  handleChanges={handlePriceChange}
+                  handleChanges={handleRangeChange}
                 />
               </div>
               <p className={`error-message ${errors.minPrice || errors.maxPrice ? 'visible' : ''}`}>{String(errors.minPrice?.message || '')}</p>

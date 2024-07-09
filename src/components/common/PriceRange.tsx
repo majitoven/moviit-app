@@ -1,13 +1,14 @@
 "use client"
 import { getTrackBackground, Range } from "react-range";
-// prop type 
+
 type IProps = {
    STEP: number;
    MIN: number;
    MAX: number;
    values: number[];
-   handleChanges: (val: number[]) => void
-}
+   handleChanges: (val: number[]) => void;
+};
+
 const PriceRange = ({ STEP, MIN, MAX, values, handleChanges }: IProps) => {
    return (
       <>
@@ -25,12 +26,11 @@ const PriceRange = ({ STEP, MIN, MAX, values, handleChanges }: IProps) => {
                      ...props.style,
                      height: '4px',
                      width: '100%',
-                     // borderRadius: "10px",
                      background: getTrackBackground({
                         values: values,
                         colors: ["#fff", "#3BB17C", "#94d6b8"],
                         min: MIN,
-                        max: MAX
+                        max: MAX,
                      }),
                   }}
                >
@@ -57,6 +57,5 @@ const PriceRange = ({ STEP, MIN, MAX, values, handleChanges }: IProps) => {
       </>
    );
 };
-
 
 export default PriceRange;
