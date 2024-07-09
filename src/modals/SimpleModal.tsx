@@ -1,7 +1,21 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const SimpleModal = ({ showModal, handleClose, formData }) => {
+interface FormData {
+  propertyType: string;
+  duration: string;
+  minPrice: number;
+  maxPrice: number;
+  selectedBarrios: string[];
+}
+
+interface SimpleModalProps {
+  showModal: boolean;
+  handleClose: () => void;
+  formData: FormData;
+}
+
+const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formData }) => {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [errors, setErrors] = useState({ email: false, fullName: false });
@@ -17,6 +31,7 @@ const SimpleModal = ({ showModal, handleClose, formData }) => {
         email: !emailValid,
         fullName: !fullNameValid,
       });
+      toast.error("Please fill in all required fields.", { position: "top-center" });
       return;
     }
 
