@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import NiceSelect from "@/ui/NiceSelect";
 import NiceMultiSelect from "@/ui/NiceMultiSelect";
@@ -26,14 +26,15 @@ const DropdownOne = ({ style }: any) => {
   });
 
   const { register, handleSubmit, reset, formState: { errors }, setValue, trigger, getValues } = useForm<FormValues>();
-  const [showModal, setShowModal] = React.useState(false);
-  const [formData, setFormData] = React.useState<FormValues>({
+  const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState<FormValues>({
     propertyType: '',
     duration: '',
     minPrice: 600,
     maxPrice: 10000,
     selectedBarrios: [],
   });
+  const [selectedBarrios, setSelectedBarrios] = useState<string[]>([]);
 
   const handleModalOpen = () => {
     // Set the form data and open the modal
@@ -53,6 +54,22 @@ const DropdownOne = ({ style }: any) => {
   };
 
   const handleModalClose = () => setShowModal(false);
+
+  const changeLocation = (selectedValues: string[]) => {
+    setSelectedBarrios(selectedValues);
+    setValue('selectedBarrios', selectedValues);
+    trigger('selectedBarrios');
+  };
+
+  const handleMinPriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = parseInt(e.target.value, 10);
+    handlePriceChange([newValue, priceValue[1]]);
+  };
+
+  const handleMaxPriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = parseInt(e.target.value, 10);
+    handlePriceChange([priceValue[0], newValue]);
+  };
 
   return (
     <>
@@ -126,10 +143,8 @@ const DropdownOne = ({ style }: any) => {
                   { value: "Delicias", text: "Delicias" },
                 ]}
                 defaultCurrent={[]}
-                onChange={(e) => {
-                  const selectedOptions = Array.from(e.target.selectedOptions, option => option.value);
-                  setValue("selectedBarrios", selectedOptions);
-                  trigger("selectedBarrios");
+                onChange={(selectedOptions) => {
+                  changeLocation(selectedOptions.map(option => option.value));
                 }}
                 name="selectedBarrios"
                 placeholder="Seleccione"
@@ -172,7 +187,8 @@ const DropdownOne = ({ style }: any) => {
                       type="number"
                       className="input-min"
                       {...register("minPrice")}
-                      onChange={(e) => setValue('minPrice', parseInt(e.target.value))}
+                      value={priceValue[0]}
+                      onChange={handleMinPriceChange}
                     />
                   </div>
                   <div className="divider-line"></div>
@@ -182,7 +198,8 @@ const DropdownOne = ({ style }: any) => {
                       type="number"
                       className="input-max"
                       {...register("maxPrice")}
-                      onChange={(e) => setValue('maxPrice', parseInt(e.target.value))}
+                      value={priceValue[1]}
+                      onChange={handleMaxPriceChange}
                     />
                   </div>
                   <div className="currency ps-1">€</div>
