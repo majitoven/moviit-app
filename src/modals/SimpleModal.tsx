@@ -129,7 +129,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
           display: flex;
           justify-content: center;
           align-items: center;
-          z-index: 1001;
+          z-index: 100000000000 !important; /* Ensure this is higher than other elements on your page */
         }
         .modal-content {
           background: white;
@@ -139,6 +139,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
           width: 100%;
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
           position: relative;
+          z-index: 1000000000001 !important; /* Ensure this is higher than other elements on your page */
         }
         .modal-header {
           display: flex;
