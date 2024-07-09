@@ -144,7 +144,7 @@ const DropdownOne = ({ style }: any) => {
                 ]}
                 defaultCurrent={[]}
                 onChange={(selectedOptions) => {
-                  changeLocation(selectedOptions.map(option => option.value));
+                  changeLocation(selectedOptions);
                 }}
                 name="selectedBarrios"
                 placeholder="Seleccione"
