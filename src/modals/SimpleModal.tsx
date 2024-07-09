@@ -4,10 +4,22 @@ import { toast } from "react-toastify";
 const SimpleModal = ({ showModal, handleClose, formData }) => {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
+  const [errors, setErrors] = useState({ email: false, fullName: false });
 
   const { propertyType, duration, minPrice, maxPrice, selectedBarrios } = formData;
 
   const handleSendData = async () => {
+    const emailValid = email.trim() !== "";
+    const fullNameValid = fullName.trim() !== "";
+
+    if (!emailValid || !fullNameValid) {
+      setErrors({
+        email: !emailValid,
+        fullName: !fullNameValid,
+      });
+      return;
+    }
+
     // Construct the data object to send
     const data = {
       email,
@@ -19,20 +31,26 @@ const SimpleModal = ({ showModal, handleClose, formData }) => {
       selectedBarrios,
     };
 
-    // try {
-      // Send data to the external service
-      // const response = await fetch('https://external-service.com/api/send', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(data),
-      // });
+    console.log(data, 'FINAL');
+    toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
 
-      // if (response.ok) {
-        console.log(data, 'FINAL')
-        toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
-        handleClose()
+    // Clear the form data
+    setEmail("");
+    setFullName("");
+    setErrors({ email: false, fullName: false });
+    handleClose();
+
+    // try {
+    //   // Send data to the external service
+    //   const response = await fetch('https://external-service.com/api/send', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(data),
+    //   });
+
+    //   if (response.ok) {
     //     console.log('Data sent successfully!');
     //   } else {
     //     console.error('Failed to send data');
@@ -48,32 +66,33 @@ const SimpleModal = ({ showModal, handleClose, formData }) => {
         <div className="modal-overlay" onClick={handleClose}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
-              <h5 className="modal-title">Estás a un paso! </h5>
-
+              <h5 className="modal-title">Estás a un paso!</h5>
               <button className="close-button" onClick={handleClose}>
                 &times;
               </button>
             </div>
-            <p className="fs-10 ">Sólo dejanos tus datos de contacto para enviarte la información:</p>
+            <p className="fs-10">Sólo dejanos tus datos de contacto para enviarte la información:</p>
             <div className="modal-body">
               <form>
                 <div className="form-group">
                   <label>Email</label>
                   <input
                     type="email"
-                    className="form-control"
+                    className={`form-control ${errors.email ? "is-invalid" : ""}`}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
+                  {errors.email && <div className="invalid-feedback">Email is required.</div>}
                 </div>
                 <div className="form-group">
                   <label>Nombre completo</label>
                   <input
                     type="text"
-                    className="form-control"
+                    className={`form-control ${errors.fullName ? "is-invalid" : ""}`}
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                   />
+                  {errors.fullName && <div className="invalid-feedback">Full Name is required.</div>}
                 </div>
               </form>
             </div>
@@ -135,6 +154,13 @@ const SimpleModal = ({ showModal, handleClose, formData }) => {
           padding: 10px;
           border: 1px solid #e5e5e5;
           border-radius: 4px;
+        }
+        .form-control.is-invalid {
+          border-color: #dc3545;
+        }
+        .invalid-feedback {
+          display: block;
+          color: #dc3545;
         }
         .modal-footer {
           display: flex;
