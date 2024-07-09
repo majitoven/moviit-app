@@ -16,7 +16,7 @@ export interface FormValues {
 }
 
 const DropdownOne = ({ style }: any) => {
-  
+
   const itemsPerPage = 9;
   const page = "listing_5";
 
@@ -44,7 +44,7 @@ const DropdownOne = ({ style }: any) => {
 
   const onSubmit = (data: FormValues) => {
     console.log(data);
-    handleModalOpen()
+    handleModalOpen();
     // Handle the form submission here
   };
 
@@ -53,7 +53,6 @@ const DropdownOne = ({ style }: any) => {
   };
 
   const handleModalClose = () => setShowModal(false);
-
 
   return (
     <>
