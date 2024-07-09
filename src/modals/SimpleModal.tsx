@@ -31,7 +31,6 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
         email: !emailValid,
         fullName: !fullNameValid,
       });
-      toast.error("Please fill in all required fields.", { position: "top-center" });
       return;
     }
 
