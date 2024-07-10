@@ -24,7 +24,6 @@
    user-select: none;
    white-space: nowrap;
    width: auto;
-   z-index: 10; // Increase z-index for the container
    .current {
      white-space: nowrap;
      overflow: hidden;
@@ -117,12 +116,12 @@
  
  .nice-select .list {
    background-color: #fff;
-   border-radius: 0 0 5px 5px;
+   border-radius: 5px 5px 5px 5px;
    box-shadow: 0 13px 35px -12px rgb(35 35 35 / 10%);
    box-sizing: border-box;
    opacity: 0;
    overflow-y: auto;
-   max-height: 250px;
+   max-height: 175px;
    border: 1px solid rgba(0, 0, 0, 0.05);
    padding: 5px 0 15px;
    pointer-events: none;
@@ -140,6 +139,11 @@
    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
    z-index: 1000; // Ensure the dropdown list has a higher z-index
  }
+
+ .nice-select .list::-webkit-scrollbar {
+  display: none;
+}
+
  
  .nice-select .option {
    font-size: 0.95em;
