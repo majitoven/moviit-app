@@ -49,7 +49,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
       setValue('maxPrice', values[1]);
       trigger(['minPrice', 'maxPrice']);
       handlePriceChange(values);
-    };
+   };
 
    return (
       <div className="bg-white card-box border-20">
@@ -388,7 +388,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   </div>
 
                   <PriceRange MAX={maxPrice} MIN={600} STEP={1} values={priceValue} handleChanges={handleRangeChange} />
-                  <p className={`error-message ${errors.minPrice ||  errors.maxPrice ? 'visible' : ''}`}>{String(errors.minPrice?.message || '')}</p>
+                  <p className={`error-message ${errors.minPrice || errors.maxPrice ? 'visible' : ''}`}>{String(errors.minPrice?.message || '')}</p>
                </div>
             </div>
          </div>
@@ -444,8 +444,10 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                <p className={`error-message ${errors.selectedBarrios ? 'visible' : ''}`}>{String(errors.selectedBarrios?.message || '')}</p>
             </div>
          </div>
-         <div className="col-12">
-            <MapBarrios selectedBarrios={selectedBarrios} />
+         <div className="row d-flex justify-content-center">
+            <div className="col-8">
+               <MapBarrios selectedBarrios={selectedBarrios} />
+            </div>
          </div>
       </div>
    );
