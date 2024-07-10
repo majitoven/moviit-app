@@ -10,12 +10,12 @@ interface DataType {
    }[];
 }
 
-const inner_faq_data:DataType[] = [
+const inner_faq_data: DataType[] = [
    {
       id: 1,
       id_name: "Empresa",
       title: "LA EMPRESA",
-      md_pt:true,
+      md_pt: true,
       faq: [
          {
             id: 1,
@@ -47,8 +47,8 @@ const inner_faq_data:DataType[] = [
          },
          {
             id: 5,
-            question: "Ustedes me pagan las expensas mensualmente?",
-            answer: "No. Tu deberás encargarte de pagar las expensas.",
+            question: "¿Ustedes me pagan las expensas mensualmente?",
+            answer: "No. Tú deberás encargarte de pagar las expensas.",
          },
       ]
    },
@@ -70,26 +70,26 @@ const inner_faq_data:DataType[] = [
          {
             id: 11,
             question: "De 10 - 12 meses: 1 mes de alquiler",
-            answer: " -Seña de 200 Euros (1 persona)",
+            answer: "Seña de 200 Euros (1 persona)",
          },
          {
-            id: 11,
+            id: 12,
             question: "En caso de ser más de 1 persona:",
             answer: "400 Euros de seña.",
          },
          {
-            id: 11,
+            id: 13,
             question: "Extras firmado el contrato:",
             answer: "Una vez firmado el contrato de alquiler se requiere el resto del monto total. Aplica para todos los casos.",
          },
          {
-            id: 11,
+            id: 14,
             question: "Reembolsos y/o devoluciones",
             answer: "En caso de querer abandonar el proceso, la seña de Moviit será totalmente perdida debido al trabajo realizado hasta la fecha. Aplica para todos los casos.",
          },
          {
-            id: 11,
-            question: "Cómo se abona el servicio?",
+            id: 15,
+            question: "¿Cómo se abona el servicio?",
             answer: "Mediante transferencia bancaria.",
          },
       ]
@@ -100,18 +100,18 @@ const inner_faq_data:DataType[] = [
       title: "COSTOS Y PAGOS AMUEBLAMIENTO",
       faq: [
          {
-            id: 12,
-            question: "El servicio de amueblamiento está incluido en el servicio de alquiler?",
-            answer: "No. Es un servicio aparte. ",
+            id: 16,
+            question: "¿El servicio de amueblamiento está incluido en el servicio de alquiler?",
+            answer: "No. Es un servicio aparte.",
          },
          {
-            id: 13,
-            question: "Cual el costo de este servicio extra?",
+            id: 17,
+            question: "¿Cuál es el costo de este servicio extra?",
             answer: "450 Euros. Pago por adelantado.",
          },
          {
-            id: 14,
-            question: "Que incluye el servicio?",
+            id: 18,
+            question: "¿Qué incluye el servicio?",
             answer: "Los 450 Euros incluyen: \nLimpieza de piso \nArmado y colocación \nRecibimiento y selección de muebles",
          },
       ]
@@ -119,17 +119,17 @@ const inner_faq_data:DataType[] = [
    {
       id: 5,
       id_name: "Terminos",
-      title: "TERMINOS & CONDICIONES",
+      title: "TÉRMINOS & CONDICIONES",
       faq: [
          {
-            id: 15,
-            question: "PRUEBA 1?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            id: 19,
+            question: "¿Qué datos personales recopilan y cómo los usan?",
+            answer: "Recopilamos datos personales como nombre, dirección de correo electrónico y número de teléfono para personalizar nuestros servicios y mantenerte informado. Estos datos no se comparten con terceros sin tu consentimiento.",
          },
          {
-            id: 16,
-            question: "PRUEBA 2?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            id: 20,
+            question: "¿Cómo protegen mi información personal?",
+            answer: "Utilizamos medidas de seguridad estándar de la industria, como el cifrado y firewalls, para proteger tu información personal contra accesos no autorizados.",
          },
       ]
    },
@@ -139,14 +139,9 @@ const inner_faq_data:DataType[] = [
       title: "OTROS",
       faq: [
          {
-            id: 17,
-            question: "PRUEBA: ??",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-         },
-         {
-            id: 18,
-            question: "PRUEBA: ??",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            id: 21,
+            question: "¿Pueden ayudarme con la documentación legal necesaria para alquilar un piso?",
+            answer: "Sí, te ayudamos a preparar y revisar toda la documentación legal necesaria para el proceso de alquiler.",
          },
       ]
    },
