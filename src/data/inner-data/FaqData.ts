@@ -48,7 +48,7 @@ const inner_faq_data: DataType[] = [
          {
             id: 5,
             question: "¿Ustedes me pagan las expensas mensualmente?",
-            answer: "No. Tú deberás encargarte de pagar las expensas.",
+            answer: "No. El objetivo de Moviit es conseguirte un piso luego te ponemos en contacto con la inmobiliaria o propietario de piso para que puedan asistirte durante tu estadía.",
          },
       ]
    },
