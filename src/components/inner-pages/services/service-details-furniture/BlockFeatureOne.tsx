@@ -58,7 +58,7 @@ const BlockFeatureOne = () => {
                            <h4 className="font-garamond special-title">Costo: 450 €</h4>
                            <ul className="list-style-one fs-22 color-dark style-none mt-30">
                               <li>Pago por adelantado.</li>
-                              <li>El presupuesto incluye: Limpieza de piso (50€) + Armado y colocación (200€) + Recibimiento y selección de muebles (200€)</li>
+                              <li>El presupuesto incluye: Limpieza de piso, Armado y colocación, Recibimiento y selección de muebles.</li>
                            </ul>
                            <div className="mt-40 lg-mt-40">
                               <Link href="/contact" className="btn-two">Me interesa</Link>

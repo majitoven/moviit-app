@@ -17,7 +17,7 @@ import CommonReviewForm from "../listing-details-common/CommonReviewForm"
 import thumb1 from "@/assets/images/listing/paly/01.jpg"
 import thumb2 from "@/assets/images/listing/isa/01.jpg"
 import thumb3 from "@/assets/images/listing/lu/01.jpg"
-const ammenities_data: string[] = ["Aire Cond.", "Calefacción", "Balcón", "Wifi", "Ascensor", "Luminoso", "Lavarropa"];
+const ammenities_data: string[] = ["Aire Acondicionado", "Calefacción", "Balcón", "Wifi", "Ascensor", "Luminoso", "Lavarropa"];
 import Image, { StaticImageData } from "next/image"
 
 interface DataType {
@@ -48,7 +48,7 @@ const property_data: DataType[] = [
       thumb: thumb2,
       link: '/listing_details_chamberi',
       title: "Chamberí",
-      address: "1 cuartos, 1 baño, 55mts²",
+      address: "1 cuarto, 1 baño, 55mts²",
       price: 1300,
    },
    {
@@ -57,7 +57,7 @@ const property_data: DataType[] = [
       tag: "ALQUILER",
       thumb: thumb3,
       link: '/listing_details_bernabeu',
-      title: "Bernabeu",
+      title: "Bernabéu",
       address: "3 cuartos, 1 baño, 75mts²",
       price: 1550,
    },

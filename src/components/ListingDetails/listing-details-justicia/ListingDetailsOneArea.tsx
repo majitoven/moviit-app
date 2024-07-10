@@ -14,8 +14,8 @@ import CommonSimilarProperty from "../listing-details-common/CommonSimilarProper
 import CommonProPertyScore from "../listing-details-common/CommonProPertyScore"
 import CommonLocation from "../listing-details-common/CommonLocation"
 import CommonReviewForm from "../listing-details-common/CommonReviewForm"
-const ammenities_data: string[] = ["Aire Cond.", "Wifi", "Ascensor", "Luminoso", "Lavarropa"];
-import thumb1 from "@/assets/images/listing/mati/01.jpg"
+const ammenities_data: string[] = ["Aire Acondicionado", "Wifi", "Ascensor", "Luminoso", "Lavarropa"];
+import thumb1 from "@/assets/images/listing/mati/02.jpg"
 import thumb2 from "@/assets/images/listing/isa/01.jpg"
 import thumb3 from "@/assets/images/listing/lu/01.jpg"
 import Image, { StaticImageData } from "next/image"
@@ -48,7 +48,7 @@ const property_data: DataType[] = [
       thumb: thumb2,
       link: '/listing_details_chamberi',
       title: "Chamberí",
-      address: "1 cuartos, 1 baño, 55mts²",
+      address: "1 cuarto, 1 baño, 55mts²",
       price: 1300,
    },
    {
@@ -57,7 +57,7 @@ const property_data: DataType[] = [
       tag: "ALQUILER",
       thumb: thumb3,
       link: '/listing_details_bernabeu',
-      title: "Bernabeu",
+      title: "Bernabéu",
       address: "3 cuartos, 1 baño, 75mts²",
       price: 1550,
    },

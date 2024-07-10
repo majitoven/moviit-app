@@ -15,7 +15,7 @@ import CommonProPertyScore from "../listing-details-common/CommonProPertyScore"
 import CommonLocation from "../listing-details-common/CommonLocation"
 import CommonReviewForm from "../listing-details-common/CommonReviewForm"
 const ammenities_data: string[] = ["Aire Cond.", "Calefacción", "Balcón", "Wifi", "Ascensor", "Luminoso", "Lavarropa"];
-import thumb1 from "@/assets/images/listing/mati/01.jpg"
+import thumb1 from "@/assets/images/listing/mati/02.jpg"
 import thumb2 from "@/assets/images/listing/paly/01.jpg"
 import thumb3 from "@/assets/images/listing/lu/01.jpg"
 import Image, { StaticImageData } from "next/image"
@@ -57,7 +57,7 @@ const property_data: DataType[] = [
       tag: "ALQUILER",
       thumb: thumb3,
       link: '/listing_details_bernabeu',
-      title: "Bernabeu",
+      title: "Bernabéu",
       address: "3 cuartos, 1 baño, 75mts²",
       price: 1550,
    },

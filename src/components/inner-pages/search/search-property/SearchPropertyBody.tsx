@@ -59,7 +59,7 @@ const SearchPropertyBody = () => {
         <div className="d-flex flex-column justify-content-center align-items-center mt-60">
           <h3 className="font-garamond special-title center">ES UNA BÚSQUEDA 360º EN MADRID </h3>
           <div>
-            <p className="fs-20 lh-lg mt-20 fw-normal"> Realiza la búsqueda y uno de nuestros asesores personales te enviará pronto los apartamentos y habitaciones que están disponibles para ti y se adapten a tu situación. </p>
+            <p className="fs-20 lh-lg mt-20 fw-normal"> Completa la búsqueda y uno de nuestros asesores personales te enviará pronto los apartamentos y habitaciones que están disponibles para ti y se adapten a tu situación. </p>
             <p className="fs-20 lh-lg pb-25 fw-normal"> Es muy fácil, sólo tienes que <strong>llenar el formulario</strong> :) </p>
           </div>
         </div>

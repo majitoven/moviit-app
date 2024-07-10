@@ -2,13 +2,13 @@ import Image, { StaticImageData } from "next/image";
 import Fancybox from "@/components/common/Fancybox";
 import { useState, useEffect } from "react";
 
-import bigCarousel_1 from "@/assets/images/listing/mati/01.jpg"
-import bigCarousel_2 from "@/assets/images/listing/mati/02.jpg"
+import bigCarousel_1 from "@/assets/images/listing/mati/02.jpg"
+import bigCarousel_2 from "@/assets/images/listing/mati/01.jpg"
 import bigCarousel_3 from "@/assets/images/listing/mati/03.jpg"
 import bigCarousel_4 from "@/assets/images/listing/mati/04.jpg"
 
-import smallCarousel_1 from "@/assets/images/listing/mati/01.jpg"
-import smallCarousel_2 from "@/assets/images/listing/mati/02.jpg"
+import smallCarousel_1 from "@/assets/images/listing/mati/02.jpg"
+import smallCarousel_2 from "@/assets/images/listing/mati/01.jpg"
 import smallCarousel_3 from "@/assets/images/listing/mati/03.jpg"
 import smallCarousel_4 from "@/assets/images/listing/mati/04.jpg"
 

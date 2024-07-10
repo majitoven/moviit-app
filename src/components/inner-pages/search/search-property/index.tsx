@@ -10,7 +10,7 @@ const SearchProperty = () => {
    return (
       <>
          <HeaderTwo style_1={true} style_2={false} />
-         <BreadcrumbTwo title="Búsqueda" sub_title="Encontrá tu hogar" background={`url(/assets/images/media/prueba3-transformed-copy.jpeg)`} />
+         <BreadcrumbTwo title="Búsqueda" sub_title="Encuentra tu hogar" background={`url(/assets/images/media/prueba3-transformed-copy.jpeg)`} />
          <SearchPropertyBody />
          <FooterOne style={true} />
       </>

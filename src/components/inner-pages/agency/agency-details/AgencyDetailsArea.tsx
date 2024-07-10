@@ -32,12 +32,12 @@ const agency_details_content: ContentType = {
    title_1: "Rainbow Housing",
    title_2: "Moviit Madrid",
    desc_1: "8210 Preston Rd. Inglewood",
-   desc_4: "Martina González Negreira / Agente inmobiliario",
+   desc_4: "Martina González Negreira / Personal Shopper",
    table_data: [{ table_td_1: "Location", table_td_2: "Maine, USA" }, { table_td_1: "Phone:", table_td_2: "+21 456 987 330" }, { table_td_1: "Email", table_td_2: "rainbowhousing@demo.com" }, { table_td_1: "Website:", table_td_2: "www.rainbowinc.com" },],
    table_data_2: [{ table_td_1: "Ubicación", table_td_2: "Madrid, España" }, { table_td_1: "Móvil:", table_td_2: "+34 611 877 027" }, { table_td_1: "Correo electrónico", table_td_2: "moviitmad@gmail.com" }, { table_td_1: "Perfil de instagram:", table_td_2: "@moviitt" },],
    icon: ["whatsapp", "instagram"],
    desc_2: (<>Con más de 5 años de experiencia, Moviit se especializa en conectar a jóvenes con su hogar ideal en Madrid.</>),
-   desc_3: (<> Nuestro equipo de asesores inmobiliarios, dinámico y experto, ofrece una búsqueda 360º personalizada. </>),
+   desc_3: (<> Nuestro equipo de personal shoppers, dinámico y experto, ofrece una búsqueda 360º personalizada. </>),
    desc_5: (<>Nos encargamos de encontrar habitaciones y apartamentos en las mejores zonas, ajustándonos a tus necesidades y presupuesto. Además, facilitamos el proceso de mudanza y amueblamiento, gestionando las negociaciones y documentación necesarias. </>),
 }
 
@@ -95,7 +95,7 @@ const AgencyDetailsArea = ({ style }: any) => {
                   </div>
 
                   <div className="agency-overview pb-40 mb-40 xl-mb-50">
-                     <h4 className="mb-20">Te contactarán nuestros agentes de confianza</h4>
+                     <h4 className="mb-20">Te contactarán nuestros asesores de confianza</h4>
                      <p className="fs-20 lh-lg">{desc_3}</p>
                      <p className="fs-20 lh-lg">{desc_5}</p>
                   </div>

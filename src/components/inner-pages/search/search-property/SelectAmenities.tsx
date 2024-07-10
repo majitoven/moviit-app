@@ -11,8 +11,8 @@ interface Props {
 
 const SelectAmenities: React.FC<Props> = ({ register, errors, setValue, trigger, getValues }) => {
    const amenities = [
-      "Aire Condicionado", "Calefacción", "Balcón", "Wifi", "Ascensor",
-      "Garage", "Aceptan Mascotas", "Luminoso", "Lavarropa/Lavandería"
+      "Aire Acondicionado", "Calefacción", "Balcón", "Wifi", "Ascensor",
+      "Garaje", "Aceptan Mascotas", "Luminoso", "Lavarropa/Lavandería"
    ];
 
    const handleCheckboxChange = (amenity: string) => {

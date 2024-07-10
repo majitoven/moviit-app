@@ -47,8 +47,8 @@ const inner_faq_data:DataType[] = [
          },
          {
             id: 5,
-            question: "PRUEBA: Ustedes me pagan las expensas mensualmente?",
-            answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "Ustedes me pagan las expensas mensualmente?",
+            answer: "No. Tu deberás encargarte de pagar las expensas.",
          },
       ]
    },
@@ -89,15 +89,15 @@ const inner_faq_data:DataType[] = [
          },
          {
             id: 11,
-            question: "PRUEBA: Como se abona el servicio?",
-            answer: "Transferencia????",
+            question: "Cómo se abona el servicio?",
+            answer: "Mediante transferencia bancaria.",
          },
       ]
    },
    {
       id: 4,
-      id_name: "Amoblamiento",
-      title: "COSTOS Y PAGOS AMOBLAMIENTO",
+      id_name: "Amueblamiento",
+      title: "COSTOS Y PAGOS AMUEBLAMIENTO",
       faq: [
          {
             id: 12,
@@ -112,7 +112,7 @@ const inner_faq_data:DataType[] = [
          {
             id: 14,
             question: "Que incluye el servicio?",
-            answer: "Los 450 Euros se desglosan en: \nLimpieza de piso 50 Euros \nArmado y colocación 200 Euros \nRecibimiento y selección de muebles 200 Euros",
+            answer: "Los 450 Euros incluyen: \nLimpieza de piso \nArmado y colocación \nRecibimiento y selección de muebles",
          },
       ]
    },

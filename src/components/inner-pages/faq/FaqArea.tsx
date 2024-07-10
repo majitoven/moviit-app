@@ -15,13 +15,13 @@ const FaqArea = () => {
                            <li><Link href="#Empresa">1. <span>La empresa</span></Link></li>
                            <li><Link href="#Servicios">2. <span>Servicios</span></Link></li>
                            <li><Link href="#Costos">3. <span>Costos y Pagos Alquiler</span></Link></li>
-                           <li><Link href="#Amoblamiento">4. <span>Costos y Pagos Amoblamiento</span></Link></li>
+                           <li><Link href="#Amueblamiento">4. <span>Costos y Pagos de Amueblamiento</span></Link></li>
                            <li><Link href="#Terminos">5. <span>Términos & Condiciones</span></Link></li>
                            <li><Link href="#Otros">6. <span>Otros</span></Link></li>
                         </ul>
                      </div>
                      <div className="bg-wrapper text-center mt-35">
-                        <h4 className="mb-35">No encuentras tu <br />respuesta?</h4>
+                        <h4 className="mb-35">¿No encuentras tu <br />respuesta?</h4>
                         <Link href="/contact" className="btn-five">Contactanos</Link>
                      </div>
                   </div>

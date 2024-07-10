@@ -1,4 +1,4 @@
-const amenities_data: string[] = ["Aire Cond.", "Calefacción", "Balcón", "Wifi", "Ascensor", "Garage", "Pet friendly", "Luminoso", "Lavarropa/Lavandería"];
+const amenities_data: string[] = ["Aire Acondicionado", "Calefacción", "Balcón", "Wifi", "Ascensor", "Garage", "Pet friendly", "Luminoso", "Lavarropa/Lavandería"];
 
 const CommonAmenities = ({ amenities }: { amenities: string[] }) => {
    return (

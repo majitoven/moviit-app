@@ -7,7 +7,7 @@ const FancyBanner = () => {
             <div className="row align-items-center">
                <div className="col-lg-8 m-auto text-center">
                   <div className="title-one mb-50 lg-mb-40">
-                     <h2 className="text-white fs-lg">Llegá directo a dormir.</h2>
+                     <h2 className="text-white fs-lg">Directo a dormir.</h2>
                      <p className="fs-24 text-white">Nosotros nos encargamos :) </p>
                   </div>
                   <Link href="contact" className="btn-six">Consultar</Link>

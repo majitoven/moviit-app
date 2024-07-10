@@ -80,7 +80,7 @@ const faq_data:DataType[] = [
       id: 2,
       page: "home_six",
       question: "VISIÓN",
-      answer: "Somos los ojos de nuestros clientes en Madrid. Nuestro objetivo es apoyarlos durante todo este proceso y brindarles confianza.",
+      answer: "Ser los ojos de nuestros clientes en Madrid.",
       showAnswer: false,
    },
    {
