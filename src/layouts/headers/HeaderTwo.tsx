@@ -2,7 +2,7 @@
 import NavMenu from "./Menu/NavMenu"
 import Link from "next/link"
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import UseSticky from "@/hooks/UseSticky"
 import LoginModal from "@/modals/LoginModal"
 import Offcanvas from "./Menu/Offcanvas"
@@ -19,11 +19,32 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
    const [offCanvas, setOffCanvas] = useState<boolean>(false);
    const [isSearch, setIsSearch] = useState<boolean>(false);
    const [language, setLanguage] = useState("es");
+   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
    const changeLanguage = (lang: string) => {
       setLanguage(lang);
       // Add logic to handle language change, e.g., reload page or update content
    };
+
+   const handleOutsideClick = (e: MouseEvent) => {
+      const navbarElement = document.getElementById('navbarNav');
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarElement && !navbarElement.contains(e.target as Node) && !navbarToggler?.contains(e.target as Node)) {
+         setNavbarOpen(false);
+      }
+   };
+
+   useEffect(() => {
+      if (navbarOpen) {
+         document.addEventListener('click', handleOutsideClick);
+      } else {
+         document.removeEventListener('click', handleOutsideClick);
+      }
+
+      return () => {
+         document.removeEventListener('click', handleOutsideClick);
+      };
+   }, [navbarOpen]);
 
    return (
       <>
@@ -39,11 +60,11 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
 
                      <nav className="navbar navbar-expand-lg p0 ms-lg-5 order-lg-2">
                         <button className="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
-                           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                           aria-label="Toggle navigation">
+                           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded={navbarOpen ? "true" : "false"}
+                           aria-label="Toggle navigation" onClick={() => setNavbarOpen(!navbarOpen)}>
                            <span></span>
                         </button>
-                        <div className={`collapse navbar-collapse ${style_2 ? "ms-xl-5" : ""}`} id="navbarNav">
+                        <div className={`collapse navbar-collapse ${style_2 ? "ms-xl-5" : ""} ${navbarOpen ? "show" : ""}`} id="navbarNav">
                            <NavMenu />
                         </div>
                      </nav>
@@ -71,8 +92,15 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
                </div>
             </div>
          </div>
-
-
+         {navbarOpen && <div style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'rgba(0, 0, 0, 0.5)',
+            zIndex: 998
+         }} onClick={() => setNavbarOpen(false)} />}
 
          <Offcanvas offCanvas={offCanvas} setOffCanvas={setOffCanvas} />
          <LoginModal />
