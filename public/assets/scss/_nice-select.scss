@@ -24,8 +24,7 @@
    user-select: none;
    white-space: nowrap;
    width: auto;
-   z-index: 1000;
-   // Add these styles
+   z-index: 10; // Increase z-index for the container
    .current {
      white-space: nowrap;
      overflow: hidden;
@@ -33,9 +32,9 @@
      display: block;
      width: 100%;
    }
-}
-
-.nice-select:after {
+ }
+ 
+ .nice-select:after {
    border-bottom: 1px solid #000;
    border-right: 1px solid #000;
    content: '';
@@ -55,67 +54,68 @@
    -webkit-transition: all 0.15s ease-in-out;
    transition: all 0.15s ease-in-out;
    width: 7px;
-}
-
-.nice-select.open:after {
+ }
+ 
+ .nice-select.open:after {
    -webkit-transform: rotate(-135deg);
    -ms-transform: rotate(-135deg);
    transform: rotate(-135deg);
-}
-
-.nice-select.open .list {
+ }
+ 
+ .nice-select.open .list {
    opacity: 1;
    pointer-events: auto;
    -webkit-transform: scale(1) translateY(0);
    -ms-transform: scale(1) translateY(0);
    transform: scale(1) translateY(0);
-}
-
-.nice-select.disabled {
+   z-index: 1000; // Ensure the dropdown list has a higher z-index
+ }
+ 
+ .nice-select.disabled {
    border-color: #ededed;
    color: #999;
    pointer-events: none;
-}
-
-.nice-select.disabled:after {
+ }
+ 
+ .nice-select.disabled:after {
    border-color: #cccccc;
-}
-
-.nice-select.wide {
+ }
+ 
+ .nice-select.wide {
    width: 100%;
-}
-
-.nice-select.wide .list {
+ }
+ 
+ .nice-select.wide .list {
    left: 0 !important;
    right: 0 !important;
-}
-
-.nice-select.right {
+ }
+ 
+ .nice-select.right {
    float: right;
-}
-
-.nice-select.right .list {
+ }
+ 
+ .nice-select.right .list {
    left: auto;
    right: 0;
-}
-
-.nice-select.small {
+ }
+ 
+ .nice-select.small {
    font-size: 12px;
    height: 36px;
    line-height: 34px;
-}
-
-.nice-select.small:after {
+ }
+ 
+ .nice-select.small:after {
    height: 4px;
    width: 4px;
-}
-
-.nice-select.small .option {
+ }
+ 
+ .nice-select.small .option {
    line-height: 34px;
    min-height: 34px;
-}
-
-.nice-select .list {
+ }
+ 
+ .nice-select .list {
    background-color: #fff;
    border-radius: 0 0 5px 5px;
    box-shadow: 0 13px 35px -12px rgb(35 35 35 / 10%);
@@ -123,7 +123,7 @@
    opacity: 0;
    overflow-y: auto;
    max-height: 250px;
-   border: 1px solid rgba($color: #000000, $alpha: 0.05);
+   border: 1px solid rgba(0, 0, 0, 0.05);
    padding: 5px 0 15px;
    pointer-events: none;
    position: absolute;
@@ -138,10 +138,10 @@
    transform: scale(0.75) translateY(-21px);
    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-   z-index: 9;
-}
-
-.nice-select .option {
+   z-index: 1000; // Ensure the dropdown list has a higher z-index
+ }
+ 
+ .nice-select .option {
    font-size: 0.95em;
    cursor: pointer;
    font-weight: 400;
@@ -152,25 +152,26 @@
    text-align: left;
    -webkit-transition: all 0.2s;
    transition: all 0.2s;
-}
-
-.nice-select .option:hover,
-.nice-select .option.focus,
-.nice-select .option.selected.focus {
+ }
+ 
+ .nice-select .option:hover,
+ .nice-select .option.focus,
+ .nice-select .option.selected.focus {
    color: $color-one;
-   background: rgba($color: $color-one, $alpha: 0.03);
-}
-
-.nice-select .option.disabled {
+   background: rgba($color-one, 0.03);
+ }
+ 
+ .nice-select .option.disabled {
    background-color: transparent;
    color: #999;
    cursor: default;
-}
-
-.no-csspointerevents .nice-select .list {
+ }
+ 
+ .no-csspointerevents .nice-select .list {
    display: none;
-}
-
-.no-csspointerevents .nice-select.open .list {
+ }
+ 
+ .no-csspointerevents .nice-select.open .list {
    display: block;
-}
+ }
+ 

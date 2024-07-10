@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useCallback, useRef, FC, ChangeEvent, useEffect } from "react";
 import { useClickAway } from "react-use";
 
@@ -32,7 +32,6 @@ const NiceSelect: FC<NiceSelectProps> = ({
   const ref = useRef<HTMLDivElement | null>(null);
 
   useClickAway(ref, onClose);
-
 
   useEffect(() => {
     const def = options[defaultCurrent];
