@@ -1,9 +1,10 @@
-"use client"
+"use client";
 import React from 'react';
 import { useForm, UseFormGetValues } from 'react-hook-form';
 import Overview from "./Overview";
 import ListingDetails from "./ListingDetails";
 import SelectAmenities from "./SelectAmenities";
+import { toast } from 'react-toastify';
 
 export interface FormValues {
   fullName: string;
@@ -26,9 +27,25 @@ export interface FormValues {
 const SearchPropertyBody = () => {
   const { register, handleSubmit, reset, formState: { errors }, setValue, trigger, getValues } = useForm<FormValues>();
 
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
-    // Handle the form submission here
+  const onSubmit = async (data: FormValues) => {
+    try {
+      const response = await fetch('/api/sendFullSearch', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
+        reset();
+      } else {
+        toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
+      }
+    } catch (error) {
+      toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
+    }
   };
 
   const handleCancel = () => {

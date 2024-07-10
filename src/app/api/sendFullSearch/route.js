@@ -15,7 +15,23 @@ oauth2Client.setCredentials({
 });
 
 export async function POST(request) {
-  const { email, fullName, propertyType, duration, minPrice, maxPrice, selectedBarrios } = await request.json();
+  const {
+    fullName,
+    country,
+    propertyType,
+    duration,
+    minPrice,
+    maxPrice,
+    selectedBarrios,
+    bedrooms,
+    bathrooms,
+    furnished,
+    interiorExterior,
+    minSqFeet,
+    maxSqFeet,
+    amenities,
+    description
+  } = await request.json();
 
   try {
     const accessToken = await oauth2Client.getAccessToken();
@@ -35,15 +51,23 @@ export async function POST(request) {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'moviitmad@gmail.com',
-      subject: 'Web Moviit: Formulario de search rápido',
+      subject: 'New Property Search Submission',
       text: `
         Nombre completo: ${fullName}
-        Email: ${email}
+        País: ${country}
         Tipo de propiedad: ${propertyType}
         Duración: ${duration}
         Min precio: ${minPrice}
         Max precio: ${maxPrice}
         Barrios: ${selectedBarrios.join(', ')}
+        Habitaciones: ${bedrooms}
+        Baños: ${bathrooms}
+        Amueblado: ${furnished}
+        Interior/Exterior: ${interiorExterior}
+        Min metros cuadrados: ${minSqFeet}
+        Max metros cuadrados: ${maxSqFeet}
+        Amenities: ${Object.entries(amenities).filter(([key, value]) => value).map(([key]) => key).join(', ')}
+        Descripción: ${description}
       `,
     };
 
