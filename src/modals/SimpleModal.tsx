@@ -45,33 +45,29 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
       selectedBarrios,
     };
 
-    console.log(data, 'FINAL');
-    toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
+    try {
+      const response = await fetch('/api/sendMiniSearch', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-    // Clear the form data
-    setEmail("");
-    setFullName("");
-    setErrors({ email: false, fullName: false });
-    handleClose();
+      if (response.ok) {
+        toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
 
-    // try {
-    //   // Send data to the external service
-    //   const response = await fetch('https://external-service.com/api/send', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(data),
-    //   });
-
-    //   if (response.ok) {
-    //     console.log('Data sent successfully!');
-    //   } else {
-    //     console.error('Failed to send data');
-    //   }
-    // } catch (error) {
-    //   console.error('Error sending data:', error);
-    // }
+        // Clear the form data
+        setEmail("");
+        setFullName("");
+        setErrors({ email: false, fullName: false });
+        handleClose();
+      } else {
+        toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
+      }
+    } catch (error) {
+      toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
+    }
   };
 
   return (
