@@ -32,13 +32,24 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
 
    const handleMinPriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const newValue = parseInt(e.target.value, 10);
+      setValue('minPrice', newValue);
+      trigger('minPrice');
       handlePriceChange([newValue, priceValue[1]]);
    };
 
    const handleMaxPriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const newValue = parseInt(e.target.value, 10);
+      setValue('maxPrice', newValue);
+      trigger('maxPrice');
       handlePriceChange([priceValue[0], newValue]);
    };
+
+   const handleRangeChange = (values: number[]) => {
+      setValue('minPrice', values[0]);
+      setValue('maxPrice', values[1]);
+      trigger(['minPrice', 'maxPrice']);
+      handlePriceChange(values);
+    };
 
    return (
       <div className="bg-white card-box border-20">
@@ -376,7 +387,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                      </div>
                   </div>
 
-                  <PriceRange MAX={maxPrice} MIN={600} STEP={1} values={priceValue} handleChanges={handlePriceChange} />
+                  <PriceRange MAX={maxPrice} MIN={600} STEP={1} values={priceValue} handleChanges={handleRangeChange} />
                   <p className={`error-message ${errors.minPrice ||  errors.maxPrice ? 'visible' : ''}`}>{String(errors.minPrice?.message || '')}</p>
                </div>
             </div>

@@ -22,6 +22,27 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
     page,
   });
 
+  const handleMinSqFeetChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = parseInt(e.target.value, 10);
+    setValue('minSqFeet', newValue);
+    trigger('minSqFeet');
+    handleSqFeetChange([newValue, sqFeetValue[1]]);
+ };
+
+ const handleMaxSqFeetChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = parseInt(e.target.value, 10);
+    setValue('maxSqFeet', newValue);
+    trigger('maxSqFeet');
+    handleSqFeetChange([sqFeetValue[0], newValue]);
+ };
+
+ const handleRangeChange = (values: number[]) => {
+    setValue('minSqFeet', values[0]);
+    setValue('maxSqFeet', values[1]);
+    trigger(['minSqFeet', 'maxSqFeet']);
+    handleSqFeetChange(values);
+  };
+
   return (
     <div className="bg-white card-box border-20 mt-40">
       <h4 className="dash-title-three">Detalles del inmueble</h4>
@@ -121,8 +142,10 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                     style={{ height: "30px" }}
                     type="number"
                     className="input-min"
+                    value={sqFeetValue[0]}
                     {...register("minSqFeet")}
-                    onChange={(e) => setValue('minSqFeet', parseInt(e.target.value))}
+                    onChange={handleMinSqFeetChange}
+
                   />
                 </div>
                 <div className="divider-line"></div>
@@ -131,8 +154,9 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                     style={{ height: "30px" }}
                     type="number"
                     className="input-max"
+                    value={sqFeetValue[1]}
                     {...register("maxSqFeet")}
-                    onChange={(e) => setValue('maxSqFeet', parseInt(e.target.value))}
+                    onChange={handleMaxSqFeetChange}
                   />
                 </div>
                 <div className="currency ps-1">m²</div>
@@ -142,7 +166,7 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
                 MIN={40}
                 STEP={1}
                 values={sqFeetValue}
-                handleChanges={handleSqFeetChange}
+                handleChanges={handleRangeChange}
               />
             </div>
             <p className={`error-message ${errors.minSqFeet || errors.maxSqFeet ? 'visible' : ''}`}>{String(errors.minSqFeet?.message || '')}</p>
