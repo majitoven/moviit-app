@@ -30,11 +30,26 @@ const schema = yup
 const AgencyFormTwo = () => {
 
    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
-   const onSubmit = (data: FormData) => {
-      toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
-      reset();
-   };
-
+   const onSubmit = async (data: FormData) => {
+      try {
+        const response = await fetch('/api/sendEmail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+  
+        if (response.ok) {
+          toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
+          reset();
+        } else {
+          toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
+        }
+      } catch (error) {
+        toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
+      }
+    };
    return (
       <form onSubmit={handleSubmit(onSubmit)}>
          <div className="input-box-three mb-25">
