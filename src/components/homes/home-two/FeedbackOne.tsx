@@ -7,7 +7,7 @@ import feedbackShape_2 from "@/assets/images/shape/shape_15.svg";
 
 const Feedback = () => {
    return (
-      <div className="feedback-section-two md-pb-40 position-relative z-1">
+      <div className="feedback-section-two md-pb-40 md-mt-40 position-relative z-1">
          <div className="container">
             <div className="row">
                <div className="col-lg-8 order-lg-last">

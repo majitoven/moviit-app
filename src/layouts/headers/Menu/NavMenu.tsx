@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
 
-import logo from "@/assets/images/logo/logo_01.svg";
+import logo from "@/assets/images/logo/moviit-logo.png";
 import spainFlag from "@/assets/images/icon/spain.png";
 import ukFlag from "@/assets/images/icon/united-kingdom.png";
 
@@ -36,14 +36,13 @@ const NavMenu = () => {
         // Add logic to handle language change, e.g., reload page or update content
     };
 
-
     return (
         <div className="navbar-container">
             <ul className="navbar-nav align-items-lg-center">
                 <li className="d-block d-lg-none">
                     <div className="logo">
                         <Link href="/" className="d-block">
-                            <Image src={logo} alt="" />
+                            <Image src={logo} alt="" style={{maxWidth: '40%'}}/>
                         </Link>
                     </div>
                 </li>
@@ -84,7 +83,7 @@ const NavMenu = () => {
                     </li>
                 ))}
             </ul>
-            <div className="language-switcher">
+            <div className="language-switcher d-none d-lg-block">
                 <div className="dropdown">
                     <a className="nav-link dropdown-toggle" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{
                         display: 'flex',
@@ -104,7 +103,6 @@ const NavMenu = () => {
                     </ul>
                 </div>
             </div>
-
         </div>
     );
 };

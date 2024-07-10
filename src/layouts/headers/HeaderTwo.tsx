@@ -11,11 +11,19 @@ import HeaderSearchbar from "./Menu/HeaderSearchbar"
 import logo_1 from "@/assets/images/logo/logo_02.svg";
 import logo_2 from "@/assets/images/logo/moviit-logo.png";
 import logo_3 from "@/assets/images/logo/logo_06.svg";
+import spainFlag from "@/assets/images/icon/spain.png";
+import ukFlag from "@/assets/images/icon/united-kingdom.png";
 
 const HeaderTwo = ({ style_1, style_2 }: any) => {
    const { sticky } = UseSticky();
    const [offCanvas, setOffCanvas] = useState<boolean>(false);
    const [isSearch, setIsSearch] = useState<boolean>(false);
+   const [language, setLanguage] = useState("es");
+
+   const changeLanguage = (lang: string) => {
+      setLanguage(lang);
+      // Add logic to handle language change, e.g., reload page or update content
+   };
 
    return (
       <>
@@ -25,7 +33,7 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
                   <div className="d-flex align-items-center">
                      <div className="logo-moviit order-lg-0">
                         <Link href="/" className="d-flex align-items-center">
-                           <Image src={style_2 ? logo_3 : style_1 ? logo_2 : logo_1} alt="" />
+                           <Image src={style_2 ? logo_3 : style_1 ? logo_2 : logo_2} alt="" />
                         </Link>
                      </div>
 
@@ -39,10 +47,32 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
                            <NavMenu />
                         </div>
                      </nav>
+                     <div className="language-switcher d-block d-lg-none">
+                        <div className="dropdown">
+                           <a className="nav-link dropdown-toggle" id="languageDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{
+                              display: 'flex',
+                              alignItems: 'center'
+                           }}>
+                              <Image src={language === "en" ? ukFlag : spainFlag} alt="language flag" width={24} height={24} />
+                           </a>
+                           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
+                              <li><a className="dropdown-item" onClick={() => changeLanguage("en")} style={{
+                                 display: 'flex',
+                                 alignItems: 'center'
+                              }}><Image src={ukFlag} alt="English" width={24} height={24} style={{ marginRight: '10px' }} /> English</a></li>
+                              <li><a className="dropdown-item" onClick={() => changeLanguage("es")} style={{
+                                 display: 'flex',
+                                 alignItems: 'center'
+                              }}><Image src={spainFlag} alt="Spanish" width={24} height={24} style={{ marginRight: '10px' }} /> Español</a></li>
+                           </ul>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
+
+
 
          <Offcanvas offCanvas={offCanvas} setOffCanvas={setOffCanvas} />
          <LoginModal />
@@ -51,4 +81,4 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
    )
 }
 
-export default HeaderTwo
+export default HeaderTwo;
