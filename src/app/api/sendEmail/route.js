@@ -34,8 +34,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'moviitmad@gmail.com',
-      cc: 'mventura@loopstudio.dev',
+      to: 'mventura@loopstudio.dev',
       subject: 'Web Moviit: Formulario de contacto',
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     };
