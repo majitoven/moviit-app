@@ -42,7 +42,7 @@ const NavMenu = () => {
                 <li className="d-block d-lg-none">
                     <div className="logo">
                         <Link href="/" className="d-block">
-                            <Image src={logo} alt="" style={{maxWidth: '40%'}}/>
+                            <Image src={logo} alt="" style={{ maxWidth: '40%' }} />
                         </Link>
                     </div>
                 </li>
@@ -92,14 +92,14 @@ const NavMenu = () => {
                         <Image src={language === "en" ? ukFlag : spainFlag} alt="language flag" width={24} height={24} />
                     </a>
                     <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                        <li><a className="dropdown-item" onClick={() => changeLanguage("en")} style={{
-                            display: 'flex',
-                            alignItems: 'center'
-                        }}><Image src={ukFlag} alt="English" width={24} height={24} style={{ marginRight: '10px' }} /> English</a></li>
                         <li><a className="dropdown-item" onClick={() => changeLanguage("es")} style={{
                             display: 'flex',
                             alignItems: 'center'
                         }}><Image src={spainFlag} alt="Spanish" width={24} height={24} style={{ marginRight: '10px' }} /> Español</a></li>
+                        <li><a className="dropdown-item" onClick={() => changeLanguage("en")} style={{
+                            display: 'flex',
+                            alignItems: 'center'
+                        }}><Image src={ukFlag} alt="English" width={24} height={24} style={{ marginRight: '10px' }} /> English</a></li>
                     </ul>
                 </div>
             </div>
