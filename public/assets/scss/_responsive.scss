@@ -587,6 +587,8 @@
  
  /*Grid sm Start*/
  @media (max-width: 767px) {
+   .special-title-mobile { font-size: 30px !important;}
+   .accordion-item-mobile { margin-top: 30px !important;}
    .special-custom-form { background: #ffffff !important;}
    .feedback-block-one blockquote {margin: 20px 0 30px;}
    .block-feature-two .block-one .card-box {top:auto; bottom: 0; min-width: 60%;}

@@ -6,9 +6,9 @@ const FaqThree = () => {
    return (
       <>
          {faq_data.filter((items) => items.page === "home_six").map((item) => (
-            <div key={item.id} className="accordion-item">
+            <div key={item.id} className="accordion-item accordion-item-mobile">
                <h2 className="accordion-header">
-                  <div style={{fontSize: '40px'}} className={`accordion-button-special font-garamond special-title`}
+                  <div style={{fontSize: '40px'}} className={`accordion-button-special font-garamond special-title special-title-mobile`}
                 >
                      {item.question}
                   </div>
