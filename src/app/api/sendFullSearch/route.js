@@ -51,7 +51,7 @@ export async function POST(request) {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'moviitmad@gmail.com',
-      subject: 'New Property Search Submission',
+      subject: 'Web Moviit: Formulario de search completo',
       text: `
         Nombre completo: ${fullName}
         País: ${country}
