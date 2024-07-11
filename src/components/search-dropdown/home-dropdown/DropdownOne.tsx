@@ -95,8 +95,8 @@ const DropdownOne = ({ style }: any) => {
               <NiceSelect
                 className={`nice-select ${style ? "fw-normal" : ""}`}
                 options={[
-                  { value: "apartments", text: "Alquilar un apartamento" },
-                  { value: "rooms", text: "Alquilar una habitación" },
+                  { value: "Apartamento", text: "Alquilar un apartamento" },
+                  { value: "Habitación", text: "Alquilar una habitación" },
                 ]}
                 defaultCurrent={0}
                 onChange={(e) => {
@@ -169,9 +169,9 @@ const DropdownOne = ({ style }: any) => {
               <NiceSelect
                 className={`nice-select ${style ? "fw-normal" : ""}`}
                 options={[
-                  { value: "3-6 months", text: "3-6 meses" },
-                  { value: "7-9 months", text: "7 - 9 meses" },
-                  { value: "10-12 months", text: "10 - 12 meses" },
+                  { value: "3-6 meses", text: "3-6 meses" },
+                  { value: "7-9 meses", text: "7 - 9 meses" },
+                  { value: "10-12 meses", text: "10 - 12 meses" },
                 ]}
                 defaultCurrent={0}
                 onChange={(e) => {

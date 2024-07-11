@@ -324,8 +324,8 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                      className="nice-select"
                      placeholder="Seleccione una opción"
                      options={[
-                        { value: "apartamento", text: "Alquilar un apartamento" },
-                        { value: "habitación", text: "Alquilar una habitación" },
+                        { value: "Apartamento", text: "Alquilar un apartamento" },
+                        { value: "Habitación", text: "Alquilar una habitación" },
                      ]}
                      {...register("propertyType", { required: "Este campo es obligatorio" })}
                      onChange={(e) => {
@@ -344,9 +344,9 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                      placeholder="Seleccione duración"
                      className="nice-select"
                      options={[
-                        { value: "3-6", text: "3-6 meses" },
-                        { value: "7-9", text: "7 - 9 meses" },
-                        { value: "10-12", text: "10 - 12 meses" },
+                        { value: "3-6 meses", text: "3-6 meses" },
+                        { value: "7-9 meses", text: "7 - 9 meses" },
+                        { value: "10-12 meses", text: "10 - 12 meses" },
                      ]}
                      {...register("duration", { required: "Este campo es obligatorio" })}
                      onChange={(e) => {
