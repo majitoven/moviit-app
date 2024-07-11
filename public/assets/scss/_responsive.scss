@@ -318,7 +318,7 @@
    .inner-banner .theme-breadcrumb li {font-size: 16px;}
    .inner-banner .theme-breadcrumb.bottom-line {padding-bottom: 3px;}
    .block-feature-two .block-two .bg-wrapper .top-line {margin-top: 40px; padding-top: 45px;}
-   .inner-banner-three {margin: 20px 12px 0;}
+   .inner-banner-three {margin: 100px 12px 0;}
    .inner-banner-three .bg-wrapper {border-radius: 20px;}
    .block-feature-sixteen {margin: 0 12px; border-radius: 20px;}
    .inner-banner-two .sub-heading {padding-left: 0;}
@@ -587,6 +587,7 @@
  
  /*Grid sm Start*/
  @media (max-width: 767px) {
+  .inner-banner-three {margin: 20px 12px 0;}
    .special-title-mobile { font-size: 30px !important;}
    .accordion-item-mobile { margin-top: 30px !important;}
    .special-custom-form { background: #ffffff !important;}
