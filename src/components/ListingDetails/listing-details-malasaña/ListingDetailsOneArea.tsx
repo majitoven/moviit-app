@@ -67,7 +67,7 @@ const ListingDetailsOneArea = () => {
    const selectHandler = (e: any) => { };
 
    return (
-      <div className="listing-details-one theme-details-one pt-100 pl-40 pr-40 lg-pt-150 pb-150 xl-pb-120">
+      <div className="listing-details-one theme-details-one pt-100 pl-40 pr-40 lg-pt-150 pb-150 xl-pb-120 md-pt-100">
          <div className="container">
             <CommonBanner />
             <MediaGallery />

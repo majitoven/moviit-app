@@ -53,7 +53,7 @@ const SearchPropertyBody = () => {
   };
 
   return (
-    <div className="search-body mt-40 xl-mt-100 xl-mb-100 md-mt-40 md-mb-40 md-pt-40">
+    <div className="search-body mt-40 xl-mt-100 xl-mb-100 md-mt-20 md-mb-40 md-pt-40">
       <div className="container">
         <h3>Prontos, listos... a buscar tu hogar.</h3>
         <div className="d-flex flex-column justify-content-center align-items-center mt-60">

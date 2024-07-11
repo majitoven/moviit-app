@@ -67,7 +67,7 @@ const { title_1, title_2, title_3, desc_1, desc_2, desc_3, desc_4, service_featu
 
 const ServiceDetailsArea = () => {
    return (
-      <div className="service-details mt-120 xl-mt-100 mb-100 xl-mb-100 pl-40 pr-40">
+      <div className="service-details mt-120 xl-mt-100 mb-100 xl-mb-100 pl-40 pr-40 md-mt-60">
          <div className="container">
             <div className="row">
                <div className="col-lg-8">

@@ -8,7 +8,7 @@ import featureImg from "@/assets/images/shape/eye.svg"
 
 const BLockFeatureOne = () => {
    return (
-      <div className="block-feature-fifteen mt-120 xl-mt-100 mb-140 xl-mb-80">
+      <div className="block-feature-fifteen mt-120 xl-mt-100 mb-140 xl-mb-80 md-mt-60">
          <div className="container">
             <div className="row gx-xl-5">
                <div className="col-xl-6 col-lg-7 order-lg-last wow fadeInRight">

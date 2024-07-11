@@ -48,7 +48,7 @@ const AgencyDetailsArea = ({ style }: any) => {
    const selectHandler = (e: any) => { };
 
    return (
-      <div className="agency-details theme-details-one mt-40 xl-mt-100 xl-pb-100 pl-40 pr-40">
+      <div className="agency-details theme-details-one mt-40 xl-mt-100 xl-pb-100 pl-40 pr-40 md-mt-60">
          <div className="container">
             <div className="row">
                <div className="col-lg-8">
@@ -94,7 +94,7 @@ const AgencyDetailsArea = ({ style }: any) => {
                      </div>
                   </div>
 
-                  <div className="agency-overview pb-40 mb-40 xl-mb-50">
+                  <div className="agency-overview pb-40 mb-40 xl-mb-50 sm-mb-10">
                      <h4 className="mb-20">Te contactarán nuestros asesores de confianza</h4>
                      <p className="fs-20 lh-lg">{desc_3}</p>
                      <p className="fs-20 lh-lg">{desc_5}</p>

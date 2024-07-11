@@ -5,7 +5,7 @@ import Link from "next/link"
 const FaqArea = () => {
 
    return (
-      <div className="faq-section-two mt-40 xl-mt-100 mb-150 xl-mb-100">
+      <div className="faq-section-two mt-40 xl-mt-100 mb-150 xl-mb-100 md-mt-60">
          <div className="container">
             <div className="row">
                <div className="col-lg-4 wow fadeInLeft">
