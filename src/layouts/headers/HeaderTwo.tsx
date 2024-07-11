@@ -1,6 +1,7 @@
 "use client"
 import NavMenu from "./Menu/NavMenu"
-import Link from "next/link"
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import UseSticky from "@/hooks/UseSticky"
@@ -15,16 +16,27 @@ import spainFlag from "@/assets/images/icon/spain.png";
 import ukFlag from "@/assets/images/icon/united-kingdom.png";
 
 const HeaderTwo = ({ style_1, style_2 }: any) => {
+   const pathname = usePathname();
+   const currentRoute = usePathname();
    const { sticky } = UseSticky();
    const [offCanvas, setOffCanvas] = useState<boolean>(false);
    const [isSearch, setIsSearch] = useState<boolean>(false);
    const [language, setLanguage] = useState("es");
    const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
+   const router = useRouter();
+
 
    const changeLanguage = (lang: string) => {
       setLanguage(lang);
-      // Add logic to handle language change, e.g., reload page or update content
-   };
+      if (typeof window !== 'undefined') {
+          if (lang === "es") {
+              router.push("/");
+          } else {
+              router.push("/en");
+          }
+      }
+  };
+
 
    const handleOutsideClick = (e: MouseEvent) => {
       const navbarElement = document.getElementById('navbarNav');

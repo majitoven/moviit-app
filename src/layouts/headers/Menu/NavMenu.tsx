@@ -1,7 +1,7 @@
 "use client";
 import menu_data from "@/data/home-data/MenuData";
-import Link from "next/link.js";
-import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -14,6 +14,7 @@ const NavMenu = () => {
     const currentRoute = usePathname();
     const [navTitle, setNavTitle] = useState("");
     const [language, setLanguage] = useState("es");
+    const router = useRouter();
 
     const isMenuItemActive = (menuLink: string) => {
         return currentRoute === menuLink;
@@ -33,7 +34,13 @@ const NavMenu = () => {
 
     const changeLanguage = (lang: string) => {
         setLanguage(lang);
-        // Add logic to handle language change, e.g., reload page or update content
+        if (typeof window !== 'undefined') {
+            if (lang === "es") {
+                router.push("/");
+            } else {
+                router.push("/en");
+            }
+        }
     };
 
     return (
