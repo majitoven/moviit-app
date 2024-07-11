@@ -38,7 +38,7 @@ const BLockFeatureFour = () => {
                            value={whatsAppNumber}
                            onChange={(e) => setWhatsAppNumber(e.target.value.replace(/\D/g, ''))}  // Accept only digits
                         />
-                        <button type="submit">Contactar</button>
+                        <button type="submit">Enviar</button>
                      </form>
                      <div className="fs-16 mt-10 opacity-75">*También puedes <Link href="/contact" className="fst-italic color-dark text-decoration-underline">rellenar el formulario completo y nos contactaremos.</Link></div>
                   </div>

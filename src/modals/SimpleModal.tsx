@@ -34,7 +34,6 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
       return;
     }
 
-    // Construct the data object to send
     const data = {
       email,
       fullName,
@@ -57,7 +56,6 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
       if (response.ok) {
         toast.success("Gracias por comunicarte! Te contactaremos a la brevedad.", { position: "top-center" });
 
-        // Clear the form data
         setEmail("");
         setFullName("");
         setErrors({ email: false, fullName: false });
@@ -107,7 +105,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
               </form>
             </div>
             <div className="modal-footer">
-              <button className={`fw-500 tran3s "text-uppercase search-btn mb-30`} onClick={handleSendData}>
+              <button className={`fw-500 tran3s text-uppercase search-btn mb-30`} onClick={handleSendData}>
                 Solicitar información
               </button>
             </div>
@@ -131,11 +129,16 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
           background: white;
           padding: 20px;
           border-radius: 8px;
+          width: 90%;
           max-width: 500px;
-          width: 100%;
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
           position: relative;
           z-index: 1000000000001 !important; /* Ensure this is higher than other elements on your page */
+        }
+        @media (min-width: 768px) {
+          .modal-content {
+            max-width: 370px;
+          }
         }
         .modal-header {
           display: flex;

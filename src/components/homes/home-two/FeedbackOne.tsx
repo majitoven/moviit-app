@@ -29,13 +29,13 @@ const Feedback = () => {
                         <div className="col-lg-12 col-md-6">
                            <div className="counter-block-two mb-85 xl-mb-50 md-mb-40">
                               <div className="main-count font-garamond fw-500"><span className="counter"><Count number={50} /></span>+</div>
-                              <p className="fs-22 fw-400 mt-5">Pisos/habitaciones alquilados.</p>
+                              <p className="fs-22 fw-500 mt-5">Pisos/habitaciones alquilados.</p>
                            </div>
                         </div>
                         <div className="col-lg-12 col-md-6">
                            <div className="counter-block-two md-mb-40">
                               <div className="main-count font-garamond fw-500"><span className="counter"><Count number={120} /></span>+</div>
-                              <p className="fs-22 fw-400 m0">Clientes contentos.</p>
+                              <p className="fs-22 fw-500 m0">Clientes contentos.</p>
                            </div>
                         </div>
                      </div>
