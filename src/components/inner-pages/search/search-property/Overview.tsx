@@ -445,7 +445,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
             </div>
          </div>
          <div className="row d-flex justify-content-center">
-            <div className="col-8">
+            <div className="col-md-8 col-sm-12">
                <MapBarrios selectedBarrios={selectedBarrios} />
             </div>
          </div>

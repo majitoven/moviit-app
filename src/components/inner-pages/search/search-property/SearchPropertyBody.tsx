@@ -53,7 +53,7 @@ const SearchPropertyBody = () => {
   };
 
   return (
-    <div className="search-body mt-40 xl-mt-100 xl-mb-100">
+    <div className="search-body mt-40 xl-mt-100 xl-mb-100 md-mt-40 md-mb-40 md-pt-40">
       <div className="container">
         <h3>Prontos, listos... a buscar tu hogar.</h3>
         <div className="d-flex flex-column justify-content-center align-items-center mt-60">
@@ -64,7 +64,7 @@ const SearchPropertyBody = () => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} style={{ background: '#ccf4f475', padding: '50px', borderRadius: '16px' }}>
+        <form onSubmit={handleSubmit(onSubmit)} style={{ background: '#ccf4f475', padding: '50px', borderRadius: '16px' }} className="special-custom-form md-p0">
           <Overview register={register} errors={errors} setValue={setValue} trigger={trigger} />
           <ListingDetails register={register} errors={errors} setValue={setValue} trigger={trigger} />
           <SelectAmenities register={register} errors={errors} setValue={setValue} trigger={trigger} getValues={getValues} />

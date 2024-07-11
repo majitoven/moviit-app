@@ -7,7 +7,7 @@ import fancyShape_2 from "@/assets/images/shape/shape_50.svg"
 
 const FancyBanner = ({ style }: any) => {
    return (
-      <div className="fancy-banner-eight wow fadeInUp xl-mt-120">
+      <div className="fancy-banner-eight wow fadeInUp xl-mt-120 md-mt-40 md-mb-40">
          <div className="container container-large">
             <div className={`bg-wrapper bg-pink-two overflow-hidden position-relative z-1 ${style ? "border-30" : ""}`}>
                <div className="row align-items-center">

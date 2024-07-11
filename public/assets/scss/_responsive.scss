@@ -429,7 +429,7 @@
    .fancy-banner-five .shape_01,.feedback-section-four .shape_02,
    .block-feature-nine.image-bg:before,.feedback-section-five .bg-wrapper::before,
    .hero-banner-five .media-wrapper {display: none !important;}
-   .feedback-section-two .main-content {padding: 80px 0 50px;}
+   .feedback-section-two .main-content {padding: 80px 0 20px;}
    .feedback-block-two blockquote {font-size: 45px; line-height: 1.25em;}
    .counter-block-two .main-count {font-size: 60px; margin-bottom: 0;}
    .feedback-section-two .bg-wrapper {padding: 40px 20px 0;}
@@ -587,6 +587,7 @@
  
  /*Grid sm Start*/
  @media (max-width: 767px) {
+   .special-custom-form { background: #ffffff !important;}
    .feedback-block-one blockquote {margin: 20px 0 30px;}
    .block-feature-two .block-one .card-box {top:auto; bottom: 0; min-width: 60%;}
    .block-feature-two .block-two {border-radius: 30px; margin-top: 40px;}
@@ -645,7 +646,7 @@
    .block-feature-four .img-gallery {padding: 25px 0 0 25px;}
    .block-feature-four .img-gallery .card-one {left: 0;}
    .footer-one .footer-nav {padding-left: 0; padding-right: 0; width: 100%; border-right: none;}
-   .footer-one {padding: 60px 0 40px;}
+   .footer-one {padding: 20px 0 40px;}
    .feedback-block-two blockquote {font-size: 35px; line-height: 1.3em;}
    .partner-section-one p {transform: none; margin: 0 0 20px;}
    .feedback-section-three .feedback-bg-wrapper .rating-box {right: 0;}

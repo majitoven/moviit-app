@@ -8,7 +8,7 @@ import fancyImg_3 from "@/assets/images/assets/screen_02.jpg"
 const FancyBannerOne = () => {
 
    return (
-      <div className="fancy-banner-four position-relative z-1 xl-mt-150 lg-mt-120">
+      <div className="fancy-banner-four position-relative z-1 xl-mt-150 lg-mt-120 md-mt-40">
          <div className="container">
             <div className="bg-line position-relative z-1 pt-110 xl-pt-80 pb-140 xl-pb-100">
                <div className="row">

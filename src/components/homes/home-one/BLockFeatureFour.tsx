@@ -24,7 +24,7 @@ const BLockFeatureFour = () => {
          <div className="container">
             <div className="row">
                <div className="col-lg-6 d-flex order-lg-last">
-                  <div className="ps-xxl-5 ms-xl-4 pt-100 xl-pt-80 pb-45 w-100 h-100 wow fadeInRight">
+                  <div className="ps-xxl-5 ms-xl-4 pt-100 xl-pt-80 md-pt-40 pb-45 w-100 h-100 wow fadeInRight">
                      <div className="title-one mb-40 lg-mb-40">
                         <div className="upper-title">PARA EMPEZAR:</div>
                         <h3>Nos gustaría <span>conocerte<Image src={titleShape} alt="" className="lazy-img" /></span> mejor.</h3>
