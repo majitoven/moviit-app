@@ -78,7 +78,7 @@ const Feedback = () => {
                      </div>
                   </div>
                </div>
-               <div className="rating-box">
+               <div className="rating-box" style={{bottom: '3%'}}>
                   <Image src={ShapeIcon} alt="" className="lazy-img" />
                </div>
             </div>
