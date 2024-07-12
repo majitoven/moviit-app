@@ -86,7 +86,7 @@ const ListingDetailsOneArea = () => {
                      <CommonAmenities amenities={ammenities_data} />
                   </div>
                   <div className="property-video-tour mb-50">
-                     <CommonPropertyVideoTour />
+                     <CommonPropertyVideoTour videoId="9zJGqfmcTy8"/>
                   </div>
                   <div className="property-nearby bg-white shadow4 border-20 p-40 mb-50">
                      <CommonNearbyList />

@@ -4,7 +4,7 @@ import VideoPopup from "@/modals/VideoPopup";
 import Image from "next/image"
 import videoImg from "@/assets/images/listing/img_47.jpg";
 
-const CommonPropertyVideoTour = () => {
+const CommonPropertyVideoTour = ({videoId = 'tUP5S4YdEJo'}) => {
 
    const [isVideoOpen, setIsVideoOpen] = useState(false);
 
@@ -23,7 +23,7 @@ const CommonPropertyVideoTour = () => {
          <VideoPopup
             isVideoOpen={isVideoOpen}
             setIsVideoOpen={setIsVideoOpen}
-            videoId={"tUP5S4YdEJo"}
+            videoId={videoId}
          />
          {/* video modal end */}
       </>
