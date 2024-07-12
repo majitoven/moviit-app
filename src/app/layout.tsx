@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={isDev}>
       <head>
         <meta name="keywords" content="Inmobiliaria, Madrid, Buscar piso" />
-        <meta name="description" content="En Moviit encontramos tu piso/habitación en Madrid." />
+        <meta name="description" content="En Moviit encontramos tu piso/habitación en Madrid" />
         <meta property="og:site_name" content="Homy" />
         <meta property="og:url" content="https://creativegigstf.com" />
         <meta property="og:type" content="website" />
@@ -25,12 +25,12 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         {/* For Resposive Device */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* For Window Tab Color */}
         {/* Chrome, Firefox OS and Opera */}
         <meta name="theme-color" content="#0D1A1C" />
         {/* Windows Phone */}
         <meta name="msapplication-navbutton-color" content="#0D1A1C" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         {/* iOS Safari */}
         <meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C" />
         <link rel="icon" href="/favicon.png" sizes="any" />
