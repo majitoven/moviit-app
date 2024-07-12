@@ -50,14 +50,15 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
         <div className="col-md-4">
           <div className="dash-input-wrapper mb-30">
             <label htmlFor="bedrooms">Número de dormitorios*</label>
-            <NumberNiceSelect
+            <NiceSelect
               className="nice-select"
               placeholder="Seleccione cantidad de dormitorios"
               options={[
-                { value: '0', text: 0 },
-                { value: '1', text: 1 },
-                { value: '2', text: 2 },
-                { value: '3', text: 3 },
+                { value: '0', text: '0' },
+                { value: '1', text: '1' },
+                { value: '2', text: '2' },
+                { value: '3', text: '3' },
+                { value: '+3', text: '+3' },
               ]}
               defaultCurrent={0}
               {...register("bedrooms", { required: "Este campo es obligatorio" })}
@@ -72,15 +73,16 @@ const ListingDetails: React.FC<Props> = ({ register, errors, setValue, trigger }
         <div className="col-md-4">
           <div className="dash-input-wrapper mb-30">
             <label htmlFor="bathrooms">Número de baños</label>
-            <NumberNiceSelect
+            <NiceSelect
               placeholder="Seleccione cantidad de baños"
               className="nice-select"
               defaultCurrent={0}
               options={[
-                { value: '0', text: 0 },
-                { value: '1', text: 1 },
-                { value: '2', text: 2 },
-                { value: '3', text: 3 },
+                { value: '0', text: '0' },
+                { value: '1', text: '1' },
+                { value: '2', text: '2' },
+                { value: '3', text: '3' },
+                { value: '+3', text: '+3' },
               ]}
               {...register("bathrooms")}
               onChange={(e) => {

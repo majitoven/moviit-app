@@ -14,8 +14,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={isDev}>
       <head>
-        <meta name="keywords" content="Real estate, Property sale, Property buy" />
-        <meta name="description" content="Homy is a beautiful website template designed for Real Estate Agency." />
+        <meta name="keywords" content="Inmobiliaria, Madrid, Buscar piso" />
+        <meta name="description" content="Bienvenidos a Moviit Madrid" />
         <meta property="og:site_name" content="Homy" />
         <meta property="og:url" content="https://creativegigstf.com" />
         <meta property="og:type" content="website" />
