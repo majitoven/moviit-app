@@ -99,7 +99,7 @@ const ServiceDetailsArea = () => {
                            <div className="col-8">
                               <Image src={seviceDetailsThumb_1} alt="" className="lazy-img  w-100 mt-20" />
                            </div>
-                           <div className="col-4">
+                           <div className="col-xl-4 col-md-12">
                               <div className="ms-xl-5">
                                  <div className="service-sidebar md-mt-80">
                                     <div className="contact-banner text-center mt-20" style={{ borderRadius: '16px', border: '1px solid #ccf4f475', background: '#ccf4f475' }}>
