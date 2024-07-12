@@ -1,5 +1,5 @@
 import ModalVideo from "react-modal-video";
-import "react-modal-video/scss/modal-video.scss";  // Ensure this import is included
+import "react-modal-video/scss/modal-video.scss";
 import { FC } from "react";
 
 interface VideoPopupProps {
@@ -21,7 +21,7 @@ const VideoPopup: FC<VideoPopupProps> = ({ isVideoOpen, setIsVideoOpen, videoId 
           controls: 1,
           disablekb: 1,
           fs: 0,
-          iv_load_policy: 3,
+          iv_load_policy: 1, // 0 or 1 are valid values
           cc_load_policy: 0,
         }}
         isOpen={isVideoOpen}
