@@ -16,6 +16,8 @@ oauth2Client.setCredentials({
 
 export async function POST(request) {
   const {
+    phone,
+    email,
     fullName,
     country,
     propertyType,
@@ -55,6 +57,8 @@ export async function POST(request) {
       text: `
         Nombre completo: ${fullName}
         País: ${country}
+        Teléfono móvil: ${phone}
+        Email: ${email}
         Tipo de propiedad: ${propertyType}
         Duración: ${duration}
         Min precio: ${minPrice}
