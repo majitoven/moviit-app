@@ -55,14 +55,28 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
       <div className="bg-white card-box border-20">
          <h4 className="dash-title-three">Información Básica</h4>
          <div className="row align-items-end">
-            <div className="col-md-6">
+            <div className="col-md-3">
                <div className="dash-input-wrapper ">
                   <label htmlFor="fullName">Nombre y apellido*</label>
                   <input {...register("fullName", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese nombre y apellido" />
                   <p className={`error-message ${errors.fullName ? 'visible' : ''}`}>{String(errors.fullName?.message || '')}</p>
                </div>
             </div>
-            <div className="col-md-6">
+             <div className="col-md-3">
+               <div className="dash-input-wrapper ">
+                  <label htmlFor="fullName">Correo electrónico*</label>
+                  <input {...register("email", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese correo electrónico" />
+                  <p className={`error-message ${errors.email ? 'visible' : ''}`}>{String(errors.email?.message || '')}</p>
+               </div>
+            </div>
+            <div className="col-md-3">
+               <div className="dash-input-wrapper ">
+                  <label htmlFor="fullName">Teléfono móvil*</label>
+                  <input {...register("phone", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese móvil" />
+                  <p className={`error-message ${errors.phone ? 'visible' : ''}`}>{String(errors.phone?.message || '')}</p>
+               </div>
+            </div>
+            <div className="col-md-3">
                <div className="dash-input-wrapper ">
                   <label htmlFor="country">País de origen</label>
                   <NiceSelect
