@@ -7,6 +7,8 @@ import SelectAmenities from "./SelectAmenities";
 import { toast } from 'react-toastify';
 
 export interface FormValues {
+  phone: string;
+  email: string;
   fullName: string;
   country: string;
   propertyType: string;
