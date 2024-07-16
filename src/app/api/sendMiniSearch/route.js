@@ -15,7 +15,8 @@ oauth2Client.setCredentials({
 });
 
 export async function POST(request) {
-  const { email, fullName, propertyType, duration, minPrice, maxPrice, selectedBarrios } = await request.json();
+  const { email, fullName, phone, propertyType, duration, minPrice, maxPrice, selectedBarrios } = await request.json();
+
 
   try {
     const accessToken = await oauth2Client.getAccessToken();
@@ -40,6 +41,7 @@ export async function POST(request) {
         Nombre completo: ${fullName}
         Email: ${email}
         Tipo de propiedad: ${propertyType}
+        Telefono: ${phone}
         Duración: ${duration}
         Min precio: ${minPrice}
         Max precio: ${maxPrice}
