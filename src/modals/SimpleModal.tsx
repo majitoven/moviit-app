@@ -18,18 +18,21 @@ interface SimpleModalProps {
 const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formData }) => {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
-  const [errors, setErrors] = useState({ email: false, fullName: false });
+  const [phone, setPhone] = useState("");
+  const [errors, setErrors] = useState({ email: false, fullName: false, phone: false });
 
   const { propertyType, duration, minPrice, maxPrice, selectedBarrios } = formData;
 
   const handleSendData = async () => {
     const emailValid = email.trim() !== "";
     const fullNameValid = fullName.trim() !== "";
+    const phoneValid = phone.trim() !== "";
 
-    if (!emailValid || !fullNameValid) {
+    if (!emailValid || !fullNameValid || !phoneValid) {
       setErrors({
         email: !emailValid,
         fullName: !fullNameValid,
+        phone: !phoneValid,
       });
       return;
     }
@@ -37,6 +40,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
     const data = {
       email,
       fullName,
+      phone,
       propertyType,
       duration,
       minPrice,
@@ -58,7 +62,8 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
 
         setEmail("");
         setFullName("");
-        setErrors({ email: false, fullName: false });
+        setPhone("");
+        setErrors({ email: false, fullName: false, phone: false });
         handleClose();
       } else {
         toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
@@ -90,7 +95,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                  {errors.email && <div className="invalid-feedback">Email is required.</div>}
+                  {errors.email && <div className="invalid-feedback">Email es requerido.</div>}
                 </div>
                 <div className="form-group">
                   <label>Nombre completo</label>
@@ -100,7 +105,17 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                   />
-                  {errors.fullName && <div className="invalid-feedback">Full Name is required.</div>}
+                  {errors.fullName && <div className="invalid-feedback">Nombre es requerido.</div>}
+                </div>
+                  <div className="form-group">
+                  <label>Teléfono móvil</label>
+                  <input
+                    type="text"
+                    className={`form-control ${errors.phone ? "is-invalid" : ""}`}
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+                  {errors.phone && <div className="invalid-feedback">Teléfono es requerido.</div>}
                 </div>
               </form>
             </div>
