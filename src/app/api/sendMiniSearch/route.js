@@ -41,7 +41,7 @@ export async function POST(request) {
         Nombre completo: ${fullName}
         Email: ${email}
         Tipo de propiedad: ${propertyType}
-        Telefono: ${phone}
+        Teléfono móvil: ${phone}
         Duración: ${duration}
         Min precio: ${minPrice}
         Max precio: ${maxPrice}
