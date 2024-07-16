@@ -330,7 +330,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
          </div>
 
          <div className="row align-items-end">
-            <div className="col-md-4">
+            <div className="col-md-3">
                <div className="dash-input-wrapper">
                   <label htmlFor="propertyType">Estoy buscando*</label>
                   <NiceSelect
@@ -350,7 +350,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   <p className={`error-message ${errors.propertyType ? 'visible' : ''}`}>{String(errors.propertyType?.message || '')}</p>
                </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-3">
                <div className="dash-input-wrapper">
                   <label htmlFor="duration">Duración*</label>
                   <NiceSelect
@@ -371,7 +371,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   <p className={`error-message ${errors.duration ? 'visible' : ''}`}>{String(errors.duration?.message || '')}</p>
                </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-3">
                <div className="dash-input-wrapper">
                   <label htmlFor="priceRange">Rango de precios</label>
                   <div className="price-ranger">
@@ -405,8 +405,8 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   <p className={`error-message ${errors.minPrice || errors.maxPrice ? 'visible' : ''}`}>{String(errors.minPrice?.message || '')}</p>
                </div>
             </div>
-         </div>
-         <div className="col-lg-3">
+
+         <div className="col-md-3">
             <div className="dash-input-wrapper">
                <label htmlFor="selectedBarrios">Zonas</label>
                <NiceMultiSelect
@@ -458,6 +458,8 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                <p className={`error-message ${errors.selectedBarrios ? 'visible' : ''}`}>{String(errors.selectedBarrios?.message || '')}</p>
             </div>
          </div>
+         </div>
+
          <div className="row d-flex justify-content-center">
             <div className="col-md-8 col-sm-12">
                <MapBarrios selectedBarrios={selectedBarrios} />
