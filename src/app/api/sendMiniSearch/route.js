@@ -18,7 +18,8 @@ export async function POST(request) {
   const { email, fullName, phone, propertyType, duration, minPrice, maxPrice, selectedBarrios } = await request.json();
 
   try {
-    const accessToken = await oauth2Client.getAccessToken();
+    const accessTokenResponse = await oauth2Client.getAccessToken();
+    const accessToken = accessTokenResponse.token;
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -28,7 +29,7 @@ export async function POST(request) {
         clientId: process.env.OAUTH_CLIENT_ID,
         clientSecret: process.env.OAUTH_CLIENT_SECRET,
         refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-        accessToken: accessToken.token,
+        accessToken: accessToken,
       },
     });
 
@@ -52,6 +53,15 @@ export async function POST(request) {
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
   } catch (error) {
     console.error('Error sending email:', error);
+
+    if (error.response && error.response.data) {
+      // Handle specific errors, such as token expiration or revocation
+      if (error.response.data.error === 'invalid_grant') {
+        console.error('Refresh token has expired or been revoked. Re-authentication is required.');
+        // Logic to prompt user re-authentication
+      }
+    }
+
     return NextResponse.json({ error: 'Error sending email' }, { status: 500 });
   }
 }
