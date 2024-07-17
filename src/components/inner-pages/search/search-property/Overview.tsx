@@ -64,14 +64,14 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
             </div>
              <div className="col-md-3">
                <div className="dash-input-wrapper ">
-                  <label htmlFor="fullName">Correo electrónico*</label>
+                  <label htmlFor="email">Correo electrónico*</label>
                   <input {...register("email", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese correo electrónico" />
                   <p className={`error-message ${errors.email ? 'visible' : ''}`}>{String(errors.email?.message || '')}</p>
                </div>
             </div>
             <div className="col-md-3">
                <div className="dash-input-wrapper ">
-                  <label htmlFor="fullName">Teléfono móvil*</label>
+                  <label htmlFor="phone">Teléfono móvil*</label>
                   <input {...register("phone", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese móvil" />
                   <p className={`error-message ${errors.phone ? 'visible' : ''}`}>{String(errors.phone?.message || '')}</p>
                </div>
