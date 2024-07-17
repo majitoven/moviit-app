@@ -17,7 +17,6 @@ oauth2Client.setCredentials({
 export async function POST(request) {
   const { email, fullName, phone, propertyType, duration, minPrice, maxPrice, selectedBarrios } = await request.json();
 
-
   try {
     const accessToken = await oauth2Client.getAccessToken();
 
