@@ -32,7 +32,8 @@ export async function POST(request) {
     minSqFeet,
     maxSqFeet,
     amenities,
-    description
+    description,
+    month
   } = await request.json();
 
   try {
@@ -52,7 +53,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'moviitmad@gmail.com',
+      to: 'mventura@loopstudio.dev',
       subject: 'Web Moviit: Formulario de search completo',
       text: `
         Nombre completo: ${fullName}
@@ -60,10 +61,11 @@ export async function POST(request) {
         Teléfono móvil: ${phone}
         Email: ${email}
         Tipo de propiedad: ${propertyType}
+        Mes entrante: ${month}
         Duración: ${duration}
         Min precio: ${minPrice}
         Max precio: ${maxPrice}
-        Barrios: ${selectedBarrios.join(', ')}
+        Barrios: ${selectedBarrios?.length ? selectedBarrios.join(', ') : '-'}
         Habitaciones: ${bedrooms}
         Baños: ${bathrooms}
         Amueblado: ${furnished}

@@ -9,6 +9,7 @@ import { toast } from 'react-toastify';
 export interface FormValues {
   phone: string;
   email: string;
+  month: string;
   fullName: string;
   country: string;
   propertyType: string;

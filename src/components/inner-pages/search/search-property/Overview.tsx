@@ -62,7 +62,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   <p className={`error-message ${errors.fullName ? 'visible' : ''}`}>{String(errors.fullName?.message || '')}</p>
                </div>
             </div>
-             <div className="col-md-3">
+            <div className="col-md-3">
                <div className="dash-input-wrapper ">
                   <label htmlFor="email">Correo electrónico*</label>
                   <input {...register("email", { required: "Este campo es obligatorio" })} type="text" placeholder="Ingrese correo electrónico" />
@@ -351,6 +351,37 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                </div>
             </div>
             <div className="col-md-3">
+               <div className="dash-input-wrapper ">
+                  <label htmlFor="month">Mes de entrada al piso*</label>
+                  <NiceSelect
+                     defaultCurrent={0}
+                     className="nice-select"
+                     placeholder="Seleccione mes entrante"
+                     options={
+                        [
+                           { text: "Enero", value: "Enero" },
+                           { text: "Febrero", value: "Febrero" },
+                           { text: "Marzo", value: "Marzo" },
+                           { text: "Abril", value: "Abril" },
+                           { text: "Mayo", value: "Mayo" },
+                           { text: "Junio", value: "Junio" },
+                           { text: "Julio", value: "Julio" },
+                           { text: "Agosto", value: "Agosto" },
+                           { text: "Septiembre", value: "Septiembre" },
+                           { text: "Octubre", value: "Octubre" },
+                           { text: "Noviembre", value: "Noviembre" },
+                           { text: "Diciembre", value: "Diciembre" },
+                        ]}
+                     {...register("month")}
+                     onChange={(e) => {
+                        setValue('month', e.target.value);
+                        trigger('month');
+                     }}
+                  />
+                  <p className={`error-message ${errors.month ? 'visible' : ''}`}>{String(errors.month?.message || '')}</p>
+               </div>
+            </div>
+            <div className="col-md-3">
                <div className="dash-input-wrapper">
                   <label htmlFor="duration">Duración*</label>
                   <NiceSelect
@@ -405,61 +436,63 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                   <p className={`error-message ${errors.minPrice || errors.maxPrice ? 'visible' : ''}`}>{String(errors.minPrice?.message || '')}</p>
                </div>
             </div>
+         </div>
 
-         <div className="col-md-3">
-            <div className="dash-input-wrapper">
-               <label htmlFor="selectedBarrios">Zonas</label>
-               <NiceMultiSelect
-                  className="nice-select location"
-                  options={[
-                     { value: "Chamberí", text: "Chamberí" },
-                     { value: "Justicia", text: "Justicia" },
-                     { value: "Chueca", text: "Chueca" },
-                     { value: "Malasaña", text: "Malasaña" },
-                     { value: "Sol", text: "Sol" },
-                     { value: "Almagro", text: "Almagro" },
-                     { value: "Ríos Rosas", text: "Ríos Rosas" },
-                     { value: "Gaztambide", text: "Gaztambide" },
-                     { value: "Argüelles", text: "Argüelles" },
-                     { value: "Arapiles", text: "Arapiles" },
-                     { value: "Trafalgar", text: "Trafalgar" }, //lo agregue
-                     { value: "Salamanca", text: "Salamanca" },
-                     { value: "Goya", text: "Goya" },
-                     { value: "Lista", text: "Lista" },
-                     { value: "Ibiza", text: "Ibiza" },
-                     { value: "Recoletos", text: "Recoletos" },
-                     { value: "Castellana", text: "Castellana" },
-                     { value: "Cuatro Caminos", text: "Cuatro Caminos" },
-                     { value: "El Viso", text: "El Viso" },
-                     { value: "Prosperidad", text: "Prosperidad" },
-                     { value: "Vallehermoso", text: "Vallehermoso" },
-                     { value: "Ciudad Jardín", text: "Ciudad Jardín" },
-                     { value: "Hispanoamérica", text: "Hispanoamérica" },
-                     { value: "Fuente del Berro", text: "Fuente del Berro" },
-                     { value: "Guindalera", text: "Guindalera" },
-                     { value: "Ventas", text: "Ventas" },
-                     { value: "Ciudad Universitaria", text: "Ciudad Universitaria" },
-                     { value: "Latina", text: "Latina" },
-                     { value: "Palacio", text: "Palacio" },
-                     { value: "Lavapiés", text: "Lavapiés" },
-                     { value: "Universidad", text: "Universidad" },
-                     { value: "Cortes", text: "Cortes" }, //lo agregue
-                     { value: "Pacífico", text: "Pacífico" },
-                     { value: "Jerónimos", text: "Jerónimos" },
-                     { value: "Atocha", text: "Atocha" },
-                     { value: "Arganzuela", text: "Arganzuela" },
-                     { value: "Delicias", text: "Delicias" },
-                  ]}
-                  defaultCurrent={[]}
-                  onChange={changeLocation}
-                  placeholder="Seleccione zonas"
-                  name={''}
-               />
-               <p className={`error-message ${errors.selectedBarrios ? 'visible' : ''}`}>{String(errors.selectedBarrios?.message || '')}</p>
+         <div className="row d-flex justify-content-start">
+            <div className="col-md-4">
+               <div className="dash-input-wrapper">
+                  <label htmlFor="selectedBarrios">Zonas</label>
+                  <NiceMultiSelect
+                     className="nice-select location"
+                     options={[
+                        { value: "Chamberí", text: "Chamberí" },
+                        { value: "Justicia", text: "Justicia" },
+                        { value: "Chueca", text: "Chueca" },
+                        { value: "Malasaña", text: "Malasaña" },
+                        { value: "Sol", text: "Sol" },
+                        { value: "Almagro", text: "Almagro" },
+                        { value: "Ríos Rosas", text: "Ríos Rosas" },
+                        { value: "Gaztambide", text: "Gaztambide" },
+                        { value: "Argüelles", text: "Argüelles" },
+                        { value: "Arapiles", text: "Arapiles" },
+                        { value: "Trafalgar", text: "Trafalgar" }, //lo agregue
+                        { value: "Salamanca", text: "Salamanca" },
+                        { value: "Goya", text: "Goya" },
+                        { value: "Lista", text: "Lista" },
+                        { value: "Ibiza", text: "Ibiza" },
+                        { value: "Recoletos", text: "Recoletos" },
+                        { value: "Castellana", text: "Castellana" },
+                        { value: "Cuatro Caminos", text: "Cuatro Caminos" },
+                        { value: "El Viso", text: "El Viso" },
+                        { value: "Prosperidad", text: "Prosperidad" },
+                        { value: "Vallehermoso", text: "Vallehermoso" },
+                        { value: "Ciudad Jardín", text: "Ciudad Jardín" },
+                        { value: "Hispanoamérica", text: "Hispanoamérica" },
+                        { value: "Fuente del Berro", text: "Fuente del Berro" },
+                        { value: "Guindalera", text: "Guindalera" },
+                        { value: "Ventas", text: "Ventas" },
+                        { value: "Ciudad Universitaria", text: "Ciudad Universitaria" },
+                        { value: "Latina", text: "Latina" },
+                        { value: "Palacio", text: "Palacio" },
+                        { value: "Lavapiés", text: "Lavapiés" },
+                        { value: "Universidad", text: "Universidad" },
+                        { value: "Cortes", text: "Cortes" }, //lo agregue
+                        { value: "Pacífico", text: "Pacífico" },
+                        { value: "Jerónimos", text: "Jerónimos" },
+                        { value: "Atocha", text: "Atocha" },
+                        { value: "Arganzuela", text: "Arganzuela" },
+                        { value: "Delicias", text: "Delicias" },
+                     ]}
+                     defaultCurrent={[]}
+                     onChange={changeLocation}
+                     placeholder="Seleccione zonas"
+                     name={''}
+                  />
+                  <p className={`error-message ${errors.selectedBarrios ? 'visible' : ''}`}>{String(errors.selectedBarrios?.message || '')}</p>
+               </div>
             </div>
-         </div>
-         </div>
 
+         </div>
          <div className="row d-flex justify-content-center">
             <div className="col-md-8 col-sm-12">
                <MapBarrios selectedBarrios={selectedBarrios} />

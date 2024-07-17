@@ -15,7 +15,7 @@ oauth2Client.setCredentials({
 });
 
 export async function POST(request) {
-  const { email, fullName, phone, propertyType, duration, minPrice, maxPrice, selectedBarrios } = await request.json();
+  const { email, fullName, phone, propertyType, duration, month, minPrice, maxPrice, selectedBarrios } = await request.json();
 
   try {
     const accessTokenResponse = await oauth2Client.getAccessToken();
@@ -35,17 +35,18 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'moviitmad@gmail.com',
+      to: 'mventura@loopstudio.dev',
       subject: 'Web Moviit: Formulario de search rápido',
       text: `
         Nombre completo: ${fullName}
         Email: ${email}
         Tipo de propiedad: ${propertyType}
+        Mes entrante: ${month}
         Teléfono móvil: ${phone}
         Duración: ${duration}
         Min precio: ${minPrice}
         Max precio: ${maxPrice}
-        Barrios: ${selectedBarrios.join(', ')}
+        Barrios: ${selectedBarrios?.length ? selectedBarrios.join(', ') : '-'}
       `,
     };
 

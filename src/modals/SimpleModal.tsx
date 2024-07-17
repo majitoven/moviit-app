@@ -19,7 +19,8 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
-  const [errors, setErrors] = useState({ email: false, fullName: false, phone: false });
+  const [month, setMonth] = useState("");
+  const [errors, setErrors] = useState({ email: false, fullName: false, phone: false, month: false });
 
   const { propertyType, duration, minPrice, maxPrice, selectedBarrios } = formData;
 
@@ -27,12 +28,14 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
     const emailValid = email.trim() !== "";
     const fullNameValid = fullName.trim() !== "";
     const phoneValid = phone.trim() !== "";
+    const monthValid = phone.trim() !== "";
 
-    if (!emailValid || !fullNameValid || !phoneValid) {
+    if (!emailValid || !fullNameValid || !phoneValid || !monthValid) {
       setErrors({
         email: !emailValid,
         fullName: !fullNameValid,
         phone: !phoneValid,
+        month: !monthValid
       });
       return;
     }
@@ -40,6 +43,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
     const data = {
       email,
       fullName,
+      month,
       phone,
       propertyType,
       duration,
@@ -63,7 +67,8 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
         setEmail("");
         setFullName("");
         setPhone("");
-        setErrors({ email: false, fullName: false, phone: false });
+        setMonth("");
+        setErrors({ email: false, fullName: false, phone: false, month: false });
         handleClose();
       } else {
         toast.error("Error al enviar el correo. Por favor, inténtelo de nuevo más tarde.", { position: "top-center" });
@@ -90,6 +95,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
                 <div className="form-group">
                   <label>Email</label>
                   <input
+                    placeholder="Ingrese su correo electrónico"
                     type="email"
                     className={`form-control ${errors.email ? "is-invalid" : ""}`}
                     value={email}
@@ -101,21 +107,34 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
                   <label>Nombre completo</label>
                   <input
                     type="text"
+                    placeholder="Ingrese su nombre y apellido"
                     className={`form-control ${errors.fullName ? "is-invalid" : ""}`}
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                   />
                   {errors.fullName && <div className="invalid-feedback">Nombre es requerido.</div>}
                 </div>
-                  <div className="form-group">
+                <div className="form-group">
                   <label>Teléfono móvil</label>
                   <input
                     type="text"
+                    placeholder="Ingrese su teléfono móvil"
                     className={`form-control ${errors.phone ? "is-invalid" : ""}`}
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
                   {errors.phone && <div className="invalid-feedback">Teléfono es requerido.</div>}
+                </div>
+                <div className="form-group">
+                  <label>Mes entrante</label>
+                  <input
+                    type="text"
+                    placeholder="Mes que ingresará al piso"
+                    className={`form-control ${errors.month ? "is-invalid" : ""}`}
+                    value={month}
+                    onChange={(e) => setMonth(e.target.value)}
+                  />
+                  {errors.month && <div className="invalid-feedback">Mes es requerido.</div>}
                 </div>
               </form>
             </div>
