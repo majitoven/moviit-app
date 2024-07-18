@@ -161,7 +161,7 @@ const inner_faq_data: DataType[] = [
          {
             id: 25,
             question: "¿Cuáles son mis derechos sobre mi información?",
-            answer: "Usted tiene derecho a acceder, rectificar o eliminar sus datos personales en cualquier momento. Para ejercer estos derechos, por favor, póngase en contacto con nosotros a través del correo electrónico: [su_email@moviit.com].",
+            answer: "Usted tiene derecho a acceder, rectificar o eliminar sus datos personales en cualquier momento. Para ejercer estos derechos, por favor, póngase en contacto con nosotros a través del correo electrónico: moviitmad@gmail.com.",
          },
          {
             id: 26,
@@ -171,7 +171,7 @@ const inner_faq_data: DataType[] = [
          {
             id: 27,
             question: "¿Cómo puedo contactar con ustedes?",
-            answer: "Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad o sobre nuestras prácticas de manejo de información, por favor, póngase en contacto con nosotros en: Moviit, Correo electrónico: [su_email@moviit.com], Teléfono: [su_número_de_teléfono].",
+            answer: "Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad o sobre nuestras prácticas de manejo de información, por favor, póngase en contacto con nosotros en: Moviit, Correo electrónico: moviitmad@gmail.com, Teléfono: +34 611 877 027.",
          },
       ]
    },
