@@ -36,7 +36,7 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.ZOHO_USER,
-    to: 'mventura@loopstudio.dev',
+    to: 'moviitmad@gmail.com',
     subject: 'Web Moviit: Formulario de búsqueda completo',
     text: `
       Nombre completo: ${fullName}
