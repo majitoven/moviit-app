@@ -17,7 +17,7 @@ const footer_data: DataType[] = [
       widget_class: "xs-mt-30",
       page: "home_1",
       widget_title: "Legal:",
-      footer_link: [{ link: "/faq#Costos", link_title: "Términos & condiciones" }, { link: "/faq", link_title: "FAQ" }]
+      footer_link: [{ link: "/faq#Privacidad", link_title: "Política de privacidad" },{ link: "/faq#Costos", link_title: "Términos & condiciones" }, { link: "/faq", link_title: "FAQ" }]
    },
    {
       id: 3,

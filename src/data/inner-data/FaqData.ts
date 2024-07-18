@@ -2,7 +2,7 @@ interface DataType {
    id: number;
    id_name: string;
    title: string;
-   md_pt?:boolean;
+   md_pt?: boolean;
    faq: {
       id: number;
       question: string;
@@ -135,11 +135,53 @@ const inner_faq_data: DataType[] = [
    },
    {
       id: 6,
+      id_name: "Privacidad",
+      title: "POLÍTICA DE PRIVACIDAD",
+      faq: [
+         {
+            id: 21,
+            question: "¿Qué información recopilan?",
+            answer: "Recopilamos los siguientes datos personales a través de nuestro formulario de contacto: nombre completo, dirección de correo electrónico, número de teléfono, tipo de propiedad buscada, mes de inicio de búsqueda, duración de la estancia, rango de precios (mínimo y máximo), y barrios preferidos.",
+         },
+         {
+            id: 22,
+            question: "¿Para qué usan la información?",
+            answer: "Los datos personales que recopilamos se utilizan exclusivamente para los siguientes fines: permitir que nuestros agentes inmobiliarios inicien la búsqueda de apartamentos en base a sus requisitos y contactar con usted para proporcionar información sobre los apartamentos disponibles que coincidan con su búsqueda.",
+         },
+         {
+            id: 23,
+            question: "¿Compartirán mi información con terceros?",
+            answer: "No compartimos, vendemos ni alquilamos sus datos personales a terceros. Su información se comparte únicamente con nuestros agentes inmobiliarios internos para los fines descritos en esta Política de Privacidad.",
+         },
+         {
+            id: 24,
+            question: "¿Cómo protegen mi información personal?",
+            answer: "Tomamos medidas razonables para proteger sus datos personales contra pérdida, robo y uso no autorizado. Sin embargo, ningún sistema de seguridad es infalible y no podemos garantizar la seguridad absoluta de su información.",
+         },
+         {
+            id: 25,
+            question: "¿Cuáles son mis derechos sobre mi información?",
+            answer: "Usted tiene derecho a acceder, rectificar o eliminar sus datos personales en cualquier momento. Para ejercer estos derechos, por favor, póngase en contacto con nosotros a través del correo electrónico: [su_email@moviit.com].",
+         },
+         {
+            id: 26,
+            question: "¿Pueden cambiar esta política de privacidad?",
+            answer: "Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en nuestro sitio web. Le recomendamos revisar esta política periódicamente para estar informado sobre cómo protegemos su información.",
+         },
+         {
+            id: 27,
+            question: "¿Cómo puedo contactar con ustedes?",
+            answer: "Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad o sobre nuestras prácticas de manejo de información, por favor, póngase en contacto con nosotros en: Moviit, Correo electrónico: [su_email@moviit.com], Teléfono: [su_número_de_teléfono].",
+         },
+      ]
+   },
+   {
+      id: 7,
       id_name: "Otros",
       title: "OTROS",
       faq: [
          {
-            id: 21,
+            id: 28,
             question: "¿Pueden ayudarme con la documentación legal necesaria para alquilar un piso?",
             answer: "Sí, te ayudamos a preparar y revisar toda la documentación legal necesaria para el proceso de alquiler.",
          },
