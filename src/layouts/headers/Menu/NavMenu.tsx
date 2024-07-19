@@ -36,9 +36,9 @@ const NavMenu = () => {
         setLanguage(lang);
         if (typeof window !== 'undefined') {
             if (lang === "es") {
-                router.push("/");
+                window.location.href = "https://moviitmadrid.com/";
             } else {
-                router.push("/en");
+                window.location.href = "https://moviitmadrid.com/en";
             }
         }
     };

@@ -46,6 +46,7 @@ interface DataType {
    btn?: string;
    class_name?:string;
    url?: string;
+   title_en?: string;
 }
 
 const feature_data: DataType[] = [
@@ -181,6 +182,7 @@ const feature_data: DataType[] = [
       page: "home_two_feature_2",
       img: featureImg_1,
       title: "Paly Ferrer, 21 años",
+      title_en: "Paly Ferrer, 21 years",
       tag: "VER REVIEW",
       data_delay_time: "0.2s",
       url: 'https://www.instagram.com/reel/C4oMsmrIm9R/?igsh=MXNlcndtOGM5MWhmZQ=='
@@ -190,6 +192,7 @@ const feature_data: DataType[] = [
       page: "home_two_feature_2",
       img: featureImg_2,
       title: "Morita Smith, 27 años",
+      title_en: "Morita Smith, 27 years",
       tag: "VER REVIEW",
       data_delay_time: "0.1s",
       url: 'https://www.instagram.com/reel/C6KWXTLglIm/?igsh=aDlvMzczN21jaXJh'
@@ -199,6 +202,7 @@ const feature_data: DataType[] = [
       page: "home_two_feature_2",
       img: featureImg_3,
       title: "Isa Castañares, 21 años",
+      title_en: "Isa Castañares, 21 years",
       tag: "VER REVIEW",
       data_delay_time: "0.2s",
       url: 'https://www.instagram.com/reel/C67PXZNI9ri/?igsh=aTd4bzE2Z3F5cmd4'

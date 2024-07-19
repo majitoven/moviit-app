@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import { animationCreate } from "@/utils/utils";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import ScrollToTop from "@/components/common/ScrollToTop";
 
 if (typeof window !== "undefined") {
     require("bootstrap/dist/js/bootstrap");

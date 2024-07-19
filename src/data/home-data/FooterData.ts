@@ -2,11 +2,13 @@ interface DataType {
    id: number;
    page: string;
    widget_title: string;
+   widget_title_en?: string;
    widget_class?: string;
    widget_class2?: string;
    footer_link: {
       link: string;
       link_title: string;
+      link_title_en?: string;
    }[];
 
 }
@@ -17,14 +19,27 @@ const footer_data: DataType[] = [
       widget_class: "xs-mt-30",
       page: "home_1",
       widget_title: "Legal:",
-      footer_link: [{ link: "/faq#Privacidad", link_title: "Política de privacidad" },{ link: "/faq#Costos", link_title: "Términos & condiciones" }, { link: "/faq", link_title: "FAQ" }]
+      widget_title_en: "Legal:",
+      footer_link: [
+         { link: "/faq#Privacidad", link_title: "Política de privacidad", link_title_en: "Privacy Policy" },
+         { link: "/faq#Costos", link_title: "Términos & condiciones", link_title_en: "Terms & Conditions" },
+         { link: "/faq", link_title: "FAQ", link_title_en: "FAQ" }
+      ]
    },
    {
       id: 3,
       widget_class: "xs-mt-30",
       page: "home_1",
-      widget_title: "Conocenos:",
-      footer_link: [{ link: "/about_us_02", link_title: "La empresa" }, { link: "/search_property", link_title: "Buscar piso" }, { link: "/service_details_rent", link_title: "Servicio Alquiler" }, { link: "/service_details_furniture", link_title: "Servicio Amueblamiento" },{ link: "/listing_details_justicia", link_title: "Casos reales" }, { link: "/contact", link_title: "Contacto" }]
+      widget_title: "Más información:",
+      widget_title_en: "More info:",
+      footer_link: [
+         { link: "/about_us_02", link_title: "La empresa", link_title_en: "The Company" },
+         { link: "/search_property", link_title: "Buscar piso", link_title_en: "Search Property" },
+         { link: "/service_details_rent", link_title: "Servicio Alquiler", link_title_en: "Rental Service" },
+         { link: "/service_details_furniture", link_title: "Servicio Amueblamiento", link_title_en: "Furniture Service" },
+         { link: "/listing_details_justicia", link_title: "Casos reales", link_title_en: "Real Cases" },
+         { link: "/contact", link_title: "Contacto", link_title_en: "Contact" }
+      ]
    },
 
    // home two

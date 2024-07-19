@@ -1,6 +1,5 @@
 import FooterOne from "@/layouts/footers/FooterOne"
 import ServiceDetailsArea from "./ServiceDetailsArea"
-import FancyBanner from "@/components/common/FancyBanner"
 import BreadcrumbTwo from "@/components/common/breadcrumb/BreadcrumbTwo"
 import HeaderTwo from "@/layouts/headers/HeaderTwo"
 

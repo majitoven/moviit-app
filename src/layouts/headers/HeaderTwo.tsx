@@ -25,18 +25,16 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
    const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
    const router = useRouter();
 
-
    const changeLanguage = (lang: string) => {
       setLanguage(lang);
       if (typeof window !== 'undefined') {
           if (lang === "es") {
-              router.push("/");
+              window.location.href = "https://moviitmadrid.com/";
           } else {
-              router.push("/en");
+              window.location.href = "https://moviitmadrid.com/en";
           }
       }
-  };
-
+   };
 
    const handleOutsideClick = (e: MouseEvent) => {
       const navbarElement = document.getElementById('navbarNav');
@@ -89,7 +87,6 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
                               <Image src={language === "en" ? ukFlag : spainFlag} alt="language flag" width={24} height={24} />
                            </a>
                            <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
-
                               <li><a className="dropdown-item" onClick={() => changeLanguage("es")} style={{
                                  display: 'flex',
                                  alignItems: 'center'
