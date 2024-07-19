@@ -1,11 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
-import footer_data from "@/data/home-data/FooterData";
 
 import footerLogo_1 from "@/assets/images/shape/eye.svg";
 import footerLogo_2 from "@/assets/images/shape/eye.svg";
 import footerShape_1 from "@/assets/images/icon/icon_homy_2.png";
 import footerShape_2 from "@/assets/images/shape/nube_4.png";
+
+const footer_data = [
+  {
+    id: 2,
+    widget_class: "xs-mt-30",
+    page: "home_1",
+    widget_title: "Legal:",
+    widget_title_en: "Legal:",
+    footer_link: [
+      { link: "/faq#Privacidad", link_en: "/faq#Privacy", link_title: "Política de privacidad", link_title_en: "Privacy Policy" },
+      { link: "/faq#Costos", link_en: "/faq#Costs", link_title: "Términos & condiciones", link_title_en: "Terms & Conditions" },
+      { link: "/faq", link_en: "/faq", link_title: "FAQ", link_title_en: "FAQ" }
+    ]
+  },
+  {
+    id: 3,
+    widget_class: "xs-mt-30",
+    page: "home_1",
+    widget_title: "Más información:",
+    widget_title_en: "More info:",
+    footer_link: [
+      { link: "/about_us_02", link_en: "/en/about_us_02", link_title: "La empresa", link_title_en: "The Company" },
+      { link: "/search_property", link_en: "/en/search_property", link_title: "Buscar piso", link_title_en: "Search Property" },
+      { link: "/service_details_rent", link_en: "/en/service_details_rent", link_title: "Servicio Alquiler", link_title_en: "Rental Service" },
+      { link: "/service_details_furniture", link_en: "/en/service_details_furniture", link_title: "Servicio Amueblamiento", link_title_en: "Furniture Service" },
+      { link: "/listing_details_justicia", link_en: "/en/listing_details_justicia", link_title: "Casos reales", link_title_en: "Real Cases" },
+      { link: "/contact", link_en: "/en/contact", link_title: "Contacto", link_title_en: "Contact" }
+    ]
+  }]
 
 const FooterOne = ({ style }: any) => {
   const currentYear = new Date().getFullYear();
