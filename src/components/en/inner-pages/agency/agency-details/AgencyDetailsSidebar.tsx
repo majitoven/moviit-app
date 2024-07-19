@@ -11,7 +11,7 @@ const AgencyDetailsSidebar = () => {
             <div className="tour-schedule bg-white p-30 mb-40">
                <h5 className="mb-40">Contact Form</h5>
                <AgencyFormTwo />
-               <Link href="tel:+34611877027" className="btn-eight sm text-uppercase w-100 rounded-0 tran3s">LLAMAR AHORA</Link>
+               <Link href="tel:+34611877027" className="btn-eight sm text-uppercase w-100 rounded-0 tran3s">CALL NOW</Link>
             </div>
 
          </div>
