@@ -21,7 +21,7 @@ const IgBanner = () => {
                   <span className="fw-normal fst-italic">Instagram.</span>
                 </h3>
                 <div className="d-inline-flex flex-wrap align-items-center position-relative mt-15">
-                  <Link href="/contact" className="btn-eight mt-10 me-4">
+                  <Link href="/en/contact" className="btn-eight mt-10 me-4">
                     <span>Contact Us</span>
                   </Link>
                   <Link

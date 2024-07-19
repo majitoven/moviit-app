@@ -213,7 +213,7 @@ const FaqArea = () => {
                      </div>
                      <div className="bg-wrapper text-center mt-35">
                         <h4 className="mb-35">Can't find your <br />answer?</h4>
-                        <Link href="/contact" className="btn-five">Contact Us</Link>
+                        <Link href="/en/contact" className="btn-five">Contact Us</Link>
                      </div>
                   </div>
                </div>

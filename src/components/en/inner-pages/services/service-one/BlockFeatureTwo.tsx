@@ -28,7 +28,7 @@ const BlockFeatureTwo = ({ style }: any) => {
                            <Image src={item.icon} alt="" className="lazy-img" /></div>
                         <h6>{item.title}</h6>
                         <p>{item.desc}</p>
-                        <Link href="/service_details" className="btn-twelve sm mt-auto">{item.btn}</Link>
+                        <Link href="/en/service_details" className="btn-twelve sm mt-auto">{item.btn}</Link>
                      </div>
                   </div>
                ))}

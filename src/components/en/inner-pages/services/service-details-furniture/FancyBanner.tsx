@@ -15,7 +15,7 @@ const FancyBanner = () => {
                         <h2 className="text-white fs-lg">Straight to bed.</h2>
                         <p className="fs-24 text-white">We'll take care of it :)</p>
                      </div>
-                     <Link href="contact" className="btn-six">Consult</Link>
+                     <Link href="/en/contact" className="btn-six">Consult</Link>
                   </div>
                </div>
             </div>

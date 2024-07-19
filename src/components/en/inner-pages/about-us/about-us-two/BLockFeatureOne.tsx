@@ -56,7 +56,7 @@ const BLockFeatureOne = () => {
                            ))}
                         </div>
                      </div>
-                     <Link href="contact" className="btn-five mt-75 lg-mt-50">Contact Us</Link>
+                     <Link href="/en/contact" className="btn-five mt-75 lg-mt-50">Contact Us</Link>
                   </div>
                </div>
                <div className="col-xl-6 col-lg-5 d-lg-flex wow fadeInLeft">

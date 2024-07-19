@@ -101,7 +101,7 @@ const ServiceDetailsArea = () => {
                      <ul className="list-style-one fs-22 color-dark style-none">
                         {service_list.map((list, i) => <li key={i}>{list}</li>)}
                      </ul>
-                     <Link href="/contact" className="btn-two mt-30">Contact Us</Link>
+                     <Link href="/en/contact" className="btn-two mt-30">Contact Us</Link>
                   </div>
                </div>
                
@@ -116,7 +116,7 @@ const ServiceDetailsArea = () => {
                         </div>
                         <div className="contact-banner text-center mt-45">
                            <h4 className="mb-35 text-white">Any Questions? <br />Let’s talk</h4>
-                           <Link href="/contact" className="btn-two">Let’s Talk</Link>
+                           <Link href="/en/contact" className="btn-two">Let’s Talk</Link>
                         </div>
                      </div>
                   </div>

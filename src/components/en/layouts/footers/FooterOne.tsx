@@ -21,7 +21,7 @@ const FooterOne = ({ style }: any) => {
               >
                 <div className="bg-wrapper">
                   <div className="logo mb-20">
-                    <Link href="/">
+                    <Link href="/en">
                       <Image
                         src={style ? footerLogo_2 : footerLogo_1}
                         alt=""
@@ -102,7 +102,7 @@ const FooterOne = ({ style }: any) => {
                       <ul className="footer-nav-link style-none">
                         {item.footer_link.map((li, i) => (
                           <li key={i}>
-                            <Link href={li.link}>{li.link_title_en}</Link>
+                            <Link href={li.link_en}>{li.link_title_en}</Link>
                           </li>
                         ))}
                       </ul>

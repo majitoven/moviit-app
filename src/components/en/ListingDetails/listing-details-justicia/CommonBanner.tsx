@@ -15,7 +15,7 @@ const CommonBanner = ({ style_3 }: any) => {
             <div className="d-inline-block md-mt-40">
                <div className="price color-dark fw-500">Price: €1650</div>
                <ul className="style-none d-flex align-content-end action-btns">
-                  <li style={{display: 'flex', alignItems: 'center'}}><Link href="/contact"
+                  <li style={{display: 'flex', alignItems: 'center'}}><Link href="/en/contact"
                      className={`d-flex align-items-center justify-content-center tran3s ${style_3 ? "" : "rounded-circle"}`}><i
                         className="fa-light fa-phone"></i></Link><p style={{margin: 0, paddingLeft: '10px'}}>I'm interested</p></li>
                </ul>

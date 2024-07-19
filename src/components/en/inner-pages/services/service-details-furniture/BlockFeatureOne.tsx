@@ -59,7 +59,7 @@ const BlockFeatureOne = () => {
                               <li>The budget includes: Cleaning of the apartment, Assembly and placement, Receiving and selection of furniture.</li>
                            </ul>
                            <div className="mt-40 lg-mt-40">
-                              <Link href="/contact" className="btn-two">I'm interested</Link>
+                              <Link href="/en/contact" className="btn-two">I'm interested</Link>
                            </div>
                         </div>
                      </div>

@@ -7,6 +7,7 @@ interface DataType {
    widget_class2?: string;
    footer_link: {
       link: string;
+      link_en?: string;
       link_title: string;
       link_title_en?: string;
    }[];
@@ -21,9 +22,9 @@ const footer_data: DataType[] = [
       widget_title: "Legal:",
       widget_title_en: "Legal:",
       footer_link: [
-         { link: "/faq#Privacidad", link_title: "Política de privacidad", link_title_en: "Privacy Policy" },
-         { link: "/faq#Costos", link_title: "Términos & condiciones", link_title_en: "Terms & Conditions" },
-         { link: "/faq", link_title: "FAQ", link_title_en: "FAQ" }
+         { link: "/faq#Privacidad", link_en: "/faq#Privacy", link_title: "Política de privacidad", link_title_en: "Privacy Policy" },
+         { link: "/faq#Costos", link_en: "/faq#Costs",link_title: "Términos & condiciones", link_title_en: "Terms & Conditions" },
+         { link: "/faq",link_en: "/faq", link_title: "FAQ", link_title_en: "FAQ" }
       ]
    },
    {
@@ -33,12 +34,12 @@ const footer_data: DataType[] = [
       widget_title: "Más información:",
       widget_title_en: "More info:",
       footer_link: [
-         { link: "/about_us_02", link_title: "La empresa", link_title_en: "The Company" },
-         { link: "/search_property", link_title: "Buscar piso", link_title_en: "Search Property" },
-         { link: "/service_details_rent", link_title: "Servicio Alquiler", link_title_en: "Rental Service" },
-         { link: "/service_details_furniture", link_title: "Servicio Amueblamiento", link_title_en: "Furniture Service" },
-         { link: "/listing_details_justicia", link_title: "Casos reales", link_title_en: "Real Cases" },
-         { link: "/contact", link_title: "Contacto", link_title_en: "Contact" }
+         { link: "/about_us_02", link_en: "/en/about_us_02", link_title: "La empresa", link_title_en: "The Company" },
+         { link: "/search_property", link_en: "/en/search_property", link_title: "Buscar piso", link_title_en: "Search Property" },
+         { link: "/service_details_rent", link_en: "/en/service_details_rent", link_title: "Servicio Alquiler", link_title_en: "Rental Service" },
+         { link: "/service_details_furniture", link_en: "/en/service_details_furniture", link_title: "Servicio Amueblamiento", link_title_en: "Furniture Service" },
+         { link: "/listing_details_justicia", link_en: "/en/listing_details_justicia", link_title: "Casos reales", link_title_en: "Real Cases" },
+         { link: "/contact", link_en: "/en/contact", link_title: "Contacto", link_title_en: "Contact" }
       ]
    },
 

@@ -11,7 +11,7 @@ const FancyBannerTwo = () => {
                   <div className="title-one mb-40 lg-mb-20">
                      <h2 className="font-garamond fs-xl text-white">Any questions? Feel free to chat with us.</h2>
                   </div>
-                  <Link href="/contact" className="btn-nine text-uppercase"><span>CONTACT US</span></Link>
+                  <Link href="/en/contact" className="btn-nine text-uppercase"><span>CONTACT US</span></Link>
                </div>
             </div>
          </div>

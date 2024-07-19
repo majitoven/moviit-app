@@ -39,7 +39,7 @@ const BLockFeatureFour = () => {
                         />
                         <button type="submit">Send</button>
                      </form>
-                     <div className="fs-16 mt-10 opacity-75">*You can also <Link href="/contact" className="fst-italic color-dark text-decoration-underline">fill out the full form and we will contact you.</Link></div>
+                     <div className="fs-16 mt-10 opacity-75">*You can also <Link href="/en/contact" className="fst-italic color-dark text-decoration-underline">fill out the full form and we will contact you.</Link></div>
                   </div>
                </div>
 

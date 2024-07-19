@@ -54,7 +54,7 @@ const BLockFeatureFive = ({ style }: any) => {
                </div>
             </div>
             <div className="col-xl-8 m-auto text-center">
-               <Link href="/search-property" className="btn-nine text-uppercase"><span>START</span></Link>
+               <Link href="/en/search-property" className="btn-nine text-uppercase"><span>START</span></Link>
             </div>
          </div>
          <Image src={featureShape_1} alt="" className="lazy-img shapes shape_01" />

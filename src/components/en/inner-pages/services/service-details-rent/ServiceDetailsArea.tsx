@@ -94,7 +94,7 @@ const ServiceDetailsArea = () => {
                                  <div className="service-sidebar md-mt-80">
                                     <div className="contact-banner text-center mt-20" style={{ borderRadius: '16px', border: '1px solid #ccf4f475', background: '#ccf4f475' }}>
                                        <h4 className="mb-35 text-black font-garamond"> To get started, we would like to know you better.</h4>
-                                       <Link href="/search-property" className="btn-six">Start the search</Link>
+                                       <Link href="/en/search-property" className="btn-six">Start the search</Link>
                                     </div>
                                  </div>
                               </div>
@@ -122,7 +122,7 @@ const ServiceDetailsArea = () => {
                         {service_list.map((list, i) => <li key={i}>{list}</li>)}
                      </ul>
                      <p className="fs-10 lh-lg ">To see all the information, click on the following link:</p>
-                     <Link href="/faq#Costos" className="btn-two">See Terms & Conditions</Link>
+                     <Link href="/en/faq#Costs" className="btn-two">See Terms & Conditions</Link>
                   </div>
                </div>
             </div>

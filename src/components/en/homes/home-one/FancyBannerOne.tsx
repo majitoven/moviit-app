@@ -38,7 +38,7 @@ const FancyBannerOne = ({ style }: any) => {
                   essentials so you can arrive and sleep comfortably.
                 </p>
               </div>
-              <Link href="/service_details_furniture" className="btn-six">
+              <Link href="/en/service_details_furniture" className="btn-six">
                 I'm interested
               </Link>
             </div>
@@ -117,11 +117,11 @@ const FancyBannerOne = ({ style }: any) => {
                 </div>
 
                 <div className="button-group gutter d-flex justify-content-between align-items-center">
-                  <Link href="/service_details_rent" className="btn-three">
+                  <Link href="/en/service_details_rent" className="btn-three">
                     <span>Discover all our services</span>
                   </Link>
                   <Link
-                    href="/service_details_rent"
+                    href="/en/service_details_rent"
                     className="btn-four rounded-circle"
                   >
                     <i className="bi bi-arrow-up-right"></i>
