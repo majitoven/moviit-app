@@ -59,23 +59,23 @@ const inner_faq_data: DataType[] = [
       faq: [
          {
             id: 9,
-            question: "De 3 -6 meses: 50% de 1 mes de alquiler",
+            question: "Contrato temporal (de 1 - 6 meses): 50% de 1 mes de alquiler",
             answer: "Seña de 200 Euros (1 persona)",
          },
          {
             id: 10,
-            question: "De 7 - 9 meses: 70% de 1 mes de alquiler",
+            question: "Contrato temporal (de 7 - 11 meses): 70% de 1 mes de alquiler",
             answer: "Seña de 200 Euros (1 persona)",
          },
          {
             id: 11,
-            question: "De 10 - 12 meses: 1 mes de alquiler",
+            question: "Contrato anual (1 año): 1 mes de alquiler",
             answer: "Seña de 200 Euros (1 persona)",
          },
          {
             id: 12,
             question: "En caso de ser más de 1 persona:",
-            answer: "400 Euros de seña.",
+            answer: "200 Euros de seña por persona.",
          },
          {
             id: 13,

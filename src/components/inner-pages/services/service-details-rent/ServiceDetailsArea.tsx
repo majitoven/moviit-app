@@ -57,9 +57,9 @@ const content_data: ContentType = {
          desc: "Te asesoramos sobre los documentos que debes presentar para aplicar a tu apartamento ideal."
       },
    ],
-   service_list: ["De 3 - 6 meses: 50% de 1 mes de alquiler + Seña de 200 Euros (1 persona)",
-      "De 7 - 9 meses: 70% de 1 mes de alquiler + Seña de 200 Euros (1 persona)",
-      "De 10 - 12 meses: 1 mes de alquiler + Seña de 200 Euros (1 persona)",],
+   service_list: ["Contrato temporal (1 - 6 meses): 50% de 1 mes de alquiler + Seña de 200 Euros (1 persona)",
+      "Contrato temporal (7 - 11 meses): 70% de 1 mes de alquiler + Seña de 200 Euros (1 persona)",
+      "Contrato anual (1 año): 1 mes de alquiler + Seña de 200 Euros (por persona persona)",],
    sidebar_list: ["Property & Loan", "Sell Home", "Consulting Service", "Rent Home", "Mortgage",],
 }
 
@@ -127,7 +127,7 @@ const ServiceDetailsArea = () => {
                      </div>
 
                      <h4 className="mb-30">{title_3}</h4>
-                     <p className="fs-20 lh-lg pb-25">Nuestra tarifa depende de la duración del alquiler:</p>
+                     <p className="fs-20 lh-lg pb-25">Nuestra tarifa depende del tipo de contrato:</p>
                      <ul className="list-style-one fs-22 color-dark style-none">
                         {service_list.map((list, i) => <li key={i}>{list}</li>)}
                      </ul>

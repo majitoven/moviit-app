@@ -23,7 +23,7 @@ const FancyBannerOne = () => {
                            </div>
                            <div className="col-lg-8">
                               <p className="fs-24 color-dark" style={{marginBottom: '0px'}}><b>¿Cuál es el costo de nuestro servicio?</b> </p>
-                              <p className="fs-20 color-dark">Nuestra tarifa depende de la duración del alquiler:</p>
+                              <p className="fs-20 color-dark">Nuestra tarifa depende del tipo de contrato:</p>
                               <div className="accordion accordion-style-one mt-40" id="accordionOne">
                                  <FaqOne />
                               </div>
