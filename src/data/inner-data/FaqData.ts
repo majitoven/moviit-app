@@ -60,22 +60,22 @@ const inner_faq_data: DataType[] = [
          {
             id: 9,
             question: "Contrato temporal (de 1 - 6 meses): 50% de 1 mes de alquiler",
-            answer: "Seña de 200 Euros (1 persona)",
+            answer: "Seña de 200€ (1 persona)",
          },
          {
             id: 10,
             question: "Contrato temporal (de 7 - 11 meses): 70% de 1 mes de alquiler",
-            answer: "Seña de 200 Euros (1 persona)",
+            answer: "Seña de 200€ (1 persona)",
          },
          {
             id: 11,
             question: "Contrato anual (1 año): 1 mes de alquiler",
-            answer: "Seña de 200 Euros (1 persona)",
+            answer: "Seña de 200€ (1 persona)",
          },
          {
             id: 12,
             question: "En caso de ser más de 1 persona:",
-            answer: "200 Euros de seña por persona.",
+            answer: "200€ de seña por persona.",
          },
          {
             id: 13,
@@ -107,12 +107,12 @@ const inner_faq_data: DataType[] = [
          {
             id: 17,
             question: "¿Cuál es el costo de este servicio extra?",
-            answer: "450 Euros. Pago por adelantado.",
+            answer: "450€. Pago por adelantado.",
          },
          {
             id: 18,
             question: "¿Qué incluye el servicio?",
-            answer: "Los 450 Euros incluyen: \nLimpieza de piso \nArmado y colocación \nRecibimiento y selección de muebles",
+            answer: "Los 450€ incluyen: \nLimpieza de piso \nArmado y colocación \nRecibimiento y selección de muebles",
          },
       ]
    },

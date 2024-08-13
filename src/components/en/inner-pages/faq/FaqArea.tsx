@@ -64,23 +64,23 @@ const FaqArea = () => {
          faq: [
             {
                id: 9,
-               question: "From 3 to 6 months: 50% of one month's rent",
-               answer: "Deposit of 200 Euros (1 person)",
+               question: "From 1 to 6 months: 50% of one month's rent",
+               answer: "Deposit of 200€ (per person)",
             },
             {
                id: 10,
-               question: "From 7 to 9 months: 70% of one month's rent",
-               answer: "Deposit of 200 Euros (1 person)",
+               question: "From 7 to 11 months: 70% of one month's rent",
+               answer: "Deposit of 200€ (per person)",
             },
             {
                id: 11,
-               question: "From 10 to 12 months: 1 month's rent",
-               answer: "Deposit of 200 Euros (1 person)",
+               question: "1 year: One month's rent",
+               answer: "Deposit of 200€ (per person)",
             },
             {
                id: 12,
                question: "In case of more than one person:",
-               answer: "400 Euros deposit.",
+               answer: "200€ per person for deposit.",
             },
             {
                id: 13,
@@ -112,12 +112,12 @@ const FaqArea = () => {
             {
                id: 17,
                question: "What is the cost of this extra service?",
-               answer: "450 Euros. Payment in advance.",
+               answer: "450€. Payment in advance.",
             },
             {
                id: 18,
                question: "What does the service include?",
-               answer: "The 450 Euros include:\nApartment cleaning\nFurniture assembly and placement\nReceipt and selection of furniture",
+               answer: "The 450€ include:\nApartment cleaning\nFurniture assembly and placement\nReceipt and selection of furniture",
             },
          ]
       },
