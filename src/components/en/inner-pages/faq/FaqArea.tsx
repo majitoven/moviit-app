@@ -80,7 +80,7 @@ const FaqArea = () => {
             {
                id: 12,
                question: "In case of more than one person:",
-               answer: "200€ per person for deposit.",
+               answer: "200€ per person for deposit from the %.",
             },
             {
                id: 13,
