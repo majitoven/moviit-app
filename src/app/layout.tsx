@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
         <meta name="keywords" content="Inmobiliaria, Madrid, Buscar piso" />
         <meta name="description" content="En Moviit encontramos tu apartamento ideal en Madrid" />
-        <meta property="og:site_name" content="Homy" />
+        <meta property="og:site_name" content="Moviit Madrid" />
         <meta property="og:url" content="https://creativegigstf.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Moviit Madrid" />
@@ -28,6 +28,22 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* For Window Tab Color */}
         {/* Chrome, Firefox OS and Opera */}
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "RealEstateAgent",
+            "name": "Moviit Madrid",
+            "url": "https://www.moviitmadrid.com",
+            "logo": "https://www.moviitmadrid.com/images/logo.png",
+            "sameAs": ["https://www.instagram.com/moviitt/"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Madrid",
+              "addressCountry": "ES"
+            },
+            "description": "En Moviit encontramos tu apartamento ideal en Madrid."
+          }`}
+        </script>
         <meta name="theme-color" content="#0D1A1C" />
         {/* Windows Phone */}
         <meta name="msapplication-navbutton-color" content="#0D1A1C" />
