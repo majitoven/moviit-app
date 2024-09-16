@@ -39,23 +39,26 @@ export default function RootLayout({
 
         {/* Structured Data (corrected JSON-LD) */}
         <script type="application/ld+json">
-          {`{
-            "@context": "https://schema.org",
-            "@type": "RealEstateAgent",
-            "name": "Moviit Madrid",
-            "url": "https://www.moviitmadrid.com",
-            "logo": "https://www.moviitmadrid.com/images/logo.png",
-            "sameAs": [
-              "https://www.instagram.com/moviitt/"
-            ],
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Madrid",
-              "addressCountry": "ES"
-            },
-            "description": "En Moviit encontramos tu apartamento ideal en Madrid."
-          }`}
-        </script>
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Moviit Madrid",
+    "url": "https://www.moviitmadrid.com",
+    "logo": "https://www.moviitmadrid.com/images/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/moviitt/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Madrid",
+      "addressCountry": "ES"
+    },
+    "description": "En Moviit encontramos tu apartamento ideal en Madrid."
+  }
+  `}
+</script>
+
       </head>
       <body suppressHydrationWarning={true}>
         <div className="main-page-wrapper">
