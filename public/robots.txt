@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.moviitmadrid.com
+
+# Sitemaps
+Sitemap: https://www.moviitmadrid.com/sitemap.xml
