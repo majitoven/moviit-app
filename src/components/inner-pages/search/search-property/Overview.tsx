@@ -392,6 +392,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                         { value: "1-6 meses", text: "1 - 6 meses" },
                         { value: "7-11 meses", text: "7 - 11 meses" },
                         { value: "1 año", text: "1 año" },
+                        { value: "Más de 1 año", text: "Más de 1 año" },
                      ]}
                      {...register("duration", { required: "Este campo es obligatorio" })}
                      onChange={(e) => {
