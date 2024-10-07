@@ -2,7 +2,7 @@ import Faq from "@/components/inner-pages/faq";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Moviit | Faq",
+   title: "Moviit Madrid | Faq",
 };
 const index = () => {
    return (

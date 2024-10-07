@@ -42,7 +42,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" />
         <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet" />
- 
+        
+        {/* URL canónica */}
+        <link rel="canonical" href="https://www.moviitmadrid.com/" />
+
         {/* Inject structured data using dangerouslySetInnerHTML */}
         <script
           type="application/ld+json"
@@ -57,5 +60,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
       </body>
     </html>
-  )
+  );
 }
