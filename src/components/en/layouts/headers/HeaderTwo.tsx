@@ -27,9 +27,9 @@ const HeaderTwo = ({ style_1, style_2 }: any) => {
       setLanguage(lang);
       if (typeof window !== 'undefined') {
          if (lang === "es") {
-            window.location.href = "https://moviitmadrid.com/";
+            window.location.href = "https://www.moviitmadrid.com/";
          } else {
-            window.location.href = "https://moviitmadrid.com/en";
+            window.location.href = "https://www.moviitmadrid.com/en";
          }
       }
    };
