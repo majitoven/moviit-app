@@ -58,12 +58,11 @@ const SearchPropertyBody = () => {
   return (
     <div className="search-body mt-40 xl-mt-100 xl-mb-100 md-mt-20 md-mb-40 md-pt-40">
       <div className="container">
-        <h3>Prontos, listos... a buscar tu hogar.</h3>
         <div className="d-flex flex-column justify-content-center align-items-center mt-60">
-          <h3 className="font-garamond special-title center">ES UNA BÚSQUEDA 360º EN MADRID </h3>
+          <h3 className="font-garamond special-title center">BÚSQUEDA 360º PERSONALIZADA EN MADRID </h3>
           <div>
-            <p className="fs-20 lh-lg mt-20 fw-normal"> Completa la búsqueda y uno de nuestros asesores personales te enviará pronto los apartamentos y habitaciones que están disponibles para ti y se adapten a tu situación. </p>
-            <p className="fs-20 lh-lg pb-25 fw-normal"> Es muy fácil, sólo tienes que <strong>llenar el formulario</strong> :) </p>
+            <p className="fs-20 lh-lg mt-20 fw-normal"> Ofrecemos un servicio personalizado para la búsqueda de vivienda, adaptándonos a los criterios del cliente. Ayudamos en la negociación, investigación y documentación hasta la firma del contrato. </p>
+            <p className="fs-20 lh-lg pb-25 fw-normal"> Sólo debes <strong>completar el formulario</strong> y te contactaremos a la brevedad para comenzar con el proceso. </p>
           </div>
         </div>
 

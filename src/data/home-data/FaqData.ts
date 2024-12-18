@@ -10,14 +10,14 @@ const faq_data:DataType[] = [
    {
       id: 1,
       page: "home_2_faq_1",
-      question: "Contrato temporal (1 - 6 meses): 50% de 1 mes de alquiler",
+      question: "Contrato temporal (1 - 5 meses): 50% de 1 mes de alquiler",
       answer: "Seña de 200€ que se descontará del % (1 persona)",
       showAnswer: false,
    },
    {
       id: 2,
       page: "home_2_faq_1",
-      question: "Contrato temporal (7 - 11 meses): 70% de 1 mes de alquiler",
+      question: "Contrato temporal (6 - 11 meses): 70% de 1 mes de alquiler",
       answer: "Seña de 200€ que se descontará del % (1 persona)",
       showAnswer: false,
    },

@@ -57,8 +57,8 @@ const content_data: ContentType = {
          desc: "Te asesoramos sobre los documentos que debes presentar para aplicar a tu apartamento ideal."
       },
    ],
-   service_list: ["Contrato temporal (1 - 6 meses): 50% de 1 mes de alquiler con seña de 200€ que se descontará del porcentaje (1 persona)",
-      "Contrato temporal (7 - 11 meses): 70% de 1 mes de alquiler con seña de 200€ que se descontará del porcentaje (1 persona)",
+   service_list: ["Contrato temporal (1 - 5 meses): 50% de 1 mes de alquiler con seña de 200€ que se descontará del porcentaje (1 persona)",
+      "Contrato temporal (6 - 11 meses): 70% de 1 mes de alquiler con seña de 200€ que se descontará del porcentaje (1 persona)",
       "Contrato anual (1 año): 1 mes de alquiler con seña de 200€ que se descontará del porcentaje (por persona)",],
    sidebar_list: ["Property & Loan", "Sell Home", "Consulting Service", "Rent Home", "Mortgage",],
 }

@@ -169,8 +169,8 @@ const DropdownOne = ({ style }: any) => {
               <NiceSelect
                 className={`nice-select ${style ? "fw-normal" : ""}`}
                 options={[
-                  { value: "1-6 meses", text: "1 - 6 meses" },
-                  { value: "7-11 meses", text: "7 - 11 meses" },
+                  { value: "1-5 meses", text: "1 - 5 meses" },
+                  { value: "6-11 meses", text: "6 - 11 meses" },
                   { value: "1 año", text: "1 año" },
                   { value: "Más de 1 año", text: "Más de 1 año" },
                 ]}

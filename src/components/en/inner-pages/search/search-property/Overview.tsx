@@ -388,8 +388,8 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
                      className="nice-select"
                      placeholder="Select duration"
                      options={[
-                        { value: "1-6 months", text: "1-6 months" },
-                        { value: "7-11 months", text: "7-11 months" },
+                        { value: "1-5 months", text: "1-5 months" },
+                        { value: "6-11 months", text: "6-11 months" },
                         { value: "1 year", text: "1 year" },
                         { value: "More than 1 year", text: "More than 1 year" },
 

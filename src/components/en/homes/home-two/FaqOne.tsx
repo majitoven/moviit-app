@@ -12,14 +12,14 @@ interface DataType {
     {
        id: 1,
        page: "home_2_faq_1",
-       question: "Temporary contract (1 - 6 months): 50% of 1 month's rent",
+       question: "Temporary contract (1 - 5 months): 50% of 1 month's rent",
        answer: "Deposit of 200€ from the % (1 person)",
        showAnswer: false,
     },
     {
        id: 2,
        page: "home_2_faq_1",
-       question: "Temporary contract (7 - 11 months): 70% of 1 month's rent",
+       question: "Temporary contract (6 - 11 months): 70% of 1 month's rent",
        answer: "Deposit of 200€ from the % (1 person)",
        showAnswer: false,
     },
