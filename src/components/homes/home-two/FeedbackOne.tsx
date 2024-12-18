@@ -13,7 +13,7 @@ const Feedback = () => {
                <div className="col-lg-8 order-lg-last">
                   <div className="main-content position-relative z-1">
                      <div className="feedback-block-two">
-                        <blockquote className="font-garamond text-white">¡Bienvenidos a <span style={{textDecoration: 'none'}}>Madrid!</span> <br/>Logramos que llegues directo de Barajas a tu <span style={{textDecoration: 'none'}}>casa.</span></blockquote>
+                        <blockquote className="font-garamond text-white">¡Encontrar tu hogar en <span style={{textDecoration: 'none'}}>Madrid</span> <br/>a distancia ahora es <span style={{textDecoration: 'none'}}>más fácil!</span></blockquote>
                         <div className="d-flex align-items-center mt-75 md-mt-60">
                            <div className="ps-4">
                               

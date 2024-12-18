@@ -12,7 +12,7 @@ const HeroBanner = () => {
                <div className="row">
                   <div className="col-xxl-7 col-xl-6 col-lg-7">
                      <div className="position-relative pe-xxl-5 wow fadeInLeft">
-                        <h1 className="hero-heading">Encontraremos un lugar <span className="d-inline-block position-relative">perfecto <Image src={titleShape} alt="" className="lazy-img" /></span>  para ti.</h1>
+                        <h1 className="hero-heading">Encontraremos tu hogar <span className="d-inline-block position-relative">ideal <Image src={titleShape} alt="" className="lazy-img" /></span>.</h1>
                      </div>
                   </div>
                   <div className="col-lg-5 ms-auto">
