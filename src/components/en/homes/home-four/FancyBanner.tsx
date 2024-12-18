@@ -13,7 +13,7 @@ const FancyBanner = ({ style }: any) => {
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-7 col-md-7">
               <div className="pb-80 lg-pb-40">
-                <h3>Our mission is to help you <span className="fw-normal fst-italic">find your place.</span></h3>
+                <h3>We save you time and money! <span className="fw-normal fst-italic">Let us take care of finding your ideal place.</span></h3>
                 <div className="d-inline-flex flex-wrap align-items-center position-relative mt-15">
                   <Link href="/en/contact" className="btn-two rounded-0 border-0 mt-10"><span style={{ fontSize: '36px' }}>Contact Us</span></Link>
                   <Image src={fancyShape_1} alt="" className="lazy-img shapes shape_02 wow fadeInRight" />

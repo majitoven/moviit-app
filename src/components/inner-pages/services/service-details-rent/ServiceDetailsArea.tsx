@@ -74,7 +74,13 @@ const ServiceDetailsArea = () => {
                   <div className="service-post">
                      <h3 className="mb-30">{title_1}</h3>
                      <h4 className="font-garamond special-title">¿Qué hacemos?</h4>
-                     <p className="fs-20 lh-lg pb-25 mt-20"> Nos aseguramos de que llegues directamente a tu hogar ideal. </p>
+                     <p className="fs-20 lh-lg pb-25 mt-20"> Somos Personal Shoppers y entendemos que el proceso de alquiler puede ser complicado, especialmente para extranjeros, por lo que nos enfocamos en brindar un servicio adaptado a las necesidades individuales de cada cliente de una manera transparente.
+
+                     Nos enfocamos exclusivamente en proteger y promover los intereses de nuestros clientes actuando como sus ojos frente a intermediarios y agencias, ofreciendo nuestro asesoramiento honesto sobre cada oportunidad de alquiler.
+
+                     Nuestra misión es facilitar el acceso a opciones de alquiler que se alineen con sus preferencias y requisitos, asegurando una experiencia fluida y satisfactoria a distancia. Queremos que cada inquilino se sienta apoyado y confiado al dar este importante paso.
+
+Somos conscientes de que ayudarles a encontrar la propiedad que mejor se adapte a sus necesidades es nuestra principal prioridad y lo que más nos satisface.</p>
                      <h4 className="font-garamond special-title">¿Cómo lo hacemos?</h4>
                      <p className="fs-20 lh-lg mt-20">A través de una búsqueda 360º de apartamentos y habitaciones en Madrid, te presentamos todas las opciones disponibles que se ajustan a tus necesidades y circunstancias. Negociamos en tu nombre con la agencia inmobiliaria o el propietario del apartamento y te asesoramos sobre la documentación necesaria para ser el mejor perfil y aumentar tus posibilidades de ser aceptado.</p>
                   </div>
@@ -117,7 +123,7 @@ const ServiceDetailsArea = () => {
                            {service_features.map((item, index) => (
                               <div key={index} className="col-xl-3 col-lg-3 col-md-3">
                                  <div className="card-style-five mt-30" style={{ padding: '50px 40px 50px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                                    <div className="icon" style={{height: '150px', width: '185px'}}><Image src={item.icon} alt="" className="lazy-img w-100 h-100" /></div>
+                                    <div className="icon" style={{ height: '150px', width: '185px' }}><Image src={item.icon} alt="" className="lazy-img w-100 h-100" /></div>
                                     <h5 className="mt-20 mb-20 font-garamond special-title">{`${index + 1}. ${item.title}`}</h5>
                                     <p>{item.desc}</p>
                                  </div>
