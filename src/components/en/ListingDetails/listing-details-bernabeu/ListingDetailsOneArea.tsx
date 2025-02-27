@@ -30,7 +30,7 @@ const property_data: DataType[] = [
   {
     id: 1,
     page: "home_3_property_2",
-    tag: "RENT",
+    tag: "RENTED",
     thumb: thumb1,
     link: '/en/listing_details_malasana',
     title: "Malasaña",
@@ -40,7 +40,7 @@ const property_data: DataType[] = [
   {
     id: 2,
     page: "home_3_property_2",
-    tag: "RENT",
+    tag: "RENTED",
     thumb: thumb2,
     link: '/en/listing_details_chamberi',
     title: "Chamberí",
@@ -50,7 +50,7 @@ const property_data: DataType[] = [
   {
     id: 3,
     page: "home_3_property_2",
-    tag: "RENT",
+    tag: "RENTED",
     thumb: thumb3,
     link: '/en/listing_details_malasana',
     title: "Justicia",
@@ -73,10 +73,7 @@ const ListingDetailsOneArea = () => {
         </div>
         <div className="row">
           <div className="col-xl-8">
-            <div className="property-overview mb-50 bg-white shadow4 border-20 p-40">
-              <h4 className="mb-20">Description</h4>
-              <p className="fs-20 lh-lg">Lu and Gastón arrived directly at their apartment in Madrid with their dogs. They came to work.</p>
-            </div>
+
             <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
               <CommonAmenities amenities={ammenities_data} />
             </div>

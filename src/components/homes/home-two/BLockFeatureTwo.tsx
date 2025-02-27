@@ -14,7 +14,7 @@ interface ContentType {
 const content_data: ContentType = {
   title: (
     <>
-      Nuestros clientes <i>felices</i>
+      Nuestros casos de <i>éxito</i>
     </>
   ),
   desc: "“Excelente servicio, el piso fue perfecto y el barrio demasiado lindo!”",

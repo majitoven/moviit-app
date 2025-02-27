@@ -27,7 +27,7 @@ const property_data: DataType[] = [
    {
       id: 1,
       page: "home_3_property_2",
-      tag: "RENT",
+      tag: "RENTED",
       thumb: thumb1,
       link: '/en/listing_details_malasana',
       title: "Justicia",
@@ -37,7 +37,7 @@ const property_data: DataType[] = [
    {
       id: 2,
       page: "home_3_property_2",
-      tag: "RENT",
+      tag: "RENTED",
       thumb: thumb2,
       link: '/en/listing_details_chamberi',
       title: "Chamberí",
@@ -47,7 +47,7 @@ const property_data: DataType[] = [
    {
       id: 3,
       page: "home_3_property_2",
-      tag: "RENT",
+      tag: "RENTED",
       thumb: thumb3,
       link: '/en/listing_details_bernabeu',
       title: "Bernabéu",

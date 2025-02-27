@@ -54,7 +54,7 @@ const menu_data: MenuItem[] = [
     {
         id: 4,
         has_dropdown: true,
-        title: "Happy clients",
+        title: "Successful cases",
         link: "#",
         sub_menus: [
             { link: "/en/listing_details_justicia", title: "Justicia" }, //Paly

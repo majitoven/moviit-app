@@ -48,7 +48,7 @@ const MediaGallery = ({ style }: any) => {
   }, []);
 
   return (
-    <div className="media-gallery mt-100 xl-mt-80 lg-mt-60">
+    <div className="media-gallery mt-100 xl-mt-80 lg-mt-20">
       <div id="media_slider" className="carousel slide row">
         <div className="col-lg-10">
           <div className={`bg-white border-20 md-mb-20 ${style ? "" : "shadow4 p-30"}`}>

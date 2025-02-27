@@ -128,7 +128,7 @@ const feature_data: DataType[] = [
       class_name:"arrow position-relative",
       icon: feature3Icon_2,
       title: "Te encontramos tu lugar",
-      desc: "Te ofrecemos una búsqueda 360º de apartamentos y habitaciones en Madrid, presentándote todas las opciones que se ajustan a tus necesidades. Negociamos con la agencia o propietario y te asesoramos sobre la documentación necesaria para aumentar tus posibilidades de ser aceptado.",
+      desc: "After an exhaustive search on real estate portals, agencies, and off-market properties, we will provide you with a list of options that match your needs. From there, we will begin advocating for your interests, acting as your representative with intermediaries and agencies to help you find your ideal home",
    },
 
 

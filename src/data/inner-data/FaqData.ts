@@ -96,23 +96,13 @@ const inner_faq_data: DataType[] = [
    },
    {
       id: 4,
-      id_name: "Amueblamiento",
-      title: "COSTOS Y PAGOS AMUEBLAMIENTO",
+      id_name: "Asesoramiento",
+      title: "SERVICIO DE ASESORAMIENTO INMOBILIARIO",
       faq: [
          {
             id: 16,
-            question: "¿El servicio de amueblamiento está incluido en el servicio de alquiler?",
-            answer: "No. Es un servicio aparte.",
-         },
-         {
-            id: 17,
-            question: "¿Cuál es el costo de este servicio extra?",
-            answer: "450€. Pago por adelantado.",
-         },
-         {
-            id: 18,
-            question: "¿Qué incluye el servicio?",
-            answer: "Los 450€ incluyen: \nLimpieza de piso \nArmado y colocación \nRecibimiento y selección de muebles",
+            question: "¿El servicio de asesoramiento inmobiliario está incluido en el servicio de alquiler?",
+            answer: "El servicio de asesoramiento inmobiliario está incluido en el paquete de alquiler. Es un beneficio adicional que ofrecemos a nuestros clientes de Moviit.",
          },
       ]
    },

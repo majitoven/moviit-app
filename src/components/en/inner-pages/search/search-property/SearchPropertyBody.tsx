@@ -61,8 +61,12 @@ const SearchPropertyBody = () => {
         <div className="d-flex flex-column justify-content-center align-items-center mt-60">
           <h3 className="font-garamond special-title center">360º PERSONALIZED SEARCH IN MADRID</h3>
           <div>
-            <p className="fs-20 lh-lg mt-20 fw-normal"> We offer a personalized service for housing search, adapting to the client's criteria. We assist with negotiation, research, and documentation until the contract is signed.</p>
-            <p className="fs-20 lh-lg pb-25 fw-normal"> Just <strong>complete the form</strong> and we will contact you shortly to start the process. </p>
+          <p className="fs-20 lh-lg mt-20 fw-normal">
+  We offer a personalized home search service, adapting to the client's criteria. We assist with negotiation, research, and documentation until the contract is signed.
+</p>
+<p className="fs-20 lh-lg pb-25 fw-normal">
+  You only need to <strong>fill out the form</strong>, and we will contact you shortly to begin the process.
+</p>
           </div>
         </div>
 

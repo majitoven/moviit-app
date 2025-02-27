@@ -8,7 +8,7 @@ const ListingDetailsOne = () => {
   return (
     <>
       <HeaderTwo style_1={true} style_2={false} />
-      <BreadcrumbTwo title="Clientes felices" background={`url(/assets/images/media/A2_short.jpg)`} />
+      <BreadcrumbTwo title="Casos de éxito" background={`url(/assets/images/media/A2_short.jpg)`} />
       <ListingDetailsOneArea />
       <FooterOne style={true} />
     </>

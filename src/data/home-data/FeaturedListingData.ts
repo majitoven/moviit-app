@@ -16,7 +16,7 @@ const feature_listing_data:DataType[]=[
    {
       id: 1,
       page: "home_5",
-      tag: "Rent",
+      tag: "RENTED",
       item_bg_img:"item-bg-1",
       title: "Blueberry villa.",
       address: "Mirpur 10, Stadium dhaka 1208",
@@ -35,7 +35,7 @@ const feature_listing_data:DataType[]=[
    {
       id: 3,
       page: "home_5",
-      tag: "Rent",
+      tag: "RENTED",
       item_bg_img:"item-bg-3",
       title: "Modern Duplex",
       address: "Twin tower, 32 street, Florida",

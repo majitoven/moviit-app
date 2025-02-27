@@ -102,23 +102,14 @@ const FaqArea = () => {
       {
          id: 4,
          id_name: "Furnishing",
-         title: "FURNISHING COSTS AND PAYMENTS",
+         title: "REAL ESTATE CONSULTING SERVICE",
          faq: [
             {
                id: 16,
-               question: "Is the furnishing service included in the rental service?",
-               answer: "No. It is a separate service.",
+               question: "Is the real estate consulting service included in the rental service?",
+               answer: "Yes, the real estate consulting service is included in the rental package. It is an additional benefi we offer to our Moviit clients.",
             },
-            {
-               id: 17,
-               question: "What is the cost of this extra service?",
-               answer: "450€. Payment in advance.",
-            },
-            {
-               id: 18,
-               question: "What does the service include?",
-               answer: "The 450€ include:\nApartment cleaning\nFurniture assembly and placement\nReceipt and selection of furniture",
-            },
+          
          ]
       },
       {
@@ -205,7 +196,7 @@ const FaqArea = () => {
                            <li><Link href="#Company">1. <span>The Company</span></Link></li>
                            <li><Link href="#Services">2. <span>Services</span></Link></li>
                            <li><Link href="#Costs">3. <span>Rental Costs and Payments</span></Link></li>
-                           <li><Link href="#Furnishing">4. <span>Furnishing Costs and Payments</span></Link></li>
+                           <li><Link href="#Furnishing">4. <span>Real Estate Consulting Services</span></Link></li>
                            <li><Link href="#Terms">5. <span>Terms & Conditions</span></Link></li>
                            <li><Link href="#Privacy">6. <span>Privacy Policies</span></Link></li>
                            <li><Link href="#Others">7. <span>Others</span></Link></li>

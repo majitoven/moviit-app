@@ -17,7 +17,8 @@ const HeroBanner = () => {
                   </div>
                   <div className="col-lg-5 ms-auto">
                      <div className="ps-xxl-5 pt-35 wow fadeInRight">
-                        <p className="color-dark sub-heading mb-40 lg-mb-20"> Sólo tienes que llegar, dormir y disfrutar de Madrid.</p>
+                        <p className="color-dark sub-heading mb-40 lg-mb-20"> Gracias a nuestra dedicación, experiencia y amplia red de contactos en el sector
+                        inmobiliario de Madrid.</p>
                         <div className="d-flex flex-wrap justify-content-center align-items-end">
               
                            <Link href="/contact" className="btn-five rounded-0 md mt-20" style={{marginTop: '0px'}}><span>Contactanos</span> <i className="bi bi-arrow-up-right"></i></Link>

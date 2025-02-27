@@ -30,7 +30,7 @@ const HeroBanner = () => {
             <div className="row">
                <div className="col-lg-10 m-auto">
                   <h1 className="hero-heading text-center text-white font-garamond fw-500 wow fadeInUp"><span><Image src={titleShape} alt="" className="lazy-img" /> We will find your</span> <br />  perfect place.</h1>
-                  <p className="fs-24 bold text-white text-center pt-35 md-pt-20 pb-55 lg-pb-40 wow fadeInUp" data-wow-delay="0.1s" style={{fontWeight: 500}}>You just have to arrive, sleep, and enjoy Madrid.</p>
+                  <p className="fs-24 bold text-white text-center pt-35 md-pt-20 pb-55 lg-pb-40 wow fadeInUp" data-wow-delay="0.1s" style={{fontWeight: 500}}>Thanks to our dedication, experience, and extensive network of contacts in the real estate sector in Madrid.</p>
                </div>
             </div>
 				<div className="row">

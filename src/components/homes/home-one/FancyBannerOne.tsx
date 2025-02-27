@@ -51,6 +51,30 @@ const FancyBannerOne = ({ style }: any) => {
                 <div className="row gx-0">
                   <div className="col-md-8 d-flex">
                     <div className="gutter border-right w-100 h-100">
+                      <div className="tag mb-20"><strong>Beneficios</strong></div>
+                      <strong className="d-block color-dark fw-500 fs-20">
+                        Qué incluye:
+                    </strong>
+                      <p style={{ fontSize: "16px", margin: "0px" }}>
+                        - Te ahorramos tiempo:
+                        • Ahora estás al tanto de los requisitos y restricciones de alquiler en Madrid, por lo que no te verás sorprendido.
+                    </p>
+                      <p style={{ fontSize: "16px", margin: "0px" }}>
+                        - Te ahorramos dinero:
+                        • Te informarás con antelación sobre los posibles desafíos o problemas que podrías enfrentar, lo que te permitirá evitar imprevistos que puedan resultar costosos.
+                    </p>
+                      <p style={{ fontSize: "16px", margin: "0px" }}>
+                        - Te ayudamos a no perder oportunidades:
+                        •Gracias al asesoramiento, podrás aprovechar al máximo todas las oportunidades para ser aceptado.
+                    </p>
+                    
+                      {/* <ul className="style-none d-flex action-icons">
+                      <SocialIcon />
+                    </ul> */}
+                    </div>
+                  </div>
+                  <div className="col-md-4 d-flex">
+                    <div className="gutter border-right w-100 h-100">
                       <div className="tag mb-20"><strong>Proceso</strong></div>
                       <strong className="d-block color-dark fw-500 fs-20">
                         Qué incluye:
@@ -77,7 +101,7 @@ const FancyBannerOne = ({ style }: any) => {
                     </div>
                   </div>
 
-                  <div className="col-md-4 d-flex">
+                  {/* <div className="col-md-4 d-flex">
                     <div className="gutter w-100 h-100">
                       <div className="tag mb-20"><strong>COSTO</strong></div>
                       <div style={{ height: '80%' }} className="d-flex align-items-center justify-content-center flex-column">
@@ -111,9 +135,9 @@ const FancyBannerOne = ({ style }: any) => {
                     </p>
                     <p style={{ fontSize: "15px", margin: "0px" }}>
                       - Recibimiento y selección: 200€
-                    </p> */}
+                    </p> 
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="button-group gutter d-flex justify-content-between align-items-center">

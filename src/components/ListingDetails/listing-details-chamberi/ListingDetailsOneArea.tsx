@@ -34,7 +34,7 @@ const property_data: DataType[] = [
    {
       id: 1,
       page: "home_3_property_2",
-      tag: "ALQUILER",
+      tag: "ALQUILADO",
       thumb: thumb1,
       link: '/listing_details_malasana',
       title: "Malasaña",
@@ -44,7 +44,7 @@ const property_data: DataType[] = [
    {
       id: 2,
       page: "home_3_property_2",
-      tag: "ALQUILER",
+      tag: "ALQUILADO",
       thumb: thumb2,
       link: '/listing_details_malasana',
       title: "Justicia",
@@ -54,7 +54,7 @@ const property_data: DataType[] = [
    {
       id: 3,
       page: "home_3_property_2",
-      tag: "ALQUILER",
+      tag: "ALQUILADO",
       thumb: thumb3,
       link: '/listing_details_bernabeu',
       title: "Bernabéu",
@@ -78,11 +78,6 @@ const ListingDetailsOneArea = () => {
             </div>
             <div className="row">
                <div className="col-xl-8">
-                  <div className="property-overview mb-50 bg-white shadow4 border-20 p-40">
-                     <h4 className="mb-20">Descripción</h4>
-                     <p className="fs-20 lh-lg">Isa nos contactó estando en Madrid para que le busquemos piso porque no quería vivir más en la Residencia.
-</p>
-                  </div>
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
                      <CommonAmenities amenities={ammenities_data}/>
                   </div>

@@ -64,13 +64,21 @@ const ServiceDetailsArea = () => {
                   <div className="service-post">
                      <h3 className="mb-30">{title_1}</h3>
                      <h4 className="font-garamond special-title">What do we do?</h4>
-                     <p className="fs-20 lh-lg pb-25 mt-20"> We are Personal Shoppers, and we understand that the rental process can be complicated, especially for foreigners. That’s why we focus on providing a service tailored to each client’s individual needs in a transparent manner.</p>
+                     <p className="fs-20 lh-lg mt-20">
+  We are Personal Shoppers, and we understand that the rental process can be complicated, especially for foreigners. That’s why we focus on providing a service tailored to each client’s individual needs in a transparent manner.
+</p>
 
-<p>We exclusively concentrate on protecting and promoting our clients’ interests, acting as their eyes in front of intermediaries and agencies, and offering our honest advice on every rental opportunity.</p>
+<p>
+  We are exclusively dedicated to protecting and promoting our clients' interests, acting as their eyes when dealing with intermediaries and agencies, and offering honest advice on every rental opportunity.
+</p>
 
-<p>Our mission is to facilitate access to rental options that align with their preferences and requirements, ensuring a smooth and satisfying remote experience. We want every tenant to feel supported and confident when taking this important step.</p>
+<p>
+  Our mission is to facilitate access to rental options that align with their preferences and requirements, ensuring a smooth and satisfying experience from a distance. We want every tenant to feel supported and confident when taking this important step.
+</p>
 
-<p className=" pb-25 ">We recognize that helping them find the property that best suits their needs is our top priority and what brings us the most satisfaction. </p>
+<p className="pb-25">
+  We are fully aware that helping them find the property that best suits their needs is our top priority and what brings us the greatest satisfaction.
+</p>
                      <h4 className="font-garamond special-title">How do we do it?</h4>
                      <p className="fs-20 lh-lg mt-20">Through a 360º search of apartments and rooms in Madrid, we present all the available options that fit your needs and circumstances. We negotiate on your behalf with the real estate agency or the apartment owner and advise you on the necessary documentation to be the best profile and increase your chances of being accepted.</p>
                   </div>

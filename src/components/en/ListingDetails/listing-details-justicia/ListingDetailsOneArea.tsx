@@ -72,10 +72,7 @@ const ListingDetailsOneArea = () => {
             </div>
             <div className="row">
                <div className="col-xl-8">
-                  <div className="property-overview mb-50 bg-white shadow4 border-20 p-40">
-                     <h4 className="mb-20">Description</h4>
-                     <p className="fs-20 lh-lg">Paly arrived from Argentina directly to her apartment in Madrid. She came to study for a Master's degree.</p>
-                  </div>
+
                   <div className="property-amenities bg-white shadow4 border-20 p-40 mb-50">
                      <CommonAmenities amenities={amenities_data} />
                   </div>

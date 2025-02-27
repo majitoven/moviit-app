@@ -15,7 +15,7 @@ const FaqArea = () => {
                            <li><Link href="#Empresa">1. <span>La empresa</span></Link></li>
                            <li><Link href="#Servicios">2. <span>Servicios</span></Link></li>
                            <li><Link href="#Costos">3. <span>Costos y Pagos Alquiler</span></Link></li>
-                           <li><Link href="#Amueblamiento">4. <span>Costos y Pagos de Amueblamiento</span></Link></li>
+                           <li><Link href="#Asesoramiento">4. <span>Servicio de asesoramiento inmobiliario</span></Link></li>
                            <li><Link href="#Terminos">5. <span>Términos & Condiciones</span></Link></li>
                            <li><Link href="#Privacidad">6. <span>Políticas de Privacidad</span></Link></li>
                            <li><Link href="#Otros">7. <span>Otros</span></Link></li>
