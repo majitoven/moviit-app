@@ -35,10 +35,10 @@ const footer_data: DataType[] = [
       widget_title_en: "More info:",
       footer_link: [
          { link: "/about_us_02", link_en: "/en/about_us_02", link_title: "La empresa", link_title_en: "The Company" },
-         { link: "/search_property", link_en: "/en/search_property", link_title: "Buscar piso", link_title_en: "Search Property" },
+         { link: "/search_property", link_en: "/en/search_property", link_title: "Buscar apartamento", link_title_en: "Search Property" },
          { link: "/service_details_rent", link_en: "/en/service_details_rent", link_title: "Servicio Alquiler", link_title_en: "Rental Service" },
-         { link: "/service_details_furniture", link_en: "/en/service_details_furniture", link_title: "Servicio Amueblamiento", link_title_en: "Furniture Service" },
-         { link: "/listing_details_justicia", link_en: "/en/listing_details_justicia", link_title: "Casos reales", link_title_en: "Real Cases" },
+         { link: "/service_details_consulting", link_en: "/en/service_details_consulting", link_title: "Asesoramiento inmobiliario", link_title_en: "Real estate consulting" },
+         { link: "/listing_details_justicia", link_en: "/en/listing_details_justicia", link_title: "Casos de éxito", link_title_en: "Success stories" },
          { link: "/contact", link_en: "/en/contact", link_title: "Contacto", link_title_en: "Contact" }
       ]
    },

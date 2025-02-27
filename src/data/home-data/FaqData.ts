@@ -32,7 +32,7 @@ const faq_data:DataType[] = [
       id: 4,
       page: "home_2_faq_1",
       question: "Aclaraciones",
-      answer: "En caso de ser más de 1 persona se requiere 200€ por persona de seña que se descontará. Una vez firmado el contrato de alquiler se requiere el resto del monto restante.",
+      answer: "*En caso de ser más de 1 persona se requiere 200 Euros por persona de seña. Una vez firmado el contrato de alquiler se requiere el monto restante.",
       showAnswer: false,
    },
 
@@ -73,14 +73,14 @@ const faq_data:DataType[] = [
       id: 1,
       page: "home_six",
       question: "MISIÓN",
-      answer: "Nuestro objetivo es encontrar tu lugar ideal, en una zona agradable donde te sientas cómodo.",
+      answer: "A través de un enfoque integral, nuestra misión es transformar la experiencia de alquiler, brindando confianza y transparencia a quienes buscan un nuevo hogar en Madrid a distancia.",
       showAnswer: false,
    },
    {
       id: 2,
       page: "home_six",
       question: "VISIÓN",
-      answer: "Ser los ojos de nuestros clientes en Madrid.",
+      answer: "Nos dedicamos por completo a proteger y promover los intereses de nuestros clientes, actuando como sus ojos ante intermediarios y agencias inmobiliarias. Les brindamos nuestro asesoramiento honesto sobre cada oportunidad de alquiler.",
       showAnswer: false,
    },
    {

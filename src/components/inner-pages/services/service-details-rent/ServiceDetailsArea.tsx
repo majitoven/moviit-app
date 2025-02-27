@@ -28,7 +28,7 @@ interface ContentType {
 }[];
 
 const content_data: ContentType = {
-   title_1: "Encontramos tu piso / habitación.",
+   title_1: "Encontramos tu apartamento y/o habitación.",
    title_2: "Solo tienes que seguir estos simples pasos:",
    title_3: "Costos y condiciones del servicio:",
    desc_1: (<>Risk management and compliance, when approached strategically, have the potential to go beyond mitigating threats and protecting a company’s operations & reputation.They can actually generate value and create opportunities.</>),

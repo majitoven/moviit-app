@@ -22,24 +22,23 @@ const FancyBannerOne = ({ style }: any) => {
             >
               <div className="title-one mb-45 lg-mb-30">
                 <h3 className="text-white">
-                  We{" "}
+                
                   <span>
-                    furnish{" "}
+                    Tenant{" "}
                     {style ? (
                       ""
                     ) : (
                       <Image src={titleShape} alt="" className="lazy-img" />
                     )}
                   </span>
-                  your home in Madrid.
+                 profile
                 </h3>
                 <p className="fs-24 text-white pe-xl-5 me-xxl-5">
-                  Not only do we find you a home, but we also furnish it with the
-                  essentials so you can arrive and sleep comfortably.
+                  We give you the opportunity to be the best profile for the landlord.
                 </p>
               </div>
-              <Link href="/en/service_details_furniture" className="btn-six">
-                I'm interested
+              <Link href="/en/service_details_consulting" className="btn-six">
+                Read more
               </Link>
             </div>
 

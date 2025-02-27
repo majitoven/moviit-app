@@ -9,7 +9,7 @@ const ServiceFurniture = () => {
    return (
       <>
          <HeaderTwo style_1={true} style_2={false} />
-         <BreadcrumbTwo title="Furniture" sub_title="We furnish your home" background={`url(/assets/images/media/silla.jpg)`} />
+         <BreadcrumbTwo title="Real estate consulting" sub_title="We provide you with guidance" background={`url(/assets/images/media/silla.jpg)`} />
          <BlockFeatureOne />
          <FancyBanner />
          <Feedback />

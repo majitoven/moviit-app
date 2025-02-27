@@ -22,7 +22,7 @@ interface ContentType {
 }[];
 
 const content_data: ContentType = {
-   title_1: "We find your apartment/room.",
+   title_1: "We find your apartment and/or room.",
    title_2: "Just follow these simple steps:",
    title_3: "Service costs and conditions:",
 
@@ -49,7 +49,7 @@ const content_data: ContentType = {
       },
    ],
    service_list: ["Temporary contract (1 to 6 months): 50% of one month's rent with 200€ deposit included in the percentage (per person)",
-      "Temporary contract (7 to 11 months): 70% of one month's rent with 200€ deposit included in the percentage (per person)",
+      "Temporary contract (6 to 11 months): 70% of one month's rent with 200€ deposit included in the percentage (per person)",
       "Annual contract (1 year): One month's rent with 200€ deposit included in the percentage (per person)",],
 }
 

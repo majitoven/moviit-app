@@ -42,24 +42,19 @@ const BlockFeatureOne = () => {
                      <div className="block-two ms-xxl-5 wow fadeInRight">
                         <div className="bg-wrapper md-mt-60">
                            <div className="title-one m0">
-                              <h3>We don't just find you a home, we also <span>furnish it<Image src={featureImg_5} alt="" className="lazy-img" /></span>.</h3>
+                              <h3>In addition to the search, the <span>advisory<Image src={featureImg_5} alt="" className="lazy-img" /></span> aspect is even more important.</h3>
                            </div>
-                           <p className="fs-22 mt-45 mb-50 xl-mb-40 pe-xxl-5">We prepare your home with essential furniture so that you can then add your personal touch.</p>
-                           <h4 className="font-garamond special-title">Process:</h4>
+                           <p className="fs-22 mt-45 mb-50 xl-mb-40 pe-xxl-5">In addition to helping you choose the best option, we provide guidance to increase your chances of being accepted by the landlord.</p>
+                           <h4 className="font-garamond special-title">Tenant Profile:</h4>
                            <ul className="list-style-one fs-22 color-dark style-none mt-30 mb-50">
-                              <li>Selection of essential furniture from our catalog (mattresses, sofa, bedding, towels, and dishes).</li>
-                              <li>Cleaning of the apartment.</li>
-                              <li>Receiving furniture. </li>
-                              <li>Assembly and placement of furniture.</li>
-                              <li>Creation of photographic material: photos and videos.</li>
+                              <li>We give you the opportunity to be your best self.</li>
+                              <li>We help you filter the documentation to be presented.</li>
+                              <li>We develop the best strategy for you to be accepted.</li>
+                          
                            </ul>
-                           <h4 className="font-garamond special-title">Cost: 450 €</h4>
-                           <ul className="list-style-one fs-22 color-dark style-none mt-30">
-                              <li>Payment in advance.</li>
-                              <li>The budget includes: Cleaning of the apartment, Assembly and placement, Receiving and selection of furniture.</li>
-                           </ul>
+
                            <div className="mt-40 lg-mt-40">
-                              <Link href="/en/contact" className="btn-two">I'm interested</Link>
+                              <Link href="/en/contact" className="btn-two">I want to get advise</Link>
                            </div>
                         </div>
                      </div>

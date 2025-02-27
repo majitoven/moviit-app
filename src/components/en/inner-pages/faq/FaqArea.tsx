@@ -26,17 +26,17 @@ const FaqArea = () => {
             {
                id: 1,
                question: "What does Moviit do?",
-               answer: "We are Personal Shoppers. We conduct a personalized search for apartments/rooms in Madrid. We present available apartments that fit your conditions. We help you sign the contract online so you can arrive directly at your apartment.",
+               answer: "We are Personal Shoppers, and thanks to our dedication, experience, and extensive network of contacts in the real estate sector, we will find your ideal home.",
             },
             {
                id: 2,
                question: "Who needs Moviit?",
-               answer: "Moviit is necessary for everyone who:\nIs not in Madrid.\nIs in Madrid but doesn't have time to search for an apartment.\nDoesn't have enough tools to find one.",
+               answer: "Moviit is essential for foreigners who cannot visit apartments and lack experience in the rental process in Madrid, as well as for those already living in the city but who do not have the necessary tools to find their home.",
             },
             {
                id: 3,
                question: "Are you a real estate agency?",
-               answer: "We are not a real estate agency. At Moviit, we work for our client. We negotiate on their behalf with the real estate agency/ apartment manager/ owner.",
+               answer: "We are not a real estate agency. We are fully dedicated to protecting and promoting our clients' interests, acting as their representatives with intermediaries and agencies, and providing honest advice on every rental oportunity.",
             },
          ]
       },
@@ -48,12 +48,12 @@ const FaqArea = () => {
             {
                id: 4,
                question: "What happens if I decide to cancel the service?",
-               answer: "You can cancel the service at any time. The deposit is non-refundable due to the work done up to that date.",
+               answer: "You can cancel the service at any time. However, the deposit is non-refundable due to the work completed to date.",
             },
             {
                id: 5,
                question: "Do you pay the monthly expenses for me?",
-               answer: "No. Moviit's goal is to find you an apartment. Then we put you in touch with the real estate agency or apartment owner so they can assist you during your stay.",
+               answer: "No. The goal of Moviit is to help you find accommodation, and afterward, we connect you with the real estate agency or the landlord to assist you during your stay.",
             },
          ]
       },
@@ -69,7 +69,7 @@ const FaqArea = () => {
             },
             {
                id: 10,
-               question: "From 7 to 11 months: 70% of one month's rent",
+               question: "From 6 to 11 months: 70% of one month's rent",
                answer: "Deposit of 200€ from the % (per person)",
             },
             {
@@ -80,22 +80,22 @@ const FaqArea = () => {
             {
                id: 12,
                question: "In case of more than one person:",
-               answer: "200€ per person for deposit from the %.",
+               answer: "200€ per person.",
             },
             {
                id: 13,
                question: "Extras after signing the contract:",
-               answer: "Once the rental contract is signed, the remaining total amount is required. This applies to all cases.",
+               answer: "Once the rental contract is signed, the total remaining amount must be paid. This policy applies in all cases.",
             },
             {
                id: 14,
                question: "Refunds and/or returns",
-               answer: "In case of wanting to cancel the process, Moviit's deposit will be totally lost due to the work done up to that date. This applies to all cases.",
+               answer: "In the event that you decide to discontinue the process, the deposit with Moviit will be considered fully forfeited due to the work completed to date. This policy applies in all cases.",
             },
             {
                id: 15,
                question: "How is the service paid?",
-               answer: "By bank transfer.",
+               answer: "The service can be paid for via bank transfer or in cash.",
             },
          ]
       },
@@ -142,12 +142,12 @@ const FaqArea = () => {
             {
                id: 22,
                question: "What do you use the information for?",
-               answer: "The personal data we collect is used exclusively for the following purposes: allowing our real estate agents to start the search for apartments based on your requirements and contacting you to provide information on available apartments that match your search.",
+               answer: "The personal data we collect is used exclusively for the following purposes: allowing our personal shoppers to start the search for apartments based on your requirements and contacting you to provide information on available apartments that match your search.",
             },
             {
                id: 23,
                question: "Will you share my information with third parties?",
-               answer: "We do not share, sell, or rent your personal data to third parties. Your information is shared only with our internal real estate agents for the purposes described in this Privacy Policy.",
+               answer: "We do not share, sell, or rent your personal data to third parties. Your information is shared only with our internal personal shoppers for the purposes described in this Privacy Policy.",
             },
             {
                id: 24,
@@ -166,7 +166,7 @@ const FaqArea = () => {
             },
             {
                id: 27,
-               question: "How can I contact you?",
+               question: "How can I contact Moviit?",
                answer: "If you have any questions or concerns about this Privacy Policy or our information handling practices, please contact us at: Moviit, Email: moviitmad@gmail.com, Phone: +34 611 877 027.",
             },
          ]
@@ -179,7 +179,7 @@ const FaqArea = () => {
             {
                id: 28,
                question: "Can you help me with the legal documentation necessary to rent an apartment?",
-               answer: "Yes, we help you prepare and review all the necessary legal documentation for the rental process.",
+               answer: "Yes, we assist you in preparing and reviewing all the legal documentation required for the rental process.",
             },
          ]
       },

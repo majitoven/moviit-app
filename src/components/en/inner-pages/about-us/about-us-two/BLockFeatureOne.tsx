@@ -4,14 +4,14 @@ const faq_data = [{
    id: 1,
    page: "home_six",
    question: "MISSION",
-   answer: "Our goal is to find your ideal place in a pleasant area where you feel comfortable.",
+   answer: "Through a comprehensive approach, our mission is to transform the rental experience, providing trust and transparency for those seeking a new home in Madrid remotely.",
    showAnswer: false,
 },
 {
    id: 2,
    page: "home_six",
    question: "VISION",
-   answer: "To be the eyes of our clients in Madrid.",
+   answer: "We are fully dedicated to protecting and promoting our clients' interests, acting as their eyes before intermediaries and agencies. We provide them with our honest advice on every rental opportunity.",
    showAnswer: false,
 },
 {
@@ -34,7 +34,7 @@ const BLockFeatureOne = () => {
                <div className="col-xl-6 col-lg-7 order-lg-last wow fadeInRight">
                   <div className="ms-xxl-5 ps-xl-4 ps-lg-5 md-mb-50">
                      <div className="title-one mb-45 lg-mb-20">
-                        <h2 className="font-garamond star-shape">Find your place in Madrid with Moviit. <span className="star-shape"><Image src={titleShape} alt="" className="lazy-img" /></span></h2>
+                        <h2 className="font-garamond star-shape">Renting remotely is easier with Moviit. <span className="star-shape"><Image src={titleShape} alt="" className="lazy-img" /></span></h2>
                      </div>
                      <div className="accordion-style-three">
                         <div className="accordion" id="accordionThree">

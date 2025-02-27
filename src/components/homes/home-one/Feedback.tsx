@@ -25,7 +25,7 @@ const feedback_data: DataType[] = [
       img: feadbackImg_1,
       title: "Jonathan Harry",
       country: "Milan, Itlay",
-      desc: "Rápido, eficiente y con muy buen gusto, amueblaron mi piso en Madrid sin complicaciones.",
+      desc: "Servicio muy personalizado, excelente comunicación y muy buenas recomendaciones. No solo te encuentran alojamiento, sino también te ayudan con trámites y todo lo necesario para llegar a Madrid de la mejor manera. Muy recomendado!",
       rating_count: 4.7,
       total_rating: 13,
    },
@@ -34,7 +34,7 @@ const feedback_data: DataType[] = [
       img: feadbackImg_2,
       title: "Sofia Rena",
       country: "New York, USA",
-      desc: "Excelente relación calidad-precio, llegaron, limpiaron y amueblaron mi casa rapidísimo.",
+      desc: "Martina una genia total. Le escribí algunos días antes de llegar a Madrid y dos semanas después de mi llegada ya tenía piso. Super recomendada!.",
       rating_count: 4.5,
       total_rating: 10
    },
@@ -43,10 +43,29 @@ const feedback_data: DataType[] = [
       img: feadbackImg_3,
       title: "Rashed Kabir",
       country: "Dhaka, BD",
-      desc: "¡Servicio altamente recomendable!, mi casa quedó divina y no teníamos tiempo para salir a buscar muebles.",
+      desc: "Gestión rápida y eficiente para encontrar piso. Me presentaron varias opciones y la comunicación fue sencilla y transparente. Muy recomendado para personas que busquen piso desde otro país, te solucionan todo.",
       rating_count: 4.8,
       total_rating: 11
    },
+   {
+      id: 3,
+      img: feadbackImg_3,
+      title: "Rashed Kabir",
+      country: "Dhaka, BD",
+      desc: "Quede super conforme con el servicio de Movitt, desde la primer sesion entiendio que era lo que buscaba y me envio distintas alternativas, incluso pedi mas opciones y a la semana ya tenia un listado nuevo de alojamientos. Martina me ayudo a confrimar todo, desde el pago, el contrato, la plataforma y dudas que me surgieron post confirmacion de alojamiento. Me quedo super satisfecha con el apartamento que encontramos, un servicio confiable que recomiendo 100%!",
+      rating_count: 4.8,
+      total_rating: 11
+   },
+   {
+      id: 3,
+      img: feadbackImg_3,
+      title: "Rashed Kabir",
+      country: "Dhaka, BD",
+      desc: "Una genia Marti!! Super atenta y responsable. Se preocupa por encontrarte el piso que necesitas, ella coordina y va las visitas, luego te envía fotos y videos. Todo muy prolijo y profesional. La recomiendo!!",
+      rating_count: 4.8,
+      total_rating: 11
+   },
+ 
 ]
 
 const Feedback = () => {
@@ -74,7 +93,7 @@ const Feedback = () => {
                            <div className="col-md-12">
                               <blockquote>"{item.desc}"</blockquote>
                               <div className="mt-40 lg-mt-40">
-                              <Link href="/listing_details_justicia" className="btn-two">Ver casos reales</Link>
+                              <Link href="/listing_details_justicia" className="btn-two">Ver más reviews</Link>
                            </div>
                            </div>
 

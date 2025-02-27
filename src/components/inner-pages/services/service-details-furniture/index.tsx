@@ -13,7 +13,7 @@ const ServiceFurniture = () => {
    return (
       <>
          <HeaderTwo style_1={true} style_2={false} />
-         <BreadcrumbTwo title="Amueblamiento" sub_title="Amueblamos tu casa" background={`url(/assets/images/media/silla.jpg)`} />
+         <BreadcrumbTwo title="Asesoramiento inmobiliario" sub_title="Te asesoramos" background={`url(/assets/images/media/silla.jpg)`} />
          <BlockFeatureOne />
          <FancyBanner />
          <Feedback />

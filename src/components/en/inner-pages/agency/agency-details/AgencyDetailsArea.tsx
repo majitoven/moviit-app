@@ -33,8 +33,9 @@ const agency_details_content: ContentType = {
    table_data_2: [{ table_td_1: "Ubicación", table_td_2: "Madrid, España" }, { table_td_1: "Móvil:", table_td_2: "+34 611 877 027" }, { table_td_1: "Correo electrónico", table_td_2: "moviitmad@gmail.com" }, { table_td_1: "Perfil de instagram:", table_td_2: "@moviitt" },],
    icon: ["whatsapp", "instagram"],
    desc_2: (<>With over 5 years of experience, Moviit specializes in connecting young people with their ideal homes in Madrid.</>),
-   desc_3: (<>Our dynamic and expert team of personal shoppers offers a 360º personalized search.</>),
-   desc_5: (<>We handle finding rooms and apartments in the best areas, adjusting to your needs and budget. Additionally, we facilitate the moving and furnishing process, managing negotiations and necessary documentation.</>),
+   desc_3: (<>Our dynamic and experienced team of personal shoppers offers a personalized 360°
+search.</>),
+   desc_5: (<>We specialize in finding rooms and apartments in the best areas, tailored to your needs and budget. Additionally, we provide real estate consulting to increase your chances of being accepted by the landlord.</>),
 }
 
 const { title_1, desc_1, table_data, icon, desc_2, desc_3, desc_5, table_data_2, title_2, desc_4 } = agency_details_content;

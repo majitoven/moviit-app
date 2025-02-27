@@ -120,7 +120,7 @@ const feature_data: DataType[] = [
       page: "home_1_feature_3",
       icon: feature3Icon_1,
       title: "Te conocemos",
-      desc: "Nos aseguramos de que llegues directamente a tu hogar ideal. Rellená el formulario y nos contactaremos cuanto antes para conocer tus necesidades y aconsejarte de acuerdo a tu perfil.",
+      desc: "Para iniciar la búsqueda, completa el formulario para que podamos entender tus necesidades: zonas, características, precios y otros parámetros. Luego, te contactaremos para comenzar el proceso de asesoramiento.",
    },
    {
       id: 2,
@@ -128,7 +128,7 @@ const feature_data: DataType[] = [
       class_name:"arrow position-relative",
       icon: feature3Icon_2,
       title: "Te encontramos tu lugar",
-      desc: "After an exhaustive search on real estate portals, agencies, and off-market properties, we will provide you with a list of options that match your needs. From there, we will begin advocating for your interests, acting as your representative with intermediaries and agencies to help you find your ideal home",
+      desc: "Tras una exhaustiva búsqueda en portales inmobiliarios, agencias y propiedades off market, te proporcionaremos una lista de opciones que se ajusten a tus necesidades. A partir de ahí, iniciaremos la defensa de tus intereses, actuando como tu representante ante intermediarios y agencias para lograr que encuentres tu hogar ideal.",
    },
 
 

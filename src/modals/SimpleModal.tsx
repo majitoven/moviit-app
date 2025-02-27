@@ -129,7 +129,7 @@ const SimpleModal: React.FC<SimpleModalProps> = ({ showModal, handleClose, formD
                   <label>Mes entrante</label>
                   <input
                     type="text"
-                    placeholder="Mes que ingresará al piso"
+                    placeholder="Mes que ingresará al apartamento"
                     className={`form-control ${errors.month ? "is-invalid" : ""}`}
                     value={month}
                     onChange={(e) => setMonth(e.target.value)}

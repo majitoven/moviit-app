@@ -352,7 +352,7 @@ const Overview: React.FC<Props> = ({ register, errors, setValue, trigger }) => {
             </div>
             <div className="col-md-3">
                <div className="dash-input-wrapper ">
-                  <label htmlFor="month">Mes de entrada al piso*</label>
+                  <label htmlFor="month">Mes de entrada al apartamento*</label>
                   <NiceSelect
                      defaultCurrent={0}
                      className="nice-select"

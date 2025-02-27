@@ -22,24 +22,22 @@ const FancyBannerOne = ({ style }: any) => {
             >
               <div className="title-one mb-45 lg-mb-30">
                 <h3 className="text-white">
-                  Te{" "}
                   <span>
-                    amueblamos{" "}
+                   Perfil{" "}
                     {style ? (
                       ""
                     ) : (
                       <Image src={titleShape} alt="" className="lazy-img" />
                     )}
                   </span>
-                tu hogar en Madrid.
+                del inquilino
               </h3>
                 <p className="fs-24 text-white pe-xl-5 me-xxl-5">
-                  No solo te buscamos casa, también te la amueblamos con lo
-                  indispensable para que llegues directo a dormir.
+                 Te damos la oportunidad de ser el mejor perfil para el propietario.
               </p>
               </div>
-              <Link href="/service_details_furniture" className="btn-six">
-                Me interesa
+              <Link href="/service_details_consulting" className="btn-six">
+                Conocer más
             </Link>
             </div>
 

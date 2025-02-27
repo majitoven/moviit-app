@@ -20,17 +20,17 @@ const inner_faq_data: DataType[] = [
          {
             id: 1,
             question: "¿Qué hacen en Moviit?",
-            answer: "Somos Personal Shoppers. Hacemos una búsqueda personalizada de pisos/habitaciones en Madrid. Te presentamos los pisos disponibles que se adapten a tus condiciones. Te ayudamos a firmar contrato online para que llegues directo a tu piso.",
+            answer: "Somos Personal Shoppers y gracias a nuestra dedicación, experiencia y amplia red de contactos en el sector inmobiliario encontraremos tu hogar ideal.",
          },
          {
             id: 2,
             question: "¿Quién necesita de Moviit?",
-            answer: "Moviit es necesario para todos aquellos que:\nNo están en Madrid. \nEstán en Madrid pero no tienen tiempo para buscar piso. No tienen las herramientas suficientes para encontrarlo.",
+            answer: "Moviit es esencial para los extranjeros que no pueden visitar apartmentos y no tienen experiencia en el proceso de alquiler en Madrid, así como para quienes ya residen en la ciudad pero carecen de las herramientas necesarias para encontrar su hogar.",
          },
          {
             id: 3,
             question: "¿Son una inmobiliaria?",
-            answer: "No somos inmobiliaria. En Moviit trabajamos para nuestro cliente. Negociamos en nombre de él con: Inmobiliaria/ Gestor de piso/ Propietario.",
+            answer: "No somos una inmobiliaria. Nos dedicamos plenamente a proteger y promover los intereses de nuestros clientes, actuando como sus representantes ante intermediarios y agencias, y brindando un asesoramiento honesto sobre cada oportunidad de alquiler.",
          },
 
       ]
@@ -43,12 +43,12 @@ const inner_faq_data: DataType[] = [
          {
             id: 4,
             question: "¿Qué pasa si decido abandonar el servicio?",
-            answer: "Puedes abandonar el servicio cuando quieras. La seña no se devuelve debido al trabajo realizado hasta la fecha.",
+            answer: "Puedes cancelar el servicio en cualquier momento. Sin embargo, la seña no es reembolsable debido al trabajo realizado hasta la fecha.",
          },
          {
             id: 5,
             question: "¿Ustedes me pagan las expensas mensualmente?",
-            answer: "No. El objetivo de Moviit es conseguirte un piso luego te ponemos en contacto con la inmobiliaria o propietario de piso para que puedan asistirte durante tu estadía.",
+            answer: "No. El objetivo de Moviit es ayudarte a encontrar alojamiento y, posteriormente, te conectamos con la inmobiliaria o el propietario para que puedan asistirte durante tu estadía.",
          },
       ]
    },
@@ -75,22 +75,22 @@ const inner_faq_data: DataType[] = [
          {
             id: 12,
             question: "En caso de ser más de 1 persona:",
-            answer: "200€ de seña por persona que se descontará del % .",
+            answer: "200€ de seña por persona.",
          },
          {
             id: 13,
             question: "Extras firmado el contrato:",
-            answer: "Una vez firmado el contrato de alquiler se requiere el resto del monto total. Aplica para todos los casos.",
+            answer: "Una vez firmado el contrato de alquiler, se deberá abonar el monto restante total. Esta política es aplicable en todos los casos.",
          },
          {
             id: 14,
             question: "Reembolsos y/o devoluciones",
-            answer: "En caso de querer abandonar el proceso, la seña de Moviit será totalmente perdida debido al trabajo realizado hasta la fecha. Aplica para todos los casos.",
+            answer: "En caso de decidir interrumpir el proceso, la seña de Moviit se considerará totalmente perdida debido al trabajo realizado hasta la fecha. Esta política es aplicable en todos los casos.",
          },
          {
             id: 15,
             question: "¿Cómo se abona el servicio?",
-            answer: "Mediante transferencia bancaria.",
+            answer: "El servicio se puede pagar mediante transferencia bancaria o en efectivo.",
          },
       ]
    },
@@ -136,12 +136,12 @@ const inner_faq_data: DataType[] = [
          {
             id: 22,
             question: "¿Para qué usan la información?",
-            answer: "Los datos personales que recopilamos se utilizan exclusivamente para los siguientes fines: permitir que nuestros agentes inmobiliarios inicien la búsqueda de apartamentos en base a sus requisitos y contactar con usted para proporcionar información sobre los apartamentos disponibles que coincidan con su búsqueda.",
+            answer: "Los datos personales que recopilamos se utilizan exclusivamente para los siguientes fines: permitir que nuestros personal shoppers inicien la búsqueda de apartamentos en base a sus requisitos y contactar con usted para proporcionar información sobre los apartamentos disponibles que coincidan con su búsqueda.",
          },
          {
             id: 23,
             question: "¿Compartirán mi información con terceros?",
-            answer: "No compartimos, vendemos ni alquilamos sus datos personales a terceros. Su información se comparte únicamente con nuestros agentes inmobiliarios internos para los fines descritos en esta Política de Privacidad.",
+            answer: "No compartimos, vendemos ni alquilamos sus datos personales a terceros. Su información se comparte únicamente con nuestros personal shoppers internos para los fines descritos en esta Política de Privacidad.",
          },
          {
             id: 24,
@@ -160,7 +160,7 @@ const inner_faq_data: DataType[] = [
          },
          {
             id: 27,
-            question: "¿Cómo puedo contactar con ustedes?",
+            question: "¿Cómo puedo contactar con Moviit?",
             answer: "Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad o sobre nuestras prácticas de manejo de información, por favor, póngase en contacto con nosotros en: Moviit, Correo electrónico: moviitmad@gmail.com, Teléfono: +34 611 877 027.",
          },
       ]
@@ -172,8 +172,8 @@ const inner_faq_data: DataType[] = [
       faq: [
          {
             id: 28,
-            question: "¿Pueden ayudarme con la documentación legal necesaria para alquilar un piso?",
-            answer: "Sí, te ayudamos a preparar y revisar toda la documentación legal necesaria para el proceso de alquiler.",
+            question: "¿Pueden ayudarme con la documentación legal necesaria para alquilar un apartamento?",
+            answer: "Sí, te asistimos en la preparación y revisión de toda la documentación legal requerida para el proceso de alquiler.",
          },
       ]
    },

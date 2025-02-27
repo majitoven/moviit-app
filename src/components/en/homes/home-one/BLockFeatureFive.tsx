@@ -14,7 +14,7 @@ const BLockFeatureFive = ({ style }: any) => {
          page: "home_1_feature_3",
          icon: feature3Icon_1,
          title: "We get to know you",
-         desc: "We make sure you arrive directly at your ideal home. Fill out the form and we will contact you as soon as possible to understand your needs and advise you according to your profile.",
+         desc: "To begin the search, please fill out the form so we can understand your needs: areas, characteristics, prices, and other parameters. We will then contact you to start the advisory process.",
       },
       {
          id: 2,
@@ -22,7 +22,7 @@ const BLockFeatureFive = ({ style }: any) => {
          class_name: "arrow position-relative",
          icon: feature3Icon_2,
          title: "We find your place",
-         desc: "We offer you a 360º search for apartments and rooms in Madrid, presenting all the options that meet your needs. We negotiate with the agency or owner and advise you on the necessary documentation to increase your chances of being accepted.",
+         desc: "After a thorough search through real estate portals, agencies, and off-market properties, we will provide you with a list of options that meet your needs. From there, we will advocate for your interests, acting as your representative with intermediaries and agencies to help you find your ideal home.",
       }
    ];
    

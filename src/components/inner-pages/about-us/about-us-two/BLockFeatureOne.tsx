@@ -14,7 +14,7 @@ const BLockFeatureOne = () => {
                <div className="col-xl-6 col-lg-7 order-lg-last wow fadeInRight">
                   <div className="ms-xxl-5 ps-xl-4 ps-lg-5 md-mb-50">
                      <div className="title-one mb-45 lg-mb-20">
-                        <h2 className="font-garamond star-shape">Encuentra tu lugar en Madrid con Moviit. <span className="star-shape"><Image src={titleShape} alt="" className="lazy-img" /></span></h2>
+                        <h2 className="font-garamond star-shape">Alquilar a distancia es más facil con Moviit. <span className="star-shape"><Image src={titleShape} alt="" className="lazy-img" /></span></h2>
                      </div>
                      <div className="accordion-style-three">
                         <div className="accordion" id="accordionThree">

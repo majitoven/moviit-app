@@ -23,28 +23,47 @@ const feedback_data: DataType[] = [
       img: feadbackImg_1,
       title: "Jonathan Harry",
       country: "Milan, Italy",
-      desc: "Quick, efficient, and with great taste, they furnished my apartment in Madrid without any hassle.",
+      desc: "Martina was so patient and helpful finding my friend and I a place in Madrid. She gave us lots of options, was always available to answer questions, and was easy to communicate with. She listened to our needs and acted fast when we picked a place we liked! Thank you!",
       rating_count: 4.7,
       total_rating: 13,
    },
    {
       id: 2,
-      img: feadbackImg_2,
+      img: feadbackImg_1,
       title: "Sofia Rena",
       country: "New York, USA",
-      desc: "Excellent value for money, they arrived, cleaned, and furnished my house very quickly.",
+      desc: "Martina is absolutely amazing. I contacted her a few days before arriving in Madrid, and two weeks after my arrival, I already had an apartment. Highly recommended!",
       rating_count: 4.5,
       total_rating: 10
-   },
-   {
+    },
+    {
       id: 3,
-      img: feadbackImg_3,
+      img: feadbackImg_1,
       title: "Rashed Kabir",
       country: "Dhaka, BD",
-      desc: "Highly recommended service! My house looks beautiful and we didn't have time to go out and look for furniture.",
+      desc: "Fast and efficient service to find an apartment. They presented me with several options, and the communication was simple and transparent. Highly recommended for people searching for a place from another country – they take care of everything!",
       rating_count: 4.8,
       total_rating: 11
-   },
+    },
+    {
+      id: 4,
+      img: feadbackImg_1,
+      title: "Lucia Fernández",
+      country: "Buenos Aires, Argentina",
+      desc: "I was super satisfied with Movitt's service. From the first session, they understood exactly what I was looking for and sent me different options. I even requested more alternatives, and within a week, I had a new list of accommodations. Martina helped me with everything—from payment and the contract to the platform and any questions I had after confirming my accommodation. I’m very happy with the apartment we found; a reliable service that I 100% recommend!",
+      rating_count: 4.9,
+      total_rating: 12
+    },
+    {
+      id: 5,
+      img: feadbackImg_1,
+      title: "Mariana Torres",
+      country: "Mexico City, Mexico",
+      desc: "Marti is amazing! Super attentive and responsible. She makes sure to find the perfect place for you, coordinating and attending the visits herself, then sending you photos and videos. Everything was very organized and professional. I highly recommend her!",
+      rating_count: 4.8,
+      total_rating: 11
+    }
+    
 ]
 
 const Feedback = () => {
@@ -72,7 +91,7 @@ const Feedback = () => {
                            <div className="col-md-12">
                               <blockquote>"{item.desc}"</blockquote>
                               <div className="mt-40 lg-mt-40">
-                              <Link href="/en/listing_details_justicia" className="btn-two">See real customers</Link>
+                              <Link href="/en/listing_details_justicia" className="btn-two">Read more reviews</Link>
                            </div>
                            </div>
 
