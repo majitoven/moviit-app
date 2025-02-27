@@ -2,7 +2,7 @@ import ServiceFurniture from "@/components/en/inner-pages/services/service-detai
 import Wrapper from "@/layouts/Wrapper_en";
 
 export const metadata = {
-   title: "Madrid | Furnish",
+   title: "Madrid | Consulting",
 };
 const index = () => {
    return (

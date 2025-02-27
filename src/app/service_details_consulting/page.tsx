@@ -2,7 +2,7 @@ import ServiceFurniture from "@/components/inner-pages/services/service-details-
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Madrid | Amueblamos",
+   title: "Madrid | Asesoría",
 };
 const index = () => {
    return (
