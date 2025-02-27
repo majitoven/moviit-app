@@ -141,7 +141,7 @@ const FooterOne = ({ style }: any) => {
           </div>
           <div className="bottom-footer">
             <p className="m0 text-center fs-16">Copyright @{`${currentYear}`} Moviit Madrid. Created by                 <Link
-              href="https://www.instagram.com/___morphe/"
+              href="https://www.instagram.com/heymorphe/"
               rel="noopener noreferrer"
               target="_blank"
               className={`email tran3s  ${style
@@ -149,7 +149,7 @@ const FooterOne = ({ style }: any) => {
                 : "fs-30 text-decoration-underline"
                 }`}
               style={{ fontSize: '20px' }}
-            >Morphe Studio.</Link> </p>
+            >Morphe Creative Studio.</Link> </p>
           </div>
         </div>
         {style && (
