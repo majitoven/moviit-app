@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
-import featureImg_4 from "@/assets/images/perfil.png";
+import featureImg_4 from "@/assets/images/perfilEng.png";
 
 import titleShape from "@/assets/images/shape/title_shape_04.svg";
 

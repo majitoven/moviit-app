@@ -64,7 +64,7 @@ const FaqArea = () => {
          faq: [
             {
                id: 9,
-               question: "From 1 to 6 months: 50% of one month's rent",
+               question: "From 1 to 5 months: 50% of one month's rent",
                answer: "Deposit of 200€ from the % (per person)",
             },
             {

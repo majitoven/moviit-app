@@ -87,7 +87,7 @@ const AgencyDetailsArea = ({ style }: any) => {
                               </div>
                               <ul className="style-none d-flex align-items-center social-icon">
                                  {icon.map((icon, i) => (
-                                    <li key={i}><Link href="#"><i className={`fa-brands fa-${icon}`}></i></Link></li>
+                                    <li key={i}><Link href={i == 0 ? 'https://wa.me/34611877027' : 'https://www.instagram.com/moviitt/'}><i className={`fa-brands fa-${icon}`}></i></Link></li>
                                  ))}
                               </ul>
                            </div>

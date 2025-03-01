@@ -48,7 +48,7 @@ const content_data: ContentType = {
          desc: "We advise you on the documents you need to present to apply for your ideal apartment."
       },
    ],
-   service_list: ["Temporary contract (1 to 6 months): 50% of one month's rent with 200€ deposit included in the percentage (per person)",
+   service_list: ["Temporary contract (1 to 5 months): 50% of one month's rent with 200€ deposit included in the percentage (per person)",
       "Temporary contract (6 to 11 months): 70% of one month's rent with 200€ deposit included in the percentage (per person)",
       "Annual contract (1 year): One month's rent with 200€ deposit included in the percentage (per person)",],
 }
