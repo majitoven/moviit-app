@@ -18,6 +18,14 @@
     color: #fff;
   }
 }
+
+/* Adjust height only on mobile */
+@media (max-width: 768px) {
+  .btn-two-special {
+    height: 5rem; /* Set height for mobile screens */
+    margin-top: 30px;
+  }
+}
 .btn-two {
   display: inline-flex;
   align-items: center;

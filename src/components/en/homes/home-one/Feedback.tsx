@@ -92,8 +92,9 @@ const Feedback = () => {
                               <blockquote>"{item.desc}"</blockquote>
                               <div className="mt-40 lg-mt-40">
                               <a 
+                            
   href="https://www.google.com/maps/place/Moviit/@40.4378373,-3.8443451,11z/data=!4m18!1m9!3m8!1s0x232038d432a6bc45:0xac54e151e4f136d6!2sMoviit!8m2!3d40.4379543!4d-3.6795366!9m1!1b1!16s%2Fg%2F11vjpj5qy7!3m7!1s0x232038d432a6bc45:0xac54e151e4f136d6!8m2!3d40.4379543!4d-3.6795366!9m1!1b1!16s%2Fg%2F11vjpj5qy7?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" 
-  className="btn-two"
+  className="btn-two btn-two-special"
   target="_blank" 
   rel="noopener noreferrer"
 >
