@@ -24,18 +24,19 @@ export async function POST(request) {
   } = await request.json();
 
   // Configurar el transporte de Nodemailer
+  // Configurar el transporte de Nodemailer
   const transporter = nodemailer.createTransport({
-    host: 'smtp.zoho.com',
-    port: 465,
-    secure: true, // true para 465, false para otros puertos
+    host: 'mail.morphe.com.uy',  // Cambia esto al servidor SMTP de cPanel
+    port: 465,                   // Puerto SMTP seguro (según la imagen)
+    secure: true,                // true para 465 (SSL/TLS)
     auth: {
-      user: process.env.ZOHO_USER,
-      pass: process.env.ZOHO_PASS,
+      user: 'hola@morphe.com.uy', // Tu email cPanel
+      pass: 'Morphe2025!', // Usa una variable de entorno para la contraseña
     },
   });
 
   const mailOptions = {
-    from: process.env.ZOHO_USER,
+    from: 'hola@morphe.com.uy',
     to: 'moviitmad@gmail.com',
     subject: 'Web Moviit: Formulario de búsqueda completo',
     text: `
